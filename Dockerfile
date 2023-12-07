@@ -10,9 +10,7 @@ LABEL maintainer="Parmanand Patram <ppatram@gmail.com>"
 COPY install.sh /
 
 RUN set -x \
-    && echo hello world \
     && chmod 755 install.sh \
-    && /bin/ls  \
     && ./install.sh
 
 
