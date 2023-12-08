@@ -1,7 +1,9 @@
 #!/bin/bash -x 
 
-apt-get update
-apt-get install -y nginx
-apt-get install -y dnsutils
-apt-get install -y net-tools
+echo ${INSTALL_VAR} > install.var.txt
+echo "Installing stuff"
 
+# do installation stuff here"
+
+echo "Done!"
+exit 0
