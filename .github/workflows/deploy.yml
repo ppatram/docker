@@ -1,0 +1,128 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+env:
+  AWS_REGION: us-east-1
+  ECR_REPOSITORY: k8s-training-dev-api
+  EKS_CLUSTER: k8s-training-dev-cluster
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      image-tag: ${{ steps.meta.outputs.tag }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set image tag
+        id: meta
+        run: echo "tag=${GITHUB_SHA::8}" >> "$GITHUB_OUTPUT"
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Login to ECR
+        id: ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Build and push image
+        env:
+          REGISTRY: ${{ steps.ecr.outputs.registry }}
+          TAG: ${{ steps.meta.outputs.tag }}
+        run: |
+          docker build -t $REGISTRY/$ECR_REPOSITORY:$TAG .
+          docker push $REGISTRY/$ECR_REPOSITORY:$TAG
+
+  deploy-dev:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    environment: development
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Update kubeconfig
+        run: aws eks update-kubeconfig --name $EKS_CLUSTER --region $AWS_REGION
+
+      - name: Set image in kustomization
+        run: |
+          cd manifests/overlays/dev
+          kustomize edit set image api=${{ needs.build.outputs.image-tag && format('{0}/{1}:{2}', steps.ecr.outputs.registry || format('{0}.dkr.ecr.{1}.amazonaws.com', vars.AWS_ACCOUNT_ID, env.AWS_REGION), env.ECR_REPOSITORY, needs.build.outputs.image-tag) }}
+
+      - name: Deploy to dev
+        run: kubectl apply -k manifests/overlays/dev
+
+      - name: Wait for rollout
+        run: kubectl rollout status deployment/api -n api-dev --timeout=120s
+
+  deploy-qa:
+    needs: [build, deploy-dev]
+    runs-on: ubuntu-latest
+    environment: qa
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Update kubeconfig
+        run: aws eks update-kubeconfig --name $EKS_CLUSTER --region $AWS_REGION
+
+      - name: Deploy to QA
+        env:
+          IMAGE: ${{ vars.AWS_ACCOUNT_ID }}.dkr.ecr.${{ env.AWS_REGION }}.amazonaws.com/${{ env.ECR_REPOSITORY }}:${{ needs.build.outputs.image-tag }}
+        run: |
+          cd manifests/overlays/qa
+          kustomize edit set image api=$IMAGE
+          kubectl apply -k .
+
+      - name: Wait for rollout
+        run: kubectl rollout status deployment/api -n api-qa --timeout=120s
+
+  deploy-prod:
+    needs: [build, deploy-qa]
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Update kubeconfig
+        run: aws eks update-kubeconfig --name $EKS_CLUSTER --region $AWS_REGION
+
+      - name: Deploy to production
+        env:
+          IMAGE: ${{ vars.AWS_ACCOUNT_ID }}.dkr.ecr.${{ env.AWS_REGION }}.amazonaws.com/${{ env.ECR_REPOSITORY }}:${{ needs.build.outputs.image-tag }}
+        run: |
+          cd manifests/overlays/prod
+          kustomize edit set image api=$IMAGE
+          kubectl apply -k .
+
+      - name: Wait for rollout
+        run: kubectl rollout status deployment/api -n api-prod --timeout=180s

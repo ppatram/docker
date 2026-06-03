@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api
+spec:
+  replicas: 3
+  strategy:
+    rollingUpdate:
+      maxUnavailable: 0
+      maxSurge: 1
+  template:
+    spec:
+      containers:
+        - name: api
+          resources:
+            requests:
+              cpu: 500m
+              memory: 512Mi
+            limits:
+              cpu: "1"
+              memory: 1024Mi

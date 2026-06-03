@@ -1,0 +1,3844 @@
+                                                                         ⢀⣴⣶⣶⣦⡀⠀⠀⠀⠀⢀⣴⣶⣦⣄⡀   ⢀⣴⣶⣶⣦⡀   ⢀⣴⣶⣶⣶⣶⣶⣶⣶⣶⣶⣦⣄⡀       ⢀⣠⣴⣶⣶⣶⣶⣶⣦⣄⡀
+                                                                        ⢰⣿⠋⠁⠈⠙⣿⡆⠀⢀⣾⡿⠁  ⠈⢻⡆ ⢰⣿⠋⠁⠈⠙⣿⡆ ⢰⣿⠋⠁        ⠈⠙⠻⣦     ⣴⡿⠟⠋⠁   ⠈⠙⠻⢿⣦
+                                                                        ⢸⣿⠀⠀⠀⠀⣿⣇⣴⡿⠋⠀⠀  ⢀⣼⠇ ⢸⣿⠀⠀⠀⠀⣿⡇ ⢸⣿⠀⠀⠀⢠⣤⣤⣤⣤⣄    ⣿⡆   ⣼⡟⠀⠀⠀ ⣀⣀⣀    ⢻⣧
+                                                                        ⢸⣿⠀⠀⠀⠀⣿⡿⠋⠀⠀  ⢀⣾⡿⠁  ⢸⣿⠀⠀⠀⠀⣿⡇ ⢸⣿⠀⠀⠀⢸⣿⠉⠉⠉⣿⡇   ⣿⡇  ⣼⡟⠀⠀ ⣰⡿⠟⠛⠻⢿⣆⠀⠀ ⢻⣧
+                                                                        ⢸⣿⠀⠀⠀⠀⠙⠁⠀⠀ ⢀⣼⡟⠁    ⢸⣿⠀⠀⠀⠀⣿⡇ ⢸⣿⠀⠀⠀⢸⣿⣶⣶⡶⠋⠀   ⣿⠇ ⢰⣿⠀⠀⠀⢰⣿⠀⠀⠀  ⣿⡆⠀⠀ ⣿⡆
+                                                                        ⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀ ⠹⣷⡀     ⢸⣿⠀⠀⠀⠀⣿⡇⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀   ⣠⣼⠟  ⢸⣿⠀⠀ ⢸⣿⠀⠀⠀⠀ ⣿⡇⠀⠀ ⣿⡇
+                                                                        ⢸⣿⠀⠀⠀⠀⠀⣠⡀⠀⠀ ⠹⣷⡄    ⢸⣿⠀⠀⠀⠀⣿⡇⠀⢸⣿⠀⠀⠀⠀⣤⣄  ⠀⠀⠹⣿⡅   ⠸⣿⠀⠀ ⠸⣿⠀⠀⠀⠀ ⣿⠇⠀  ⣿⠇
+                                                                        ⢸⣿⠀⠀⠀⠀⣾⡟⣷⡀⠀⠀ ⠘⣿⣆   ⢸⣿⠀⠀⠀⠀⣿⡇ ⢸⣿⠀⠀⠀⠀⣿⡟⣷⡀⠀⠀ ⠘⣿⣆   ⢻⣧⠀⠀ ⠹⣷⣦⣤⣤⣾⠏⠀⠀⠀⣼⡟
+                                                                        ⢸⣿⠀⠀⠀⠀⣿⡇⠹⣷⡀  ⠀⠈⢻⡇  ⢸⣿⠀⠀⠀⠀⣿⡇ ⢸⣿⠀⠀⠀⠀⣿⡇⠹⣷⡀  ⠀⠈⢻⡇   ⢻⣧⠀⠀⠀ ⠉⠉⠉    ⣼⡟
+                                                                        ⠸⣿⣄⡀⢀⣠⣿⠇⠀⠙⣷⡀  ⢀⣼⠇  ⠸⣿⣄⡀⢀⣠⣿⠇ ⠸⣿⣄⡀⢀⣠⣿⠇⠀⠙⣷⡀  ⢀⣼⠇    ⠻⣷⣦⣄⡀   ⢀⣠⣴⣾⠟
+                                                                         ⠈⠻⠿⠿⠟⠁⠀⠀⠀⠈⠻⠿⠿⠟⠁    ⠈⠻⠿⠿⠟⠁   ⠈⠻⠿⠿⠟⠁⠀⠀⠀⠈⠻⠿⠿⠟⠁     ⠀⠀⠈⠙⠻⠿⠿⠿⠿⠟⠋⠁
+
+                                                                   Welcome to the new Kiro CLI UX! /tui to learn more, /feedback for thoughts.
+                                                                        Prefer the classic experience? Relaunch with kiro-cli --classic.
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  there will need to be a lot of aws account configuration before this application can be built. Can you identify all of them?
+
+● Code generate_codebase_overview
+    Generated overview
+● Read /home/ppatram/kubernetes
+● Read /home/ppatram/kubernetes/docs/requirements.md
+
+  Based on the requirements document, here are all the AWS account configurations needed before this application can be built:
+
+  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  AWS Account Pre-Configuration Requirements
+
+  1. VPC & Networking
+
+  - VPC with CIDR allocation (public + private subnets across required AZs)
+  - NAT Gateway(s) in public subnets for outbound internet from private subnets
+  - Internet Gateway attached to VPC
+  - Route tables (public with IGW, private with NAT GW)
+  - VPC Endpoints for: ECR (API + DKR), Secrets Manager, CloudWatch Logs, S3
+  - Security groups: ALB ingress tier, EKS node/application tier, data tier (RDS/ElastiCache)
+
+  2. EKS Cluster
+
+  - EKS cluster IAM role (with eks.amazonaws.com trust policy)
+  - EKS node group IAM role (EC2 trust policy with policies for ECR pull, CloudWatch, Secrets Manager, X-Ray)
+  - EKS cluster created across target AZs with private endpoint access
+  - Managed node groups (per environment sizing: t3.medium → m5.xlarge)
+  - Cluster autoscaler IAM policy and service account (IRSA)
+  - OIDC provider associated with the EKS cluster (required for IRSA)
+  - aws-auth ConfigMap or EKS access entries for IAM → Kubernetes RBAC mapping
+
+  3. IAM Roles & Policies
+
+  - ALB Ingress Controller IAM role (IRSA) with permissions for ALB/target group/WAF management
+  - External Secrets Operator IAM role (IRSA) with secretsmanager:GetSecretValue scoped to app secrets
+  - CloudWatch/Container Insights IAM role for the Fluent Bit or ADOT daemonset
+  - X-Ray / OTEL Collector IAM role (IRSA) for distributed tracing
+  - CI/CD pipeline IAM role with permissions to push to ECR, update EKS deployments, and read secrets
+
+  4. ECR (Container Registry)
+
+  - ECR repository created for the application image
+  - Image scanning enabled on push
+  - Lifecycle policies (expire untagged images after 7 days)
+  - Immutable tag setting enabled for production images
+  - Repository policy granting pull access from the EKS node role
+
+  5. Secrets Manager
+
+  - Secrets created per environment: DB credentials, API keys, TLS certs
+    - e.g., api-dev/db-credentials, api-qa/db-credentials, api-prod/db-credentials
+
+  - Resource policies on secrets scoped to the External Secrets Operator role
+
+  6. RDS PostgreSQL
+
+  - DB subnet group (private subnets)
+  - RDS instances per environment (single-AZ for dev/QA, multi-AZ for prod)
+  - Security group allowing inbound 5432 only from EKS node security group
+  - KMS key for storage encryption
+  - Automated backup configuration (1/7/30 day retention by tier)
+  - Parameter group (if custom PostgreSQL settings are needed)
+
+  7. ElastiCache (Redis)
+
+  - ElastiCache subnet group (private subnets)
+  - Replication group (single-node for dev/QA, multi-AZ for prod)
+  - Security group allowing inbound 6379 only from EKS node security group
+  - KMS key for encryption at rest
+  - In-transit encryption enabled
+
+  8. ALB & Ingress
+
+  - ACM certificates provisioned and validated (per environment domain)
+  - AWS WAF WebACL (production) with rate limiting and IP allow/deny rules
+  - ALB Ingress Controller installed in the cluster (Helm chart or add-on)
+  - Target group health check configuration pointing to /health/ready
+
+  9. Observability
+
+  - CloudWatch Log Groups per environment with retention policies set
+  - CloudWatch Container Insights enabled on the EKS cluster
+  - SNS topics for alert delivery (email, PagerDuty, etc.)
+  - CloudWatch Alarms: error rate > 1%, latency p99 > 2s, pod restarts > 3 in 5min
+  - X-Ray or OTEL Collector deployed as DaemonSet or sidecar in cluster
+
+  10. KMS
+
+  - KMS keys for:
+    - RDS encryption at rest
+    - ElastiCache encryption at rest
+    - Secrets Manager encryption (default or custom)
+    - ECR image encryption (optional, uses AES-256 by default)
+
+  11. CI/CD Pipeline Infrastructure
+
+  - ECR push permissions for the build agent
+  - EKS deployment permissions (kubectl/Helm access via IAM)
+  - Manual approval mechanism for production gate (CodePipeline approval action, or GitLab manual job)
+  - SAST/image scanning tool configuration
+
+  12. Kubernetes Namespaces & RBAC (Post-Cluster)
+
+  - Namespaces: api-dev, api-qa, api-prod
+  - NetworkPolicies restricting pod-to-pod traffic per namespace
+  - ResourceQuotas per namespace (optional but recommended)
+  - External Secrets Operator or Secrets Store CSI Driver installed cluster-wide
+
+  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Summary: ~30+ distinct AWS resources/configurations need to exist before the first deployment. The critical path is: VPC → EKS cluster + OIDC → IAM roles (IRSA) → ECR → Secrets Manager → RDS/ElastiCache →
+  ALB controller + ACM certs → observability stack. Would you like me to generate the IaC (CDK/Terraform/CloudFormation) for any of these?
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  how much per month will this infrastructure cost? I'm setting it up for kubernetes training
+
+● Read /home/ppatram/kubernetes/docs/requirements.md (L101-180)
+
+  Since this is for Kubernetes training, I'd strongly recommend you don't build all three environments as spec'd. Here's the cost breakdown and a recommendation:
+
+  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Full Spec Cost Estimate (All 3 Environments)
+
+  ┌───────────────────────────────────┬─────────────────────┬─────────────────────┬──────────────────────────────┐
+  │ Component                         │ Dev/month           │ QA/month            │ Prod/month                   │
+  ├───────────────────────────────────┼─────────────────────┼─────────────────────┼──────────────────────────────┤
+  │ **EKS Control Plane**             │ $73                 │ $73                 │ $73                          │
+  │ **EC2 Nodes** (on-demand)         │ ~$60 (1× t3.medium) │ ~$120 (2× t3.large) │ ~$460 (3× m5.xlarge)         │
+  │ **NAT Gateway** (per AZ)          │ ~$33 + data         │ ~$65 + data         │ ~$100 + data                 │
+  │ **RDS PostgreSQL**                │ ~$13 (db.t3.micro)  │ ~$25 (db.t3.small)  │ ~$350 (db.r5.large multi-AZ) │
+  │ **ElastiCache**                   │ $0–13               │ ~$25                │ ~$300 (r5.large multi-AZ)    │
+  │ **ALB**                           │ ~$22 + LCUs         │ ~$22 + LCUs         │ ~$22 + LCUs                  │
+  │ **VPC Endpoints** (4×)            │ ~$29                │ ~$29                │ ~$29                         │
+  │ **CloudWatch/Logs**               │ ~$5–10              │ ~$10–20             │ ~$30–50                      │
+  │ **Secrets Manager** (3–5 secrets) │ ~$2                 │ ~$2                 │ ~$2                          │
+  │ **WAF**                           │ —                   │ —                   │ ~$10+                        │
+  │ **ECR**                           │ ~$1                 │ —                   │ —                            │
+  │ **Subtotal**                      │ **~$250–280**       │ **~$370–400**       │ **~$1,380–1,500**            │
+  └───────────────────────────────────┴─────────────────────┴─────────────────────┴──────────────────────────────┘
+
+  All 3 environments total: ~$2,000–2,200/month
+
+  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Recommendation for Training
+
+  You don't need three full environments for Kubernetes training. Build dev only (or a single combined environment) and strip the expensive components:
+
+  ┌───────────────────┬──────────────────────────────┬──────────────┐
+  │ Component         │ Training Setup               │ Monthly Cost │
+  ├───────────────────┼──────────────────────────────┼──────────────┤
+  │ EKS Control Plane │ 1 cluster                    │ $73          │
+  │ Nodes             │ 2× t3.medium (room for pods) │ ~$120        │
+  │ NAT Gateway       │ 1 (single AZ)                │ ~$33         │
+  │ RDS               │ db.t3.micro                  │ ~$13         │
+  │ ALB               │ 1                            │ ~$22         │
+  │ VPC Endpoints     │ Skip (use NAT for training)  │ $0           │
+  │ ElastiCache       │ Skip or t3.micro             │ $0–13        │
+  │ ECR               │ Minimal                      │ ~$1          │
+  │ CloudWatch        │ Basic                        │ ~$5          │
+  └───────────────────┴──────────────────────────────┴──────────────┘
+
+  Training-optimized total: ~$270–280/month
+
+  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Cost-Saving Tips for Training
+
+  - Skip VPC Endpoints — they cost $7/each/month and NAT Gateway covers the same access (just via internet)
+  - Skip production environment entirely — teach multi-env concepts with dev + QA overlays on the same cluster using different namespaces
+  - Use one EKS cluster with 3 namespaces instead of 3 separate clusters
+  - Shut down when not in use — scale node group to 0 outside training hours (saves ~60% on EC2)
+  - Use Spot Instances for nodes — saves 60–70% on EC2 (fine for training, not for prod)
+
+  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  For precise, up-to-date pricing, use the AWS Pricing Calculator (https://calculator.aws/). These estimates are based on us-east-1 on-demand pricing and will vary by region and usage patterns.
+
+  Want me to help you design a minimal single-cluster training setup that still teaches all the Kubernetes concepts from the requirements?
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  is there an aws "trial" plan I can sign up for?
+
+● search_documentation
+    ╰ search_phrase=AWS Free Tier account sign up, search_intent=Understanding what free tier or trial options AWS offers for new accounts
+● read_documentation
+    ╰ url=https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier-plans.html, max_length=8000
+
+  Yes — AWS has a Free Tier with two plan options when you sign up:
+
+  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  AWS Free Plan (new as of 2025)
+
+  - $100 in credits on sign-up + earn up to $100 more by completing activities
+  - 6 months duration or until credits are depleted (whichever comes first)
+  - No charges while you explore — account closes automatically when credits run out or time expires
+  - Access to 30+ services with monthly free usage limits
+  - Limitation: does not include access to all services — some are restricted to the Paid plan
+
+  AWS Paid Account Plan
+
+  - Same $100 sign-up credit + up to $100 in additional credits
+  - Access to all AWS services and features
+  - Pay-as-you-go after credits are exhausted
+  - Also includes short-term trial offers for specific services
+
+  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  The Problem for Your EKS Training
+
+  The Free plan won't cover this project well because:
+
+  ┌─────────────────┬─────────────────────────────────────────────────────────────────────────┐
+  │ Service         │ Free Tier Coverage                                                      │
+  ├─────────────────┼─────────────────────────────────────────────────────────────────────────┤
+  │ **EKS**         │ Not free — $73/month for the control plane alone                        │
+  │ **EC2 (nodes)** │ 750 hrs/month of t2.micro or t3.micro only — your nodes need t3.medium+ │
+  │ **RDS**         │ 750 hrs/month of db.t2.micro/db.t3.micro (single-AZ) — dev tier fits!   │
+  │ **NAT Gateway** │ Not included in free tier                                               │
+  │ **ALB**         │ Not included in free tier                                               │
+  │ **ElastiCache** │ Not included in free tier                                               │
+  └─────────────────┴─────────────────────────────────────────────────────────────────────────┘
+
+  The $100–$200 in credits would last you less than 1 month running even the minimal dev setup (~$270/month).
+
+  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Better Options for Training
+
+  1. Sign up with Paid plan — use the $200 in credits, set a billing alarm at $50, and tear everything down after training sessions. Budget for ~$270/month for the dev environment.
+  2. Use minikube or kind locally — free, teaches the same Kubernetes concepts (deployments, services, configmaps, kustomize overlays), just without the AWS-specific networking/ALB pieces.
+  3. AWS Skill Builder / EKS Workshop — AWS provides free workshop environments (https://www.eksworkshop.com/) with temporary AWS accounts at no cost during structured learning.
+  4. Set a billing budget alarm — regardless of plan, create a CloudWatch billing alarm at your comfort threshold so you don't get surprised.
+
+  Would you like me to help set up a local Kubernetes environment (minikube/kind) for the training concepts, or plan the minimal AWS setup with cost guardrails?
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  is it practical to setup and destroy the whole environment every time I need to use it
+
+  Short answer: partially practical, but not for EKS itself.
+
+  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  What's Fast to Create/Destroy
+
+  ┌───────────────────┬─────────────┬──────────────┬─────────┐
+  │ Component         │ Create Time │ Destroy Time │ Verdict │
+  ├───────────────────┼─────────────┼──────────────┼─────────┤
+  │ RDS (db.t3.micro) │ 5–10 min    │ 2–5 min      │ ✅ Fine │
+  │ ElastiCache       │ 5–10 min    │ 3–5 min      │ ✅ Fine │
+  │ ALB               │ 1–2 min     │ 1 min        │ ✅ Fine │
+  │ NAT Gateway       │ 1–2 min     │ 1–2 min      │ ✅ Fine │
+  │ Security Groups   │ Seconds     │ Seconds      │ ✅ Fine │
+  │ ECR               │ Seconds     │ Seconds      │ ✅ Fine │
+  │ Secrets Manager   │ Seconds     │ Seconds      │ ✅ Fine │
+  └───────────────────┴─────────────┴──────────────┴─────────┘
+
+  What's Slow and Painful
+
+  ┌───────────────────────────────────────────────────────────────────────────────────────┬───────────────┬───────────────────────────┬─────────────────────────┐
+  │ Component                                                                             │ Create Time   │ Destroy Time              │ Verdict                 │
+  ├───────────────────────────────────────────────────────────────────────────────────────┼───────────────┼───────────────────────────┼─────────────────────────┤
+  │ **EKS Control Plane**                                                                 │ **15–25 min** │ **10–15 min**             │ ⚠️ Annoying             │
+  │ **EKS Node Group**                                                                    │ **5–10 min**  │ **5–10 min**              │ ⚠️ Annoying             │
+  │ **VPC + Subnets + Routes**                                                            │ 2–3 min       │ 3–5 min (ordering issues) │ ⚠️ Dependency headaches │
+  │ **VPC Endpoints**                                                                     │ 2–5 min       │ 2–3 min                   │ Mildly slow             │
+  │ **Post-cluster setup** (ALB controller, External Secrets Operator, CSI drivers, OIDC) │ 5–10 min      │ Manual cleanup            │ ❌ Tedious              │
+  └───────────────────────────────────────────────────────────────────────────────────────┴───────────────┴───────────────────────────┴─────────────────────────┘
+
+  Total cold-start time: ~40–60 minutes before you can deploy your first pod. Then another 40+ minutes to tear down cleanly.
+
+  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  The Real Friction
+
+  Beyond raw time, these issues make full create/destroy impractical for regular training:
+
+  1. EKS add-ons and Helm charts (ALB controller, external-secrets, metrics-server) need reinstalling every time
+  2. IAM OIDC provider must be re-associated and service accounts re-linked
+  3. DNS/ACM validation — if you're using real domains, certificate validation takes extra time
+  4. Ordering dependencies on destroy — you can't delete a VPC until all ENIs, NAT GWs, and endpoints are gone. Terraform/CDK handles this but sometimes hangs on stuck resources
+  5. State drift — if a destroy fails halfway, manual cleanup is painful
+
+  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Practical Middle Ground
+
+  Keep the slow/cheap stuff running. Destroy the expensive stuff.
+
+  ┌───────────────────────────────┬─────────────────────────────────────────────────────┐
+  │ Keep Running (~$3–5/day)      │ Create/Destroy Per Session                          │
+  ├───────────────────────────────┼─────────────────────────────────────────────────────┤
+  │ VPC, subnets, route tables    │ EKS node group (scale to 0 when idle)               │
+  │ Security groups               │ RDS (or stop/start it)                              │
+  │ IAM roles, OIDC provider      │ ElastiCache                                         │
+  │ ECR repository                │ NAT Gateway ($1.08/day — destroy if cost-sensitive) │
+  │ Secrets Manager secrets       │ ALB (only exists when Ingress is deployed)          │
+  │ EKS control plane ($2.40/day) │                                                     │
+  └───────────────────────────────┴─────────────────────────────────────────────────────┘
+
+  Cost while idle: ~$5–7/day ($150–210/month) with just VPC + EKS control plane running.
+
+  Best trick: Scale the node group to 0 when not training:
+
+  aws eks update-nodegroup-config \
+    --cluster-name training \
+    --nodegroup-name workers \
+    --scaling-config minSize=0,maxSize=2,desiredSize=0 \
+    --region us-east-1
+
+  This drops EC2 costs to $0 while keeping the cluster ready. Scale back up in ~3 minutes when you need it.
+
+  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Recommendation
+
+  If you're training weekly or more, keep VPC + EKS running and scale nodes to 0 between sessions. If it's monthly or less, full teardown with Terraform/CDK is reasonable — just budget an hour of setup time
+  before each session.
+
+  Want me to set up the IaC with a "pause" and "resume" script for the middle-ground approach?
+
+▸ Credits: 0.29 • Time: 23s
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  what would be the typical cost if I used it 20 hours every week
+
+  Estimated Monthly Cost — 20 Hours/Week Usage
+
+  Assuming the "keep VPC + EKS control plane, scale nodes on/off" approach with the dev environment only:
+
+  Always-On Costs (24/7)
+
+  ┌───────────────────────────────┬──────────────┐
+  │ Component                     │ Monthly Cost │
+  ├───────────────────────────────┼──────────────┤
+  │ EKS Control Plane             │ $73          │
+  │ VPC (no cost itself)          │ $0           │
+  │ Secrets Manager (3–5 secrets) │ $2           │
+  │ ECR (minimal storage)         │ $1           │
+  │ IAM roles, security groups    │ $0           │
+  │ **Subtotal**                  │ **~$76**     │
+  └───────────────────────────────┴──────────────┘
+
+  Active-Only Costs (20 hrs/week ≈ 80 hrs/month)
+
+  ┌──────────────────────────────┬────────────────┬──────────────┐
+  │ Component                    │ Hourly Rate    │ 80 hrs/month │
+  ├──────────────────────────────┼────────────────┼──────────────┤
+  │ EC2 nodes (2× t3.medium)     │ $0.0832        │ ~$7          │
+  │ NAT Gateway                  │ $0.045 + data  │ ~$4          │
+  │ ALB                          │ $0.0225 + LCUs │ ~$2          │
+  │ RDS db.t3.micro (stop/start) │ $0.018         │ ~$2          │
+  │ ElastiCache t3.micro         │ $0.017         │ ~$1          │
+  │ CloudWatch logs/metrics      │ —              │ ~$3          │
+  │ **Subtotal**                 │                │ **~$19**     │
+  └──────────────────────────────┴────────────────┴──────────────┘
+
+  Monthly Total
+
+  ┌───────────────┬────────────────┐
+  │               │                │
+  ├───────────────┼────────────────┤
+  │ ---           │ ---            │
+  │ Always-on     │ $76            │
+  │ Active 80 hrs │ $19            │
+  │ **Total**     │ **~$95/month** │
+  └───────────────┴────────────────┘
+
+  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  If You Destroy Everything Between Sessions
+
+  You'd save the $73 EKS control plane but lose 40–60 minutes per session to setup. At 20 hrs/week that's a significant chunk of your training time wasted on waiting.
+
+  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Bottom line: ~$95/month with the scale-to-zero approach. The EKS control plane at $73 is the unavoidable floor if you want the cluster always ready. For exact pricing you can use the AWS Pricing Calculator
+   (https://calculator.aws/).
+
+▸ Credits: 0.16 • Time: 12s
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  create a terraform root module that will perform the whole infrastructure setup
+
+● Task list created
+● Write /home/ppatram/kubernetes/terraform/versions.tf
+  added 14 lines in versions.tf
+     1+  terraform {
+     2+    required_version = ">= 1.5.0"
+     3+
+     4+    required_providers {
+     5+      aws = {
+     6+        source  = "hashicorp/aws"
+     7+        version = "~> 5.50"
+     8+      }
+     9+      tls = {
+    10+        source  = "hashicorp/tls"
+    11+        version = "~> 4.0"
+    12+      }
+    13+    }
+    14+  }
+● Tasks updated
+● Write /home/ppatram/kubernetes/terraform/main.tf
+  added 213 lines in main.tf
+     1+  provider "aws" {
+     2+    region = var.region
+     3+  }
+     4+
+     5+  data "aws_availability_zones" "available" {
+     6+    state = "available"
+     7+  }
+     8+
+     9+  locals {
+    10+    azs        = slice(data.aws_availability_zones.available.names, 0, var.az_count)
+    11+    name       = "${var.project}-${var.environment}"
+    12+    common_tags = {
+    13+      Project     = var.project
+    14+      Environment = var.environment
+    15+      ManagedBy   = "terraform"
+    16+    }
+    17+  }
+    18+
+    19+  # --- VPC ---
+    20+
+    21+  resource "aws_vpc" "main" {
+    22+    cidr_block           = var.vpc_cidr
+    23+    enable_dns_hostnames = true
+    24+    enable_dns_support   = true
+    25+    tags                 = merge(local.common_tags, { Name = "${local.name}-vpc" })
+    26+  }
+    27+
+    28+  # --- Subnets ---
+    29+
+    30+  resource "aws_subnet" "public" {
+    31+    count                   = var.az_count
+    32+    vpc_id                  = aws_vpc.main.id
+    33+    cidr_block              = cidrsubnet(var.vpc_cidr, 4, count.index)
+    34+    availability_zone       = local.azs[count.index]
+    35+    map_public_ip_on_launch = true
+    36+    tags = merge(local.common_tags, {
+    37+      Name                                          = "${local.name}-public-${local.azs[count.index]}"
+    38+      "kubernetes.io/role/elb"                       = "1"
+    39+      "kubernetes.io/cluster/${local.name}-cluster" = "shared"
+    40+    })
+    41+  }
+    42+
+    43+  resource "aws_subnet" "private" {
+    44+    count             = var.az_count
+    45+    vpc_id            = aws_vpc.main.id
+    46+    cidr_block        = cidrsubnet(var.vpc_cidr, 4, count.index + var.az_count)
+    47+    availability_zone = local.azs[count.index]
+    48+    tags = merge(local.common_tags, {
+    49+      Name                                          = "${local.name}-private-${local.azs[count.index]}"
+    50+      "kubernetes.io/role/internal-elb"              = "1"
+    51+      "kubernetes.io/cluster/${local.name}-cluster" = "shared"
+    52+    })
+    53+  }
+    54+
+    55+  resource "aws_subnet" "data" {
+    56+    count             = var.az_count
+    57+    vpc_id            = aws_vpc.main.id
+    58+    cidr_block        = cidrsubnet(var.vpc_cidr, 4, count.index + var.az_count * 2)
+    59+    availability_zone = local.azs[count.index]
+    60+    tags              = merge(local.common_tags, { Name = "${local.name}-data-${local.azs[count.index]}" })
+    61+  }
+    62+
+    63+  # --- Internet Gateway ---
+    64+
+    65+  resource "aws_internet_gateway" "main" {
+    66+    vpc_id = aws_vpc.main.id
+    67+    tags   = merge(local.common_tags, { Name = "${local.name}-igw" })
+    68+  }
+    69+
+    70+  # --- NAT Gateway ---
+    71+
+    72+  resource "aws_eip" "nat" {
+    73+    count  = var.enable_nat_gateway ? 1 : 0
+    74+    domain = "vpc"
+    75+    tags   = merge(local.common_tags, { Name = "${local.name}-nat-eip" })
+    76+  }
+    77+
+    78+  resource "aws_nat_gateway" "main" {
+    79+    count         = var.enable_nat_gateway ? 1 : 0
+    80+    allocation_id = aws_eip.nat[0].id
+    81+    subnet_id     = aws_subnet.public[0].id
+    82+    tags          = merge(local.common_tags, { Name = "${local.name}-nat" })
+    83+    depends_on    = [aws_internet_gateway.main]
+    84+  }
+    85+
+    86+  # --- Route Tables ---
+    87+
+    88+  resource "aws_route_table" "public" {
+    89+    vpc_id = aws_vpc.main.id
+    90+    route {
+    91+      cidr_block = "0.0.0.0/0"
+    92+      gateway_id = aws_internet_gateway.main.id
+    93+    }
+    94+    tags = merge(local.common_tags, { Name = "${local.name}-public-rt" })
+    95+  }
+    96+
+    97+  resource "aws_route_table_association" "public" {
+    98+    count          = var.az_count
+    99+    subnet_id      = aws_subnet.public[count.index].id
+   100+    route_table_id = aws_route_table.public.id
+   101+  }
+   102+
+   103+  resource "aws_route_table" "private" {
+   104+    vpc_id = aws_vpc.main.id
+   105+    tags   = merge(local.common_tags, { Name = "${local.name}-private-rt" })
+   106+  }
+   107+
+   108+  resource "aws_route" "private_nat" {
+   109+    count                  = var.enable_nat_gateway ? 1 : 0
+   110+    route_table_id         = aws_route_table.private.id
+   111+    destination_cidr_block = "0.0.0.0/0"
+   112+    nat_gateway_id         = aws_nat_gateway.main[0].id
+   113+  }
+   114+
+   115+  resource "aws_route_table_association" "private" {
+   116+    count          = var.az_count
+   117+    subnet_id      = aws_subnet.private[count.index].id
+   118+    route_table_id = aws_route_table.private.id
+   119+  }
+   120+
+   121+  resource "aws_route_table_association" "data" {
+   122+    count          = var.az_count
+   123+    subnet_id      = aws_subnet.data[count.index].id
+   124+    route_table_id = aws_route_table.private.id
+   125+  }
+   126+
+   127+  # --- Security Groups ---
+   128+
+   129+  resource "aws_security_group" "alb" {
+   130+    name_prefix = "${local.name}-alb-"
+   131+    vpc_id      = aws_vpc.main.id
+   132+    description = "ALB ingress tier"
+   133+
+   134+    ingress {
+   135+      from_port   = 443
+   136+      to_port     = 443
+   137+      protocol    = "tcp"
+   138+      cidr_blocks = var.alb_ingress_cidrs
+   139+      description = "HTTPS inbound"
+   140+    }
+   141+
+   142+    egress {
+   143+      from_port   = 0
+   144+      to_port     = 0
+   145+      protocol    = "-1"
+   146+      cidr_blocks = [var.vpc_cidr]
+   147+      description = "Egress to VPC"
+   148+    }
+   149+
+   150+    tags = merge(local.common_tags, { Name = "${local.name}-alb-sg" })
+   151+
+   152+    lifecycle { create_before_destroy = true }
+   153+  }
+   154+
+   155+  resource "aws_security_group" "nodes" {
+   156+    name_prefix = "${local.name}-nodes-"
+   157+    vpc_id      = aws_vpc.main.id
+   158+    description = "EKS nodes application tier"
+   159+
+   160+    ingress {
+   161+      from_port       = 8080
+   162+      to_port         = 8080
+   163+      protocol        = "tcp"
+   164+      security_groups = [aws_security_group.alb.id]
+   165+      description     = "App port from ALB"
+   166+    }
+   167+
+   168+    egress {
+   169+      from_port   = 0
+   170+      to_port     = 0
+   171+      protocol    = "-1"
+   172+      cidr_blocks = ["0.0.0.0/0"]
+   173+      description = "Outbound all"
+   174+    }
+   175+
+   176+    tags = merge(local.common_tags, { Name = "${local.name}-nodes-sg" })
+   177+
+   178+    lifecycle { create_before_destroy = true }
+   179+  }
+   180+
+   181+  resource "aws_security_group" "data" {
+   182+    name_prefix = "${local.name}-data-"
+   183+    vpc_id      = aws_vpc.main.id
+   184+    description = "Data tier (RDS, ElastiCache)"
+   185+
+   186+    ingress {
+   187+      from_port       = 5432
+   188+      to_port         = 5432
+   189+      protocol        = "tcp"
+   190+      security_groups = [aws_security_group.nodes.id]
+   191+      description     = "PostgreSQL from nodes"
+   192+    }
+   193+
+   194+    ingress {
+   195+      from_port       = 6379
+   196+      to_port         = 6379
+   197+      protocol        = "tcp"
+   198+      security_groups = [aws_security_group.nodes.id]
+   199+      description     = "Redis from nodes"
+   200+    }
+   201+
+   202+    egress {
+   203+      from_port   = 0
+   204+      to_port     = 0
+   205+      protocol    = "-1"
+   206+      cidr_blocks = [var.vpc_cidr]
+   207+      description = "Egress to VPC"
+   208+    }
+   209+
+   210+    tags = merge(local.common_tags, { Name = "${local.name}-data-sg" })
+   211+
+   212+    lifecycle { create_before_destroy = true }
+   213+  }
+● Tasks updated
+● Write /home/ppatram/kubernetes/terraform/eks.tf
+  added 125 lines in eks.tf
+     1+  # --- EKS Cluster IAM Role ---
+     2+
+     3+  resource "aws_iam_role" "eks_cluster" {
+     4+    name = "${local.name}-eks-cluster-role"
+     5+    assume_role_policy = jsonencode({
+     6+      Version = "2012-10-17"
+     7+      Statement = [{
+     8+        Action = "sts:AssumeRole"
+     9+        Effect = "Allow"
+    10+        Principal = { Service = "eks.amazonaws.com" }
+    11+      }]
+    12+    })
+    13+    tags = local.common_tags
+    14+  }
+    15+
+    16+  resource "aws_iam_role_policy_attachment" "eks_cluster_policy" {
+    17+    role       = aws_iam_role.eks_cluster.name
+    18+    policy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
+    19+  }
+    20+
+    21+  resource "aws_iam_role_policy_attachment" "eks_vpc_cni" {
+    22+    role       = aws_iam_role.eks_cluster.name
+    23+    policy_arn = "arn:aws:iam::aws:policy/AmazonEKSVPCResourceController"
+    24+  }
+    25+
+    26+  # --- EKS Cluster ---
+    27+
+    28+  resource "aws_eks_cluster" "main" {
+    29+    name     = "${local.name}-cluster"
+    30+    role_arn = aws_iam_role.eks_cluster.arn
+    31+    version  = var.eks_version
+    32+
+    33+    vpc_config {
+    34+      subnet_ids              = aws_subnet.private[*].id
+    35+      endpoint_private_access = true
+    36+      endpoint_public_access  = true
+    37+      security_group_ids      = [aws_security_group.nodes.id]
+    38+    }
+    39+
+    40+    enabled_cluster_log_types = ["api", "audit", "authenticator"]
+    41+
+    42+    tags = local.common_tags
+    43+
+    44+    depends_on = [
+    45+      aws_iam_role_policy_attachment.eks_cluster_policy,
+    46+      aws_iam_role_policy_attachment.eks_vpc_cni,
+    47+    ]
+    48+  }
+    49+
+    50+  # --- OIDC Provider ---
+    51+
+    52+  data "tls_certificate" "eks" {
+    53+    url = aws_eks_cluster.main.identity[0].oidc[0].issuer
+    54+  }
+    55+
+    56+  resource "aws_iam_openid_connect_provider" "eks" {
+    57+    url             = aws_eks_cluster.main.identity[0].oidc[0].issuer
+    58+    client_id_list  = ["sts.amazonaws.com"]
+    59+    thumbprint_list = [data.tls_certificate.eks.certificates[0].sha1_fingerprint]
+    60+    tags            = local.common_tags
+    61+  }
+    62+
+    63+  # --- Node Group IAM Role ---
+    64+
+    65+  resource "aws_iam_role" "eks_nodes" {
+    66+    name = "${local.name}-eks-nodes-role"
+    67+    assume_role_policy = jsonencode({
+    68+      Version = "2012-10-17"
+    69+      Statement = [{
+    70+        Action = "sts:AssumeRole"
+    71+        Effect = "Allow"
+    72+        Principal = { Service = "ec2.amazonaws.com" }
+    73+      }]
+    74+    })
+    75+    tags = local.common_tags
+    76+  }
+    77+
+    78+  resource "aws_iam_role_policy_attachment" "nodes_worker" {
+    79+    role       = aws_iam_role.eks_nodes.name
+    80+    policy_arn = "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"
+    81+  }
+    82+
+    83+  resource "aws_iam_role_policy_attachment" "nodes_cni" {
+    84+    role       = aws_iam_role.eks_nodes.name
+    85+    policy_arn = "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
+    86+  }
+    87+
+    88+  resource "aws_iam_role_policy_attachment" "nodes_ecr" {
+    89+    role       = aws_iam_role.eks_nodes.name
+    90+    policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
+    91+  }
+    92+
+    93+  resource "aws_iam_role_policy_attachment" "nodes_ssm" {
+    94+    role       = aws_iam_role.eks_nodes.name
+    95+    policy_arn = "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
+    96+  }
+    97+
+    98+  # --- Managed Node Group ---
+    99+
+   100+  resource "aws_eks_node_group" "workers" {
+   101+    cluster_name    = aws_eks_cluster.main.name
+   102+    node_group_name = "${local.name}-workers"
+   103+    node_role_arn   = aws_iam_role.eks_nodes.arn
+   104+    subnet_ids      = aws_subnet.private[*].id
+   105+
+   106+    instance_types = [var.node_instance_type]
+   107+
+   108+    scaling_config {
+   109+      desired_size = var.node_desired_size
+   110+      min_size     = var.node_min_size
+   111+      max_size     = var.node_max_size
+   112+    }
+   113+
+   114+    update_config {
+   115+      max_unavailable = 1
+   116+    }
+   117+
+   118+    tags = local.common_tags
+   119+
+   120+    depends_on = [
+   121+      aws_iam_role_policy_attachment.nodes_worker,
+   122+      aws_iam_role_policy_attachment.nodes_cni,
+   123+      aws_iam_role_policy_attachment.nodes_ecr,
+   124+    ]
+   125+  }
+● Tasks updated
+● Write /home/ppatram/kubernetes/terraform/data.tf
+  added 85 lines in data.tf
+     1+  # --- DB Subnet Group ---
+     2+
+     3+  resource "aws_db_subnet_group" "main" {
+     4+    name       = "${local.name}-db-subnet"
+     5+    subnet_ids = aws_subnet.data[*].id
+     6+    tags       = merge(local.common_tags, { Name = "${local.name}-db-subnet" })
+     7+  }
+     8+
+     9+  # --- RDS PostgreSQL ---
+    10+
+    11+  resource "aws_db_instance" "postgres" {
+    12+    identifier     = "${local.name}-postgres"
+    13+    engine         = "postgres"
+    14+    engine_version = var.rds_engine_version
+    15+    instance_class = var.rds_instance_class
+    16+
+    17+    allocated_storage = 20
+    18+    storage_encrypted = true
+    19+    storage_type      = "gp3"
+    20+
+    21+    db_name  = var.rds_db_name
+    22+    username = var.rds_username
+    23+    password = random_password.rds.result
+    24+
+    25+    db_subnet_group_name   = aws_db_subnet_group.main.name
+    26+    vpc_security_group_ids = [aws_security_group.data.id]
+    27+
+    28+    multi_az            = var.rds_multi_az
+    29+    publicly_accessible = false
+    30+    skip_final_snapshot = true
+    31+
+    32+    backup_retention_period = var.rds_backup_retention_days
+    33+
+    34+    tags = local.common_tags
+    35+  }
+    36+
+    37+  resource "random_password" "rds" {
+    38+    length  = 24
+    39+    special = false
+    40+  }
+    41+
+    42+  # --- ElastiCache Redis ---
+    43+
+    44+  resource "aws_elasticache_subnet_group" "main" {
+    45+    count      = var.enable_elasticache ? 1 : 0
+    46+    name       = "${local.name}-cache-subnet"
+    47+    subnet_ids = aws_subnet.data[*].id
+    48+  }
+    49+
+    50+  resource "aws_elasticache_replication_group" "redis" {
+    51+    count                = var.enable_elasticache ? 1 : 0
+    52+    replication_group_id = "${local.name}-redis"
+    53+    description          = "Redis cache for ${local.name}"
+    54+    node_type            = var.elasticache_node_type
+    55+    num_cache_clusters   = var.elasticache_num_nodes
+    56+
+    57+    engine_version     = "7.0"
+    58+    port               = 6379
+    59+    subnet_group_name  = aws_elasticache_subnet_group.main[0].name
+    60+    security_group_ids = [aws_security_group.data.id]
+    61+
+    62+    at_rest_encryption_enabled = true
+    63+    transit_encryption_enabled = true
+    64+
+    65+    tags = local.common_tags
+    66+  }
+    67+
+    68+  # --- Secrets Manager ---
+    69+
+    70+  resource "aws_secretsmanager_secret" "db_credentials" {
+    71+    name        = "${local.name}/db-credentials"
+    72+    description = "RDS credentials for ${local.name}"
+    73+    tags        = local.common_tags
+    74+  }
+    75+
+    76+  resource "aws_secretsmanager_secret_version" "db_credentials" {
+    77+    secret_id = aws_secretsmanager_secret.db_credentials.id
+    78+    secret_string = jsonencode({
+    79+      username = aws_db_instance.postgres.username
+    80+      password = random_password.rds.result
+    81+      host     = aws_db_instance.postgres.address
+    82+      port     = aws_db_instance.postgres.port
+    83+      dbname   = aws_db_instance.postgres.db_name
+    84+    })
+    85+  }
+● Tasks updated
+● Write /home/ppatram/kubernetes/terraform/ecr.tf
+  added 33 lines in ecr.tf
+     1+  # --- ECR Repository ---
+     2+
+     3+  resource "aws_ecr_repository" "app" {
+     4+    name                 = "${local.name}-api"
+     5+    image_tag_mutability = "IMMUTABLE"
+     6+
+     7+    image_scanning_configuration {
+     8+      scan_on_push = true
+     9+    }
+    10+
+    11+    encryption_configuration {
+    12+      encryption_type = "AES256"
+    13+    }
+    14+
+    15+    tags = local.common_tags
+    16+  }
+    17+
+    18+  resource "aws_ecr_lifecycle_policy" "app" {
+    19+    repository = aws_ecr_repository.app.name
+    20+    policy = jsonencode({
+    21+      rules = [{
+    22+        rulePriority = 1
+    23+        description  = "Expire untagged images after 7 days"
+    24+        selection = {
+    25+          tagStatus   = "untagged"
+    26+          countType   = "sinceImagePushed"
+    27+          countUnit   = "days"
+    28+          countNumber = 7
+    29+        }
+    30+        action = { type = "expire" }
+    31+      }]
+    32+    })
+    33+  }
+● Tasks updated
+● Write /home/ppatram/kubernetes/terraform/alb.tf
+  added 239 lines in alb.tf
+     1+  # --- AWS Load Balancer Controller IAM Role (IRSA) ---
+     2+
+     3+  data "aws_caller_identity" "current" {}
+     4+
+     5+  locals {
+     6+    oidc_issuer = replace(aws_eks_cluster.main.identity[0].oidc[0].issuer, "https://", "")
+     7+  }
+     8+
+     9+  resource "aws_iam_role" "alb_controller" {
+    10+    name = "${local.name}-alb-controller-role"
+    11+    assume_role_policy = jsonencode({
+    12+      Version = "2012-10-17"
+    13+      Statement = [{
+    14+        Effect = "Allow"
+    15+        Principal = {
+    16+          Federated = aws_iam_openid_connect_provider.eks.arn
+    17+        }
+    18+        Action = "sts:AssumeRoleWithWebIdentity"
+    19+        Condition = {
+    20+          StringEquals = {
+    21+            "${local.oidc_issuer}:aud" = "sts.amazonaws.com"
+    22+            "${local.oidc_issuer}:sub" = "system:serviceaccount:kube-system:aws-load-balancer-controller"
+    23+          }
+    24+        }
+    25+      }]
+    26+    })
+    27+    tags = local.common_tags
+    28+  }
+    29+
+    30+  resource "aws_iam_policy" "alb_controller" {
+    31+    name        = "${local.name}-alb-controller-policy"
+    32+    description = "IAM policy for AWS Load Balancer Controller"
+    33+    policy = jsonencode({
+    34+      Version = "2012-10-17"
+    35+      Statement = [
+    36+        {
+    37+          Effect = "Allow"
+    38+          Action = [
+    39+            "iam:CreateServiceLinkedRole"
+    40+          ]
+    41+          Resource = "*"
+    42+          Condition = {
+    43+            StringEquals = {
+    44+              "iam:AWSServiceName" = "elasticloadbalancing.amazonaws.com"
+    45+            }
+    46+          }
+    47+        },
+    48+        {
+    49+          Effect = "Allow"
+    50+          Action = [
+    51+            "ec2:DescribeAccountAttributes",
+    52+            "ec2:DescribeAddresses",
+    53+            "ec2:DescribeAvailabilityZones",
+    54+            "ec2:DescribeInternetGateways",
+    55+            "ec2:DescribeVpcs",
+    56+            "ec2:DescribeVpcPeeringConnections",
+    57+            "ec2:DescribeSubnets",
+    58+            "ec2:DescribeSecurityGroups",
+    59+            "ec2:DescribeInstances",
+    60+            "ec2:DescribeNetworkInterfaces",
+    61+            "ec2:DescribeTags",
+    62+            "ec2:DescribeCoipPools",
+    63+            "ec2:GetCoipPoolUsage",
+    64+            "ec2:DescribeTargetGroups",
+    65+            "ec2:DescribeTargetHealth",
+    66+            "ec2:DescribeListeners",
+    67+            "ec2:DescribeRules",
+    68+            "elasticloadbalancing:DescribeLoadBalancers",
+    69+            "elasticloadbalancing:DescribeLoadBalancerAttributes",
+    70+            "elasticloadbalancing:DescribeListeners",
+    71+            "elasticloadbalancing:DescribeListenerCertificates",
+    72+            "elasticloadbalancing:DescribeSSLPolicies",
+    73+            "elasticloadbalancing:DescribeRules",
+    74+            "elasticloadbalancing:DescribeTargetGroups",
+    75+            "elasticloadbalancing:DescribeTargetGroupAttributes",
+    76+            "elasticloadbalancing:DescribeTargetHealth",
+    77+            "elasticloadbalancing:DescribeTags",
+    78+            "elasticloadbalancing:DescribeTrustStores"
+    79+          ]
+    80+          Resource = "*"
+    81+        },
+    82+        {
+    83+          Effect = "Allow"
+    84+          Action = [
+    85+            "cognito-idp:DescribeUserPoolClient",
+    86+            "acm:ListCertificates",
+    87+            "acm:DescribeCertificate",
+    88+            "iam:ListServerCertificates",
+    89+            "iam:GetServerCertificate",
+    90+            "waf-regional:GetWebACL",
+    91+            "waf-regional:GetWebACLForResource",
+    92+            "waf-regional:AssociateWebACL",
+    93+            "waf-regional:DisassociateWebACL",
+    94+            "wafv2:GetWebACL",
+    95+            "wafv2:GetWebACLForResource",
+    96+            "wafv2:AssociateWebACL",
+    97+            "wafv2:DisassociateWebACL",
+    98+            "shield:GetSubscriptionState",
+    99+            "shield:DescribeProtection",
+   100+            "shield:CreateProtection",
+   101+            "shield:DeleteProtection"
+   102+          ]
+   103+          Resource = "*"
+   104+        },
+   105+        {
+   106+          Effect = "Allow"
+   107+          Action = [
+   108+            "ec2:AuthorizeSecurityGroupIngress",
+   109+            "ec2:RevokeSecurityGroupIngress",
+   110+            "ec2:CreateSecurityGroup"
+   111+          ]
+   112+          Resource = "*"
+   113+        },
+   114+        {
+   115+          Effect = "Allow"
+   116+          Action = ["ec2:CreateTags"]
+   117+          Resource = "arn:aws:ec2:*:*:security-group/*"
+   118+          Condition = {
+   119+            StringEquals = {
+   120+              "ec2:CreateAction" = "CreateSecurityGroup"
+   121+            }
+   122+            Null = {
+   123+              "aws:RequestTag/elbv2.k8s.aws/cluster" = "false"
+   124+            }
+   125+          }
+   126+        },
+   127+        {
+   128+          Effect = "Allow"
+   129+          Action = ["ec2:CreateTags", "ec2:DeleteTags"]
+   130+          Resource = "arn:aws:ec2:*:*:security-group/*"
+   131+          Condition = {
+   132+            Null = {
+   133+              "aws:RequestTag/elbv2.k8s.aws/cluster"  = "true"
+   134+              "aws:ResourceTag/elbv2.k8s.aws/cluster" = "false"
+   135+            }
+   136+          }
+   137+        },
+   138+        {
+   139+          Effect = "Allow"
+   140+          Action = [
+   141+            "ec2:AuthorizeSecurityGroupIngress",
+   142+            "ec2:RevokeSecurityGroupIngress",
+   143+            "ec2:DeleteSecurityGroup"
+   144+          ]
+   145+          Resource = "*"
+   146+          Condition = {
+   147+            Null = {
+   148+              "aws:ResourceTag/elbv2.k8s.aws/cluster" = "false"
+   149+            }
+   150+          }
+   151+        },
+   152+        {
+   153+          Effect = "Allow"
+   154+          Action = [
+   155+            "elasticloadbalancing:CreateLoadBalancer",
+   156+            "elasticloadbalancing:CreateTargetGroup"
+   157+          ]
+   158+          Resource = "*"
+   159+          Condition = {
+   160+            Null = {
+   161+              "aws:RequestTag/elbv2.k8s.aws/cluster" = "false"
+   162+            }
+   163+          }
+   164+        },
+   165+        {
+   166+          Effect = "Allow"
+   167+          Action = [
+   168+            "elasticloadbalancing:CreateListener",
+   169+            "elasticloadbalancing:DeleteListener",
+   170+            "elasticloadbalancing:CreateRule",
+   171+            "elasticloadbalancing:DeleteRule"
+   172+          ]
+   173+          Resource = "*"
+   174+        },
+   175+        {
+   176+          Effect = "Allow"
+   177+          Action = [
+   178+            "elasticloadbalancing:AddTags",
+   179+            "elasticloadbalancing:RemoveTags"
+   180+          ]
+   181+          Resource = [
+   182+            "arn:aws:elasticloadbalancing:*:*:targetgroup/*/*",
+   183+            "arn:aws:elasticloadbalancing:*:*:loadbalancer/net/*/*",
+   184+            "arn:aws:elasticloadbalancing:*:*:loadbalancer/app/*/*"
+   185+          ]
+   186+          Condition = {
+   187+            Null = {
+   188+              "aws:RequestTag/elbv2.k8s.aws/cluster"  = "true"
+   189+              "aws:ResourceTag/elbv2.k8s.aws/cluster" = "false"
+   190+            }
+   191+          }
+   192+        },
+   193+        {
+   194+          Effect = "Allow"
+   195+          Action = [
+   196+            "elasticloadbalancing:ModifyLoadBalancerAttributes",
+   197+            "elasticloadbalancing:SetIpAddressType",
+   198+            "elasticloadbalancing:SetSecurityGroups",
+   199+            "elasticloadbalancing:SetSubnets",
+   200+            "elasticloadbalancing:DeleteLoadBalancer",
+   201+            "elasticloadbalancing:ModifyTargetGroup",
+   202+            "elasticloadbalancing:ModifyTargetGroupAttributes",
+   203+            "elasticloadbalancing:DeleteTargetGroup"
+   204+          ]
+   205+          Resource = "*"
+   206+          Condition = {
+   207+            Null = {
+   208+              "aws:ResourceTag/elbv2.k8s.aws/cluster" = "false"
+   209+            }
+   210+          }
+   211+        },
+   212+        {
+   213+          Effect = "Allow"
+   214+          Action = [
+   215+            "elasticloadbalancing:RegisterTargets",
+   216+            "elasticloadbalancing:DeregisterTargets"
+   217+          ]
+   218+          Resource = "arn:aws:elasticloadbalancing:*:*:targetgroup/*/*"
+   219+        },
+   220+        {
+   221+          Effect = "Allow"
+   222+          Action = [
+   223+            "elasticloadbalancing:SetWebAcl",
+   224+            "elasticloadbalancing:ModifyListener",
+   225+            "elasticloadbalancing:AddListenerCertificates",
+   226+            "elasticloadbalancing:RemoveListenerCertificates",
+   227+            "elasticloadbalancing:ModifyRule"
+   228+          ]
+   229+          Resource = "*"
+   230+        }
+   231+      ]
+   232+    })
+   233+    tags = local.common_tags
+   234+  }
+   235+
+   236+  resource "aws_iam_role_policy_attachment" "alb_controller" {
+   237+    role       = aws_iam_role.alb_controller.name
+   238+    policy_arn = aws_iam_policy.alb_controller.arn
+   239+  }
+● Tasks updated
+● Write /home/ppatram/kubernetes/terraform/observability.tf
+     1   # --- CloudWatch Log Groups ---
+     2
+     3   resource "aws_cloudwatch_log_group" "app" {
+     4     name              = "/eks/${local.name}/app"
+     5     retention_in_days = var.log_retention_days
+     6     tags              = local.common_tags
+     7   }
+     8
+     9   resource "aws_cloudwatch_log_group" "eks" {
+    10     name              = "/aws/eks/${local.name}-cluster/cluster"
+    11     retention_in_days = var.log_retention_days
+    12     tags              = local.common_tags
+    13   }
+    14
+    15   # --- SNS Topic for Alerts ---
+    16
+    17   resource "aws_sns_topic" "alerts" {
+    18     name = "${local.name}-alerts"
+    19     tags = local.common_tags
+    20   }
+    21
+    22   # --- CloudWatch Alarms ---
+    23
+    24   resource "aws_cloudwatch_metric_alarm" "node_cpu" {
+    25     alarm_name          = "${local.name}-node-cpu-high"
+    26     comparison_operator = "GreaterThanThreshold"
+    27     evaluation_periods  = 3
+    28     metric_name         = "node_cpu_utilization"
+    29     namespace           = "ContainerInsights"
+    30     period              = 60
+    31     statistic           = "Average"
+    32     threshold           = 80
+    33     alarm_description   = "EKS node CPU > 80% for 3 minutes"
+    34     alarm_actions       = [aws_sns_topic.alerts.arn]
+    35
+    36     dimensions = {
+    37       ClusterName = aws_eks_cluster.main.name
+    38     }
+    39
+    40     tags = local.common_tags
+    41   }
+    42
+    43   resource "aws_cloudwatch_metric_alarm" "node_memory" {
+    44     alarm_name          = "${local.name}-node-memory-high"
+    45     comparison_operator = "GreaterThanThreshold"
+    46     evaluation_periods  = 3
+    47     metric_name         = "node_memory_utilization"
+    48     namespace           = "ContainerInsights"
+    49     period              = 60
+    50     statistic           = "Average"
+    51     threshold           = 80
+    52     alarm_description   = "EKS node memory > 80% for 3 minutes"
+    53     alarm_actions       = [aws_sns_topic.alerts.arn]
+    54
+    55     dimensions = {
+    56       ClusterName = aws_eks_cluster.main.name
+    57     }
+    58
+    59     tags = local.common_tags
+    60   }
+    61
+    62   resource "aws_cloudwatch_metric_alarm" "pod_restart" {
+    63     alarm_name          = "${local.name}-pod-restarts"
+    64     comparison_operator = "GreaterThanThreshold"
+    65     evaluation_periods  = 1
+    66     metric_name         = "pod_number_of_container_restarts"
+    67     namespace           = "ContainerInsights"
+    68     period              = 300
+    69     statistic           = "Maximum"
+    70     threshold           = 3
+    71     alarm_description   = "Pod restarts > 3 in 5 minutes"
+    72     alarm_actions       = [aws_sns_topic.alerts.arn]
+    73
+    74     dimensions = {
+    75       ClusterName = aws_eks_cluster.main.name
+    76     }
+    77
+    78     tags = local.common_tags
+    79   }
+● Tasks updated
+● Write /home/ppatram/kubernetes/terraform/variables.tf
+  added 140 lines in variables.tf
+     1+  # --- General ---
+     2+
+     3+  variable "project" {
+     4+    description = "Project name prefix for all resources"
+     5+    type        = string
+     6+  }
+     7+
+     8+  variable "environment" {
+     9+    description = "Environment name (dev, qa, prod)"
+    10+    type        = string
+    11+  }
+    12+
+    13+  variable "region" {
+    14+    description = "AWS region"
+    15+    type        = string
+    16+  }
+    17+
+    18+  # --- Networking ---
+    19+
+    20+  variable "vpc_cidr" {
+    21+    description = "CIDR block for the VPC"
+    22+    type        = string
+    23+    default     = "10.0.0.0/16"
+    24+  }
+    25+
+    26+  variable "az_count" {
+    27+    description = "Number of availability zones"
+    28+    type        = number
+    29+    default     = 2
+    30+  }
+    31+
+    32+  variable "enable_nat_gateway" {
+    33+    description = "Enable NAT Gateway for private subnet internet access"
+    34+    type        = bool
+    35+    default     = true
+    36+  }
+    37+
+    38+  variable "alb_ingress_cidrs" {
+    39+    description = "CIDR blocks allowed to reach the ALB"
+    40+    type        = list(string)
+    41+    default     = ["0.0.0.0/0"]
+    42+  }
+    43+
+    44+  # --- EKS ---
+    45+
+    46+  variable "eks_version" {
+    47+    description = "Kubernetes version for EKS cluster"
+    48+    type        = string
+    49+    default     = "1.29"
+    50+  }
+    51+
+    52+  variable "node_instance_type" {
+    53+    description = "EC2 instance type for EKS nodes"
+    54+    type        = string
+    55+    default     = "t3.medium"
+    56+  }
+    57+
+    58+  variable "node_desired_size" {
+    59+    description = "Desired number of worker nodes"
+    60+    type        = number
+    61+    default     = 2
+    62+  }
+    63+
+    64+  variable "node_min_size" {
+    65+    description = "Minimum number of worker nodes"
+    66+    type        = number
+    67+    default     = 0
+    68+  }
+    69+
+    70+  variable "node_max_size" {
+    71+    description = "Maximum number of worker nodes"
+    72+    type        = number
+    73+    default     = 3
+    74+  }
+    75+
+    76+  # --- RDS ---
+    77+
+    78+  variable "rds_instance_class" {
+    79+    description = "RDS instance class"
+    80+    type        = string
+    81+    default     = "db.t3.micro"
+    82+  }
+    83+
+    84+  variable "rds_engine_version" {
+    85+    description = "PostgreSQL engine version"
+    86+    type        = string
+    87+    default     = "15.7"
+    88+  }
+    89+
+    90+  variable "rds_db_name" {
+    91+    description = "Name of the database to create"
+    92+    type        = string
+    93+    default     = "appdb"
+    94+  }
+    95+
+    96+  variable "rds_username" {
+    97+    description = "Master username for RDS"
+    98+    type        = string
+    99+    default     = "dbadmin"
+   100+  }
+   101+
+   102+  variable "rds_multi_az" {
+   103+    description = "Enable Multi-AZ for RDS"
+   104+    type        = bool
+   105+    default     = false
+   106+  }
+   107+
+   108+  variable "rds_backup_retention_days" {
+   109+    description = "Number of days to retain RDS backups"
+   110+    type        = number
+   111+    default     = 1
+   112+  }
+   113+
+   114+  # --- ElastiCache ---
+   115+
+   116+  variable "enable_elasticache" {
+   117+    description = "Enable ElastiCache Redis cluster"
+   118+    type        = bool
+   119+    default     = false
+   120+  }
+   121+
+   122+  variable "elasticache_node_type" {
+   123+    description = "ElastiCache node instance type"
+   124+    type        = string
+   125+    default     = "cache.t3.micro"
+   126+  }
+   127+
+   128+  variable "elasticache_num_nodes" {
+   129+    description = "Number of cache nodes"
+   130+    type        = number
+   131+    default     = 1
+   132+  }
+   133+
+   134+  # --- Observability ---
+   135+
+   136+  variable "log_retention_days" {
+   137+    description = "CloudWatch log retention in days"
+   138+    type        = number
+   139+    default     = 7
+   140+  }
+● Tasks updated
+● Write /home/ppatram/kubernetes/terraform/outputs.tf
+  added 89 lines in outputs.tf
+     1+  # --- EKS ---
+     2+
+     3+  output "eks_cluster_name" {
+     4+    description = "EKS cluster name"
+     5+    value       = aws_eks_cluster.main.name
+     6+  }
+     7+
+     8+  output "eks_cluster_endpoint" {
+     9+    description = "EKS cluster API endpoint"
+    10+    value       = aws_eks_cluster.main.endpoint
+    11+  }
+    12+
+    13+  output "eks_cluster_ca" {
+    14+    description = "EKS cluster CA certificate (base64)"
+    15+    value       = aws_eks_cluster.main.certificate_authority[0].data
+    16+    sensitive   = true
+    17+  }
+    18+
+    19+  output "eks_oidc_provider_arn" {
+    20+    description = "OIDC provider ARN for IRSA"
+    21+    value       = aws_iam_openid_connect_provider.eks.arn
+    22+  }
+    23+
+    24+  output "kubeconfig_command" {
+    25+    description = "Command to configure kubectl"
+    26+    value       = "aws eks update-kubeconfig --name ${aws_eks_cluster.main.name} --region ${var.region}"
+    27+  }
+    28+
+    29+  # --- Networking ---
+    30+
+    31+  output "vpc_id" {
+    32+    description = "VPC ID"
+    33+    value       = aws_vpc.main.id
+    34+  }
+    35+
+    36+  output "private_subnet_ids" {
+    37+    description = "Private subnet IDs"
+    38+    value       = aws_subnet.private[*].id
+    39+  }
+    40+
+    41+  # --- Data Layer ---
+    42+
+    43+  output "rds_endpoint" {
+    44+    description = "RDS instance endpoint"
+    45+    value       = aws_db_instance.postgres.endpoint
+    46+  }
+    47+
+    48+  output "redis_endpoint" {
+    49+    description = "ElastiCache Redis endpoint"
+    50+    value       = var.enable_elasticache ? aws_elasticache_replication_group.redis[0].primary_endpoint_address : null
+    51+  }
+    52+
+    53+  output "db_secret_arn" {
+    54+    description = "Secrets Manager ARN for DB credentials"
+    55+    value       = aws_secretsmanager_secret.db_credentials.arn
+    56+  }
+    57+
+    58+  # --- ECR ---
+    59+
+    60+  output "ecr_repository_url" {
+    61+    description = "ECR repository URL"
+    62+    value       = aws_ecr_repository.app.repository_url
+    63+  }
+    64+
+    65+  # --- ALB Controller ---
+    66+
+    67+  output "alb_controller_role_arn" {
+    68+    description = "IAM role ARN for the ALB ingress controller service account"
+    69+    value       = aws_iam_role.alb_controller.arn
+    70+  }
+    71+
+    72+  # --- Observability ---
+    73+
+    74+  output "sns_alerts_topic_arn" {
+    75+    description = "SNS topic ARN for alerts"
+    76+    value       = aws_sns_topic.alerts.arn
+    77+  }
+    78+
+    79+  # --- Scale Commands ---
+    80+
+    81+  output "scale_down_command" {
+    82+    description = "Command to scale nodes to 0 (pause infrastructure)"
+    83+    value       = "aws eks update-nodegroup-config --cluster-name ${aws_eks_cluster.main.name} --nodegroup-name ${aws_eks_node_group.workers.node_group_name} --scaling-config
+      minSize=0,maxSize=${var.node_max_size},desiredSize=0 --region ${var.region}"
+    84+  }
+    85+
+    86+  output "scale_up_command" {
+    87+    description = "Command to scale nodes back up (resume infrastructure)"
+    88+    value       = "aws eks update-nodegroup-config --cluster-name ${aws_eks_cluster.main.name} --nodegroup-name ${aws_eks_node_group.workers.node_group_name} --scaling-config
+      minSize=${var.node_min_size},maxSize=${var.node_max_size},desiredSize=${var.node_desired_size} --region ${var.region}"
+    89+  }
+● Tasks updated
+● Write /home/ppatram/kubernetes/terraform/terraform.tfvars
+     1   # Training environment defaults — optimized for cost
+     2   project     = "k8s-training"
+     3   environment = "dev"
+     4   region      = "us-east-1"
+     5
+     6   # Networking
+     7   vpc_cidr           = "10.0.0.0/16"
+     8   az_count           = 2
+     9   enable_nat_gateway = true
+    10
+    11   # EKS
+    12   eks_version        = "1.29"
+    13   node_instance_type = "t3.medium"
+    14   node_desired_size  = 2
+    15   node_min_size      = 0
+    16   node_max_size      = 3
+    17
+    18   # RDS (minimal for training)
+    19   rds_instance_class        = "db.t3.micro"
+    20   rds_engine_version        = "15.7"
+    21   rds_db_name               = "appdb"
+    22   rds_username              = "dbadmin"
+    23   rds_multi_az              = false
+    24   rds_backup_retention_days = 1
+    25
+    26   # ElastiCache (disabled by default to save cost)
+    27   enable_elasticache    = false
+    28   elasticache_node_type = "cache.t3.micro"
+    29   elasticache_num_nodes = 1
+    30
+    31   # Observability
+    32   log_retention_days = 7
+● Tasks updated
+
+  Now let me verify the module is syntactically valid:
+● Shell which terraform 2>/dev/null && terraform -version || echo "terraform not installed"
+● Read /home/ppatram/kubernetes/terraform
+
+  I also need to add the random provider since data.tf uses random_password:
+● Write /home/ppatram/kubernetes/terraform/versions.tf
+  added 4 lines at L9 in versions.tf
+     9       tls = {
+    10         source  = "hashicorp/tls"
+    11         version = "~> 4.0"
+    12       }
+    13+      random = {
+    14+        source  = "hashicorp/random"
+    15+        version = "~> 3.6"
+    16+      }
+    13     }
+    14   }
+
+  Done. Here's the final structure:
+
+  terraform/
+  ├── versions.tf          # Provider version constraints (aws, tls, random)
+  ├── main.tf              # VPC, subnets, IGW, NAT GW, route tables, security groups
+  ├── eks.tf               # EKS cluster, OIDC provider, node group, IAM roles
+  ├── data.tf              # RDS PostgreSQL, ElastiCache Redis, Secrets Manager
+  ├── ecr.tf               # ECR repository with scanning + lifecycle policy
+  ├── alb.tf               # AWS Load Balancer Controller IRSA role + policy
+  ├── observability.tf     # CloudWatch log groups, SNS topic, alarms
+  ├── variables.tf         # All input variables with descriptions
+  ├── outputs.tf           # Cluster info, endpoints, scale-up/down commands
+  └── terraform.tfvars     # Training-optimized dev defaults
+
+  Usage
+
+  cd terraform
+  terraform init
+  terraform plan
+  terraform apply
+
+  After apply, configure kubectl:
+
+  $(terraform output -raw kubeconfig_command)
+
+  To pause (scale nodes to 0, save ~$4/day on EC2):
+
+  $(terraform output -raw scale_down_command)
+
+  To resume:
+
+  $(terraform output -raw scale_up_command)
+
+  Key Design Decisions
+
+  - Node min_size = 0 — allows scaling to zero between training sessions
+  - ElastiCache disabled by default — set enable_elasticache = true when ready to teach caching
+  - NAT Gateway toggleable — can be disabled if you only need intra-VPC traffic
+  - Single NAT Gateway (not per-AZ) — saves ~$65/month vs production multi-AZ pattern
+  - RDS skip_final_snapshot = true — appropriate for training, not production
+  - Outputs include scale commands — easy copy-paste for pause/resume
+
+  You'll still need to install the ALB controller and External Secrets Operator via Helm after the cluster is up. Want me to create a post-apply script for those?
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  yes
+
+● Write /home/ppatram/kubernetes/terraform/post-apply.sh
+  added 94 lines in post-apply.sh
+     1+  #!/usr/bin/env bash
+     2+  set -euo pipefail
+     3+
+     4+  # Post-apply script: installs Kubernetes add-ons via Helm after EKS cluster is ready.
+     5+  # Usage: ./post-apply.sh
+     6+  # Prerequisites: aws cli, kubectl, helm, terraform (in the terraform/ directory)
+     7+
+     8+  SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+     9+  TF_DIR="${SCRIPT_DIR}"
+    10+
+    11+  echo "==> Reading Terraform outputs..."
+    12+  CLUSTER_NAME=$(terraform -chdir="$TF_DIR" output -raw eks_cluster_name)
+    13+  REGION=$(terraform -chdir="$TF_DIR" output -raw 2>/dev/null || grep 'region' "$TF_DIR/terraform.tfvars" | head -1 | awk -F'"' '{print $2}')
+    14+  ALB_ROLE_ARN=$(terraform -chdir="$TF_DIR" output -raw alb_controller_role_arn)
+    15+  VPC_ID=$(terraform -chdir="$TF_DIR" output -raw vpc_id)
+    16+
+    17+  # Fallback: read region from tfvars if not an output
+    18+  if [ -z "$REGION" ]; then
+    19+    REGION="us-east-1"
+    20+  fi
+    21+
+    22+  echo "==> Configuring kubectl for cluster: $CLUSTER_NAME"
+    23+  aws eks update-kubeconfig --name "$CLUSTER_NAME" --region "$REGION"
+    24+
+    25+  echo "==> Adding Helm repositories..."
+    26+  helm repo add eks https://aws.github.io/eks-charts
+    27+  helm repo add external-secrets https://charts.external-secrets.io
+    28+  helm repo add metrics-server https://kubernetes-sigs.github.io/metrics-server/
+    29+  helm repo update
+    30+
+    31+  # --- Metrics Server (required for HPA) ---
+    32+  echo "==> Installing metrics-server..."
+    33+  helm upgrade --install metrics-server metrics-server/metrics-server \
+    34+    --namespace kube-system \
+    35+    --set args[0]="--kubelet-preferred-address-types=InternalIP"
+    36+
+    37+  # --- AWS Load Balancer Controller ---
+    38+  echo "==> Installing AWS Load Balancer Controller..."
+    39+  kubectl apply -k "github.com/aws/eks-charts/stable/aws-load-balancer-controller//crds?ref=master" 2>/dev/null || true
+    40+
+    41+  helm upgrade --install aws-load-balancer-controller eks/aws-load-balancer-controller \
+    42+    --namespace kube-system \
+    43+    --set clusterName="$CLUSTER_NAME" \
+    44+    --set serviceAccount.create=true \
+    45+    --set serviceAccount.name=aws-load-balancer-controller \
+    46+    --set "serviceAccount.annotations.eks\.amazonaws\.com/role-arn=$ALB_ROLE_ARN" \
+    47+    --set region="$REGION" \
+    48+    --set vpcId="$VPC_ID"
+    49+
+    50+  # --- External Secrets Operator ---
+    51+  echo "==> Installing External Secrets Operator..."
+    52+  helm upgrade --install external-secrets external-secrets/external-secrets \
+    53+    --namespace external-secrets \
+    54+    --create-namespace \
+    55+    --set installCRDs=true
+    56+
+    57+  # --- Create application namespaces ---
+    58+  echo "==> Creating application namespaces..."
+    59+  for NS in api-dev api-qa api-prod; do
+    60+    kubectl create namespace "$NS" --dry-run=client -o yaml | kubectl apply -f -
+    61+  done
+    62+
+    63+  # --- Create ClusterSecretStore for Secrets Manager ---
+    64+  echo "==> Creating ClusterSecretStore..."
+    65+  cat <<EOF | kubectl apply -f -
+    66+  apiVersion: external-secrets.io/v1beta1
+    67+  kind: ClusterSecretStore
+    68+  metadata:
+    69+    name: aws-secrets-manager
+    70+  spec:
+    71+    provider:
+    72+      aws:
+    73+        service: SecretsManager
+    74+        region: $REGION
+    75+        auth:
+    76+          jwt:
+    77+            serviceAccountRef:
+    78+              name: external-secrets
+    79+              namespace: external-secrets
+    80+  EOF
+    81+
+    82+  echo ""
+    83+  echo "=== Post-apply complete ==="
+    84+  echo "Cluster: $CLUSTER_NAME"
+    85+  echo "Region:  $REGION"
+    86+  echo ""
+    87+  echo "Next steps:"
+    88+  echo "  1. Verify pods:  kubectl get pods -A"
+    89+  echo "  2. Build and push your app image to: $(terraform -chdir="$TF_DIR" output -raw ecr_repository_url)"
+    90+  echo "  3. Deploy with:  kubectl apply -k k8s/overlays/dev"
+    91+  echo ""
+    92+  echo "Cost-saving commands:"
+    93+  echo "  Pause:  $(terraform -chdir="$TF_DIR" output -raw scale_down_command)"
+    94+  echo "  Resume: $(terraform -chdir="$TF_DIR" output -raw scale_up_command)"
+● Shell chmod +x /home/ppatram/kubernetes/terraform/post-apply.sh
+
+  I need to add region as a Terraform output since the script references it:
+● Write /home/ppatram/kubernetes/terraform/outputs.tf
+  added 5 lines in outputs.tf
+     1+  output "region" {
+     2+    description = "AWS region"
+     3+    value       = var.region
+     4+  }
+     5+
+     1   # --- EKS ---
+     2
+     3   output "eks_cluster_name" {
+
+  Now fix the script to use the proper output:
+● Write /home/ppatram/kubernetes/terraform/post-apply.sh
+  added 1 line, removed 1 line at L12 in post-apply.sh
+    12   CLUSTER_NAME=$(terraform -chdir="$TF_DIR" output -raw eks_cluster_name)
+    13-  REGION=$(terraform -chdir="$TF_DIR" output -raw 2>/dev/null || grep 'region' "$TF_DIR/terraform.tfvars" | head -1 | awk -F'"' '{print $2}')
+    13+  REGION=$(terraform -chdir="$TF_DIR" output -raw region)
+    14   ALB_ROLE_ARN=$(terraform -chdir="$TF_DIR" output -raw alb_controller_role_arn)
+    15   VPC_ID=$(terraform -chdir="$TF_DIR" output -raw vpc_id)
+● Write /home/ppatram/kubernetes/terraform/post-apply.sh
+  removed 5 lines at L17 in post-apply.sh
+    17-  # Fallback: read region from tfvars if not an output
+    18-  if [ -z "$REGION" ]; then
+    19-    REGION="us-east-1"
+    20-  fi
+    21-
+    22   echo "==> Configuring kubectl for cluster: $CLUSTER_NAME"
+
+  Created terraform/post-apply.sh. Run it after terraform apply:
+
+  cd terraform
+  terraform apply
+  ./post-apply.sh
+
+  It installs:
+
+  1. metrics-server — required for HPA (Horizontal Pod Autoscaler) to work
+  2. AWS Load Balancer Controller — creates ALBs from Kubernetes Ingress resources, using the IRSA role Terraform already provisioned
+  3. External Secrets Operator — syncs AWS Secrets Manager secrets into Kubernetes Secrets
+  4. Application namespaces — api-dev, api-qa, api-prod
+  5. ClusterSecretStore — connects External Secrets Operator to AWS Secrets Manager
+
+  Prerequisites on your local machine: aws CLI, kubectl, helm, and terraform.
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  If I spun this up and immediately shut it down how much will it cost
+
+  Assuming "spin up, verify it works, tear down" takes about 1 hour:
+
+  ┌───────────────────────────┬────────────────────────────────┐
+  │ Component                 │ ~1 Hour Cost                   │
+  ├───────────────────────────┼────────────────────────────────┤
+  │ EKS Control Plane         │ $0.10                          │
+  │ EC2 nodes (2× t3.medium)  │ $0.08                          │
+  │ NAT Gateway               │ $0.045 + data transfer pennies │
+  │ RDS (db.t3.micro)         │ $0.018                         │
+  │ ALB (if Ingress deployed) │ $0.023                         │
+  │ CloudWatch logs           │ negligible                     │
+  │ Secrets Manager           │ negligible                     │
+  │ ECR                       │ negligible                     │
+  └───────────────────────────┴────────────────────────────────┘
+
+  Total: ~$0.25–$0.30 for a one-hour spin-up-and-destroy cycle.
+
+  The only gotcha: if you forget to destroy and leave it running overnight (16 hours), that's about $4. Set a billing alarm.
+
+▸ Credits: 0.16 • Time: 7s
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  recalculate if I destroyed and spun up and used only for 15 hours per week
+
+  15 hours/week = ~60 hours/month, full destroy between sessions (no always-on costs):
+
+  ┌──────────────────────────┬─────────────┬───────────────────┐
+  │ Component                │ Hourly Rate │ 60 hrs/month      │
+  ├──────────────────────────┼─────────────┼───────────────────┤
+  │ EKS Control Plane        │ $0.10       │ $6.00             │
+  │ EC2 nodes (2× t3.medium) │ $0.0832     │ $5.00             │
+  │ NAT Gateway              │ $0.045      │ $2.70             │
+  │ RDS (db.t3.micro)        │ $0.018      │ $1.08             │
+  │ ALB                      │ $0.023      │ $1.38             │
+  │ CloudWatch/ECR/Secrets   │ —           │ ~$1–2             │
+  │ **Total**                │             │ **~$17–18/month** │
+  └──────────────────────────┴─────────────┴───────────────────┘
+
+  The tradeoff: you spend ~45 minutes per session waiting for terraform apply + post-apply.sh to complete, and ~15 minutes for terraform destroy. That's ~4 hours/month of your time lost to infrastructure
+  spin-up/down across ~4 weekly sessions.
+
+  Compare to the scale-to-zero approach (keep EKS running, scale nodes off):
+
+  - Always-on: $73 (EKS) + $2 (secrets/ECR) = $75/month
+  - Active 60 hrs: ~$12
+  - Total: ~$87/month but zero wait time
+
+  So it's $17/month + your time vs $87/month + instant start. Depends on whether your time or $70/month matters more for a training environment.
+
+▸ Credits: 0.18 • Time: 10s
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  !pwd
+
+  /home/ppatram/kubernetes
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  create an infrastructure diagram for this stack. Use the official aws icons for all of the services and show how they are connected
+
+● Read /home/ppatram/.kiro/skills/delta-aws-architecture-diagram/SKILL.md
+● Read /home/ppatram/.kiro/skills/delta-aws-architecture-diagram/references/aws-icons-compute.md
+● Read /home/ppatram/.kiro/skills/delta-aws-architecture-diagram/references/aws-icons-networking.md
+● Read /home/ppatram/.kiro/skills/delta-aws-architecture-diagram/references/aws-icons-database.md
+● Read (2 files)
+    aws-icons-security.md, aws-icons-common.md
+● Read /home/ppatram/.kiro/skills/delta-aws-architecture-diagram/references/aws-icons-iot-migration-devtools.md
+● Read /home/ppatram/.kiro/skills/delta-aws-architecture-diagram/references/aws-icons-storage.md
+
+  Now I have all the icon references I need. Let me look up the CloudWatch icon — it's likely under a management & governance category. Let me check:
+● Grep "cloudwatch|management"
+    ╰ path=/home/ppatram/.kiro/skills/delta-aws-architecture-diagram/references
+  12 matches in 4 files
+● Read /home/ppatram/.kiro/skills/delta-aws-architecture-diagram/references/aws-icons-integration.md (L1-80)
+
+  Now I have all the icons I need. Let me create the diagram:
+● Write /home/ppatram/kubernetes/terraform/eks-training-infrastructure.drawio
+  added 145 lines in eks-training-infrastructure.drawio
+     1+  <mxfile host="app.diagrams.net">
+     2+    <diagram id="diagram-1" name="EKS Training Infrastructure">
+     3+      <mxGraphModel dx="2800" dy="1600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1600" math="0" shadow="0">
+     4+        <root>
+     5+          <mxCell id="0" />
+     6+          <mxCell id="1" parent="0" />
+     7+          <mxCell value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=none;" vertex="1" parent="1">
+     8+            <mxGeometry x="0" y="0" width="2400" height="1600" as="geometry" />
+     9+          </mxCell>
+    10+          <mxCell value="&lt;b&gt;EKS Training Infrastructure&lt;/b&gt;&lt;br&gt;Kubernetes Training Environment | Terraform Managed"
+      style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=14;spacing=8;" vertex="1" parent="1">
+    11+            <mxGeometry x="40" y="30" width="450" height="60" as="geometry" />
+    12+          </mxCell>
+    1+          <mxCell value="AWS Cloud"
+     style="shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud_alt;strokeColor=#232F3E;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontStyle=1;fontColor=#232F3E;html=1;" vertex="1"
+    14+            <mxGeometry x="320" y="100" width="2000" height="1420" as="geometry" />
+    15+          </mxCell>
+    16+          <mxCell value="VPC (10.0.0.0/16)"
+      style="shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_vpc;strokeColor=#8C4FFF;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontStyle=1;fontColor=#8C4FFF;html=1;" vertex="1" parent="1">
+    17+            <mxGeometry x="380" y="180" width="1880" height="1300" as="geometry" />
+    18+          </mxCell>
+    1+          <mxCell value="Public Subnets"
+     style="shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_public_subnet;strokeColor=#248814;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontStyle=1;fontColor=#248814;html=1;" vertex="1"
+    20+            <mxGeometry x="420" y="240" width="600" height="340" as="geometry" />
+    21+          </mxCell>
+    2+          <mxCell value="Private Subnets (EKS Nodes)"
+     style="shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_private_subnet;strokeColor=#147EBA;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontStyle=1;fontColor=#147EBA;html=1;" vertex="1"
+     parent="1">
+    23+            <mxGeometry x="420" y="640" width="1100" height="400" as="geometry" />
+    24+          </mxCell>
+    2+          <mxCell value="Data Subnets"
+     style="shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_private_subnet;strokeColor=#147EBA;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontStyle=1;fontColor=#147EBA;html=1;" vertex="1"
+     parent="1">
+    26+            <mxGeometry x="420" y="1100" width="1100" height="340" as="geometry" />
+    27+          </mxCell>
+    28+          <mxCell id="user" value="&lt;b&gt;User&lt;/b&gt;" style="shape=mxgraph.aws4.user;fillColor=#232F3D;strokeColor=none;html=1;" vertex="1" parent="1">
+    29+            <mxGeometry x="100" y="370" width="78" height="78" as="geometry" />
+    30+          </mxCell>
+    31+          <mxCell id="igw" value="&lt;b&gt;Internet&lt;br&gt;Gateway&lt;/b&gt;" style="shape=mxgraph.aws4.internet_gateway;fillColor=#8C4FFF;strokeColor=none;html=1;" vertex="1" parent="1">
+    32+            <mxGeometry x="460" y="300" width="78" height="78" as="geometry" />
+    33+          </mxCell>
+    34+          <mxCell id="alb" value="&lt;b&gt;Application&lt;br&gt;Load Balancer&lt;/b&gt;" style="shape=mxgraph.aws4.application_load_balancer;fillColor=#8C4FFF;strokeColor=none;html=1;" vertex="1"
+    35+            <mxGeometry x="700" y="300" width="78" height="78" as="geometry" />
+    36+          </mxCell>
+    37+          <mxCell id="nat" value="&lt;b&gt;NAT&lt;br&gt;Gateway&lt;/b&gt;" style="shape=mxgraph.aws4.nat_gateway;fillColor=#8C4FFF;strokeColor=none;html=1;" vertex="1" parent="1">
+    38+            <mxGeometry x="460" y="440" width="78" height="78" as="geometry" />
+    39+          </mxCell>
+    40+          <mxCell id="eks" value="&lt;b&gt;EKS Cluster&lt;/b&gt;" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.eks;fillColor=#ED7100;strokeColor=#ffffff;html=1;" vertex="1" parent="1">
+    41+            <mxGeometry x="560" y="720" width="78" height="78" as="geometry" />
+    42+          </mxCell>
+    43+          <mxCell id="node1" value="&lt;b&gt;Worker Node&lt;br&gt;t3.medium&lt;/b&gt;" style="shape=mxgraph.aws4.instance2;fillColor=#ED7100;strokeColor=none;html=1;" vertex="1" parent="1">
+    44+            <mxGeometry x="800" y="700" width="78" height="78" as="geometry" />
+    45+          </mxCell>
+    46+          <mxCell id="node2" value="&lt;b&gt;Worker Node&lt;br&gt;t3.medium&lt;/b&gt;" style="shape=mxgraph.aws4.instance2;fillColor=#ED7100;strokeColor=none;html=1;" vertex="1" parent="1">
+    47+            <mxGeometry x="800" y="840" width="78" height="78" as="geometry" />
+    48+          </mxCell>
+    4+          <mxCell id="hpa" value="&lt;b&gt;HPA&lt;br&gt;(Metrics Server)&lt;/b&gt;"
+     style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.auto_scaling2;fillColor=#ED7100;strokeColor=#ffffff;html=1;" vertex="1" parent="1">
+    50+            <mxGeometry x="1060" y="720" width="78" height="78" as="geometry" />
+    51+          </mxCell>
+    52+          <mxCell id="pod1" value="&lt;b&gt;API Pods&lt;br&gt;(api-dev)&lt;/b&gt;" style="shape=mxgraph.aws4.container_1;fillColor=#ED7100;strokeColor=none;html=1;" vertex="1" parent="1">
+    53+            <mxGeometry x="1060" y="860" width="78" height="78" as="geometry" />
+    54+          </mxCell>
+    55+          <mxCell id="rds" value="&lt;b&gt;RDS&lt;br&gt;PostgreSQL&lt;/b&gt;" style="shape=mxgraph.aws4.rds_postgresql_instance;fillColor=#C925D1;strokeColor=none;html=1;" vertex="1" parent="1">
+    56+            <mxGeometry x="560" y="1200" width="78" height="78" as="geometry" />
+    57+          </mxCell>
+    58+          <mxCell id="redis" value="&lt;b&gt;ElastiCache&lt;br&gt;Redis (optional)&lt;/b&gt;" style="shape=mxgraph.aws4.elasticache_for_redis;fillColor=#C925D1;strokeColor=none;html=1;" vertex="1"
+    59+            <mxGeometry x="860" y="1200" width="78" height="78" as="geometry" />
+    60+          </mxCell>
+    61+          <mxCell id="ecr" value="&lt;b&gt;ECR&lt;/b&gt;" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ecr;fillColor=#ED7100;strokeColor=#ffffff;html=1;" vertex="1" parent="1">
+    62+            <mxGeometry x="1700" y="300" width="78" height="78" as="geometry" />
+    63+          </mxCell>
+    64+          <mxCell id="secrets" value="&lt;b&gt;Secrets&lt;br&gt;Manager&lt;/b&gt;"
+      style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.secrets_manager;fillColor=#DD344C;strokeColor=#ffffff;html=1;" vertex="1" parent="1">
+    65+            <mxGeometry x="1700" y="500" width="78" height="78" as="geometry" />
+    66+          </mxCell>
+    67+          <mxCell id="kms" value="&lt;b&gt;KMS&lt;/b&gt;" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.key_management_service;fillColor=#DD344C;strokeColor=#ffffff;html=1;" vertex="1"
+    68+            <mxGeometry x="1700" y="700" width="78" height="78" as="geometry" />
+    69+          </mxCell>
+    7+          <mxCell id="cw" value="&lt;b&gt;CloudWatch&lt;br&gt;Logs &amp;amp; Metrics&lt;/b&gt;"
+     style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cloudwatch_2;fillColor=#E7157B;strokeColor=#ffffff;html=1;" vertex="1" parent="1">
+    71+            <mxGeometry x="1700" y="900" width="78" height="78" as="geometry" />
+    72+          </mxCell>
+    73+          <mxCell id="sns" value="&lt;b&gt;SNS&lt;br&gt;Alerts&lt;/b&gt;" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.sns;fillColor=#E7157B;strokeColor=#ffffff;html=1;" vertex="1"
+    74+            <mxGeometry x="1960" y="900" width="78" height="78" as="geometry" />
+    75+          </mxCell>
+    7+          <mxCell id="xray" value="&lt;b&gt;X-Ray&lt;br&gt;Tracing&lt;/b&gt;" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.xray;fillColor=#C925D1;strokeColor=#ffffff;html=1;" vertex="1"
+     parent="1">
+    77+            <mxGeometry x="1700" y="1100" width="78" height="78" as="geometry" />
+    78+          </mxCell>
+    79+          <mxCell id="acm" value="&lt;b&gt;ACM&lt;br&gt;TLS Certs&lt;/b&gt;"
+      style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.certificate_manager_3;fillColor=#DD344C;strokeColor=#ffffff;html=1;" vertex="1" parent="1">
+    80+            <mxGeometry x="880" y="300" width="65" height="65" as="geometry" />
+    81+          </mxCell>
+    82+          <mxCell id="edge-user-igw"
+      style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
+      edge="1" source="user" target="igw" parent="1">
+    83+            <mxGeometry relative="1" as="geometry" />
+    84+          </mxCell>
+    8+          <mxCell id="edge-igw-alb" value="HTTPS"
+     style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;labelBackgroundColor=#F5F5F5;fontSize=11;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=
+     0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="igw" target="alb" parent="1">
+    86+            <mxGeometry relative="1" as="geometry" />
+    87+          </mxCell>
+    88+          <mxCell id="edge-alb-nodes"
+      style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
+      edge="1" source="alb" target="node1" parent="1">
+    89+            <mxGeometry relative="1" as="geometry" />
+    90+          </mxCell>
+    9+          <mxCell id="edge-alb-node2"
+     style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0
+     ;" edge="1" source="alb" target="node2" parent="1">
+    92+            <mxGeometry relative="1" as="geometry" />
+    93+          </mxCell>
+    94+          <mxCell id="edge-eks-node1"
+      style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
+      edge="1" source="eks" target="node1" parent="1">
+    95+            <mxGeometry relative="1" as="geometry" />
+    96+          </mxCell>
+    97+          <mxCell id="edge-eks-node2"
+      style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
+      edge="1" source="eks" target="node2" parent="1">
+    98+            <mxGeometry relative="1" as="geometry" />
+    99+          </mxCell>
+   10+          <mxCell id="edge-node1-hpa"
+     style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0
+     ;" edge="1" source="node1" target="hpa" parent="1">
+   101+            <mxGeometry relative="1" as="geometry" />
+   102+          </mxCell>
+   103+          <mxCell id="edge-node-pods"
+      style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
+      edge="1" source="node2" target="pod1" parent="1">
+   104+            <mxGeometry relative="1" as="geometry" />
+   105+          </mxCell>
+   10+          <mxCell id="edge-nodes-rds" value="Port 5432"
+     style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;labelBackgroundColor=#F5F5F5;fontSize=11;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=
+     0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="node1" target="rds" parent="1">
+   107+            <mxGeometry relative="1" as="geometry" />
+   108+          </mxCell>
+   10+          <mxCell id="edge-nodes-redis" value="Port 6379"
+     style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;dashed=1;labelBackgroundColor=#F5F5F5;fontSize=11;exitX=0.5;exitY=1;exitDx=0;exitDy=
+     0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="node2" target="redis" parent="1">
+   110+            <mxGeometry relative="1" as="geometry" />
+   111+          </mxCell>
+   11+          <mxCell id="edge-nodes-ecr" value="Pull images"
+     style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;dashed=1;labelBackgroundColor=#F5F5F5;fontSize=11;exitX=1;exitY=0.5;exitDx=0;exitDy=
+     0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="node1" target="ecr" parent="1">
+   113+            <mxGeometry relative="1" as="geometry" />
+   114+          </mxCell>
+   11+          <mxCell id="edge-nodes-secrets" value="Credentials"
+     style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;dashed=1;labelBackgroundColor=#F5F5F5;fontSize=11;exitX=1;exitY=0.5;exitDx=0;exitDy=
+     0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="node2" target="secrets" parent="1">
+   116+            <mxGeometry relative="1" as="geometry" />
+   117+          </mxCell>
+   11+          <mxCell id="edge-kms-rds"
+     style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;dashed=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;"
+     edge="1" source="kms" target="rds" parent="1">
+   119+            <mxGeometry relative="1" as="geometry" />
+   120+          </mxCell>
+   12+          <mxCell id="edge-nodes-cw" value="Logs"
+     style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;labelBackgroundColor=#F5F5F5;fontSize=11;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=
+     0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="pod1" target="cw" parent="1">
+   122+            <mxGeometry relative="1" as="geometry" />
+   123+          </mxCell>
+   12+          <mxCell id="edge-cw-sns" value="Alarms"
+     style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#DD344C;labelBackgroundColor=#F5F5F5;fontSize=11;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=
+     0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="cw" target="sns" parent="1">
+   125+            <mxGeometry relative="1" as="geometry" />
+   126+          </mxCell>
+   12+          <mxCell id="edge-pods-xray" value="Traces"
+     style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;dashed=1;labelBackgroundColor=#F5F5F5;fontSize=11;exitX=1;exitY=1;exitDx=0;exitDy=0;
+     entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="pod1" target="xray" parent="1">
+   128+            <mxGeometry relative="1" as="geometry" />
+   129+          </mxCell>
+   13+          <mxCell id="edge-alb-acm"
+     style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0
+     ;" edge="1" source="alb" target="acm" parent="1">
+   131+            <mxGeometry relative="1" as="geometry" />
+   132+          </mxCell>
+   13+          <mxCell id="edge-nat-out" value="Outbound"
+     style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;dashed=1;labelBackgroundColor=#F5F5F5;fontSize=11;exitX=0;exitY=0.5;exitDx=0;exitDy=
+     0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" source="nat" target="igw" parent="1">
+   134+            <mxGeometry relative="1" as="geometry" />
+   135+          </mxCell>
+   13+          <mxCell id="edge-private-nat"
+     style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;dashed=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0
+     ;" edge="1" source="eks" target="nat" parent="1">
+   137+            <mxGeometry relative="1" as="geometry" />
+   138+          </mxCell>
+   139+          <mxCell value="&lt;b&gt;Legend&lt;/b&gt;&lt;br&gt;Solid line: Primary data flow&lt;br&gt;Dashed line: Async / optional path&lt;br&gt;Red line: Alert path"
+      style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;spacing=6;fillColor=#FFFFFF;strokeColor=#CCCCCC;" vertex="1" parent="1">
+   140+            <mxGeometry x="40" y="1420" width="250" height="80" as="geometry" />
+   141+          </mxCell>
+   142+        </root>
+   143+      </mxGraphModel>
+   144+    </diagram>
+   145+  </mxfile>
+
+  Now let me create the companion markdown guide:
+● Write /home/ppatram/kubernetes/terraform/eks-training-infrastructure.md
+  added 59 lines in eks-training-infrastructure.md
+     1+  # EKS Training Infrastructure — Architecture Diagram
+     2+
+     3+  ## Overview
+     4+
+     5+  This diagram shows the AWS infrastructure provisioned by the Terraform root module for Kubernetes training. It follows a single-region, multi-AZ pattern optimized for cost.
+     6+
+     7+  ## Request Flow
+     8+
+     9+  1. **User** → Internet Gateway → ALB (TLS terminated via ACM certificate)
+    10+  2. **ALB** → EKS Worker Nodes (port 8080) in private subnets
+    11+  3. **Worker Nodes** run API pods across namespaces (api-dev, api-qa, api-prod)
+    12+  4. **API Pods** → RDS PostgreSQL (port 5432) and optionally ElastiCache Redis (port 6379) in data subnets
+    13+  5. **Worker Nodes** → NAT Gateway → Internet Gateway for outbound traffic (ECR pulls, external APIs)
+    14+
+    15+  ## Components
+    16+
+    17+  | Service | Purpose |
+    18+  |---|---|
+    19+  | **VPC** | Network isolation with public, private, and data subnets |
+    20+  | **Internet Gateway** | Inbound internet access to public subnets |
+    21+  | **NAT Gateway** | Outbound internet for private subnets (single AZ for cost) |
+    22+  | **ALB** | HTTPS ingress with TLS termination, path-based routing |
+    23+  | **ACM** | TLS certificates for ALB |
+    24+  | **EKS Cluster** | Kubernetes control plane |
+    25+  | **Worker Nodes** | EC2 t3.medium instances running pods |
+    26+  | **HPA / Metrics Server** | Horizontal Pod Autoscaler for production overlay |
+    27+  | **RDS PostgreSQL** | Application database (db.t3.micro, encrypted) |
+    28+  | **ElastiCache Redis** | Optional caching layer (disabled by default) |
+    29+  | **ECR** | Container image registry with scan-on-push |
+    30+  | **Secrets Manager** | DB credentials injected via External Secrets Operator |
+    31+  | **KMS** | Encryption at rest for RDS and ElastiCache |
+    32+  | **CloudWatch** | Centralized logs, metrics, and Container Insights |
+    33+  | **SNS** | Alert delivery from CloudWatch Alarms |
+    34+  | **X-Ray** | Distributed request tracing |
+    35+
+    36+  ## Security Controls
+    37+
+    38+  - TLS 1.2+ on ALB ingress (ACM certificate)
+    39+  - Worker nodes in private subnets (no public IPs)
+    40+  - Security groups per tier: ALB → Nodes → Data
+    41+  - KMS encryption at rest for RDS and ElastiCache
+    42+  - Secrets Manager for credentials (never in code or env files)
+    43+  - ECR image scanning on push
+    44+  - Network policies restrict pod-to-pod traffic
+    45+
+    46+  ## Cost Optimization
+    47+
+    48+  - NAT Gateway: single AZ (not per-AZ)
+    49+  - ElastiCache: disabled by default
+    50+  - Node group: min_size=0 allows scaling to zero between sessions
+    51+  - RDS: db.t3.micro with single-AZ, 1-day backup retention
+    52+  - CloudWatch: 7-day log retention
+    53+
+    54+  ## Opening the Diagram
+    55+
+    56+  Open `eks-training-infrastructure.drawio` in:
+    57+  - [draw.io desktop app](https://github.com/jgraph/drawio-desktop/releases)
+    58+  - [app.diagrams.net](https://app.diagrams.net) (web)
+    59+  - VS Code with the Draw.io Integration extension
+
+  Done. Created two files:
+
+  - `terraform/eks-training-infrastructure.drawio` — the diagram with official AWS icons showing all services and connections
+  - `terraform/eks-training-infrastructure.md` — companion guide explaining the flow
+
+  Open the .drawio file in app.diagrams.net (https://app.diagrams.net), the draw.io desktop app, or the VS Code Draw.io extension. The diagram shows:
+
+  - Networking layer: VPC → public subnets (IGW, ALB, NAT GW) → private subnets (EKS nodes) → data subnets (RDS, Redis)
+  - Compute layer: EKS cluster managing worker nodes running API pods with HPA
+  - Data layer: RDS PostgreSQL + optional ElastiCache Redis, encrypted with KMS
+  - Security layer: ACM certs on ALB, Secrets Manager for credentials, KMS encryption
+  - Observability layer: CloudWatch (logs/metrics) → SNS (alarms) + X-Ray (tracing)
+  - Registry: ECR for container images pulled by nodes
+
+  All connections show the traffic direction and protocol/purpose via edge labels.
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  The icons have their label directly inside and it is hard to read. Put the icon text somewhere around the icon to keep it from being over anything else
+
+● Write /home/ppatram/kubernetes/terraform/eks-training-infrastructure.drawio
+  added 76 lines, removed 22 lines in eks-training-infrastructure.drawio
+     1   <mxfile host="app.diagrams.net">
+     2     <diagram id="diagram-1" name="EKS Training Infrastructure">
+     3       <mxGraphModel dx="2800" dy="1600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1600" math="0" shadow="0">
+     4         <root>
+     5           <mxCell id="0" />
+     6           <mxCell id="1" parent="0" />
+     7           <mxCell value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=none;" vertex="1" parent="1">
+     8             <mxGeometry x="0" y="0" width="2400" height="1600" as="geometry" />
+     9           </mxCell>
+    10           <mxCell value="&lt;b&gt;EKS Training Infrastructure&lt;/b&gt;&lt;br&gt;Kubernetes Training Environment | Terraform Managed"
+  style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=14;spacing=8;" vertex="1" parent="1">
+    11             <mxGeometry x="40" y="30" width="450" height="60" as="geometry" />
+    12           </mxCell>
+    13           <mxCell value="AWS Cloud"
+  style="shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud_alt;strokeColor=#232F3E;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontStyle=1;fontColor=#232F3E;html=1;" vertex="1"
+    14             <mxGeometry x="320" y="100" width="2000" height="1420" as="geometry" />
+    15           </mxCell>
+    16           <mxCell value="VPC (10.0.0.0/16)"
+  style="shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_vpc;strokeColor=#8C4FFF;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontStyle=1;fontColor=#8C4FFF;html=1;" vertex="1" parent="1">
+    17             <mxGeometry x="380" y="180" width="1880" height="1300" as="geometry" />
+    18           </mxCell>
+    19           <mxCell value="Public Subnets"
+  style="shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_public_subnet;strokeColor=#248814;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontStyle=1;fontColor=#248814;html=1;" vertex="1"
+    20             <mxGeometry x="420" y="240" width="600" height="340" as="geometry" />
+    21           </mxCell>
+    22           <mxCell value="Private Subnets (EKS Nodes)"
+  style="shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_private_subnet;strokeColor=#147EBA;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontStyle=1;fontColor=#147EBA;html=1;" vertex="1"
+    23             <mxGeometry x="420" y="640" width="1100" height="400" as="geometry" />
+    24           </mxCell>
+    25           <mxCell value="Data Subnets"
+  style="shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_private_subnet;strokeColor=#147EBA;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontStyle=1;fontColor=#147EBA;html=1;" vertex="1"
+    26             <mxGeometry x="420" y="1100" width="1100" height="340" as="geometry" />
+    27           </mxCell>
+    28-          <mxCell id="user" value="&lt;b&gt;User&lt;/b&gt;" style="shape=mxgraph.aws4.user;fillColor=#232F3D;strokeColor=none;html=1;" vertex="1" parent="1">
+    28+          <mxCell id="user" value="" style="shape=mxgraph.aws4.user;fillColor=#232F3D;strokeColor=none;html=1;" vertex="1" parent="1">
+    29             <mxGeometry x="100" y="370" width="78" height="78" as="geometry" />
+    30           </mxCell>
+    31-          <mxCell id="igw" value="&lt;b&gt;Internet&lt;br&gt;Gateway&lt;/b&gt;" style="shape=mxgraph.aws4.internet_gateway;fillColor=#8C4FFF;strokeColor=none;html=1;" vertex="1" parent="1">
+    31+          <mxCell value="User" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+    32+            <mxGeometry x="99" y="450" width="80" height="30" as="geometry" />
+    33+          </mxCell>
+    34+          <mxCell id="igw" value="" style="shape=mxgraph.aws4.internet_gateway;fillColor=#8C4FFF;strokeColor=none;html=1;" vertex="1" parent="1">
+    32             <mxGeometry x="460" y="300" width="78" height="78" as="geometry" />
+    33           </mxCell>
+    34-          <mxCell id="alb" value="&lt;b&gt;Application&lt;br&gt;Load Balancer&lt;/b&gt;" style="shape=mxgraph.aws4.application_load_balancer;fillColor=#8C4FFF;strokeColor=none;html=1;" vertex="1"
+    37+          <mxCell value="Internet&lt;br&gt;Gateway" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+    38+            <mxGeometry x="449" y="380" width="100" height="40" as="geometry" />
+    39+          </mxCell>
+    40+          <mxCell id="alb" value="" style="shape=mxgraph.aws4.application_load_balancer;fillColor=#8C4FFF;strokeColor=none;html=1;" vertex="1" parent="1">
+    35             <mxGeometry x="700" y="300" width="78" height="78" as="geometry" />
+    36           </mxCell>
+    37-          <mxCell id="nat" value="&lt;b&gt;NAT&lt;br&gt;Gateway&lt;/b&gt;" style="shape=mxgraph.aws4.nat_gateway;fillColor=#8C4FFF;strokeColor=none;html=1;" vertex="1" parent="1">
+    43+          <mxCell value="Application&lt;br&gt;Load Balancer" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+    44+            <mxGeometry x="684" y="380" width="110" height="40" as="geometry" />
+    45+          </mxCell>
+    46+          <mxCell id="nat" value="" style="shape=mxgraph.aws4.nat_gateway;fillColor=#8C4FFF;strokeColor=none;html=1;" vertex="1" parent="1">
+    38             <mxGeometry x="460" y="440" width="78" height="78" as="geometry" />
+    39           </mxCell>
+    40-          <mxCell id="eks" value="&lt;b&gt;EKS Cluster&lt;/b&gt;" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.eks;fillColor=#ED7100;strokeColor=#ffffff;html=1;" vertex="1" parent="1">
+    49+          <mxCell value="NAT Gateway" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+    50+            <mxGeometry x="449" y="520" width="100" height="30" as="geometry" />
+    51+          </mxCell>
+    52+          <mxCell id="eks" value="" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.eks;fillColor=#ED7100;strokeColor=#ffffff;html=1;" vertex="1" parent="1">
+    41             <mxGeometry x="560" y="720" width="78" height="78" as="geometry" />
+    42           </mxCell>
+    43-          <mxCell id="node1" value="&lt;b&gt;Worker Node&lt;br&gt;t3.medium&lt;/b&gt;" style="shape=mxgraph.aws4.instance2;fillColor=#ED7100;strokeColor=none;html=1;" vertex="1" parent="1">
+    55+          <mxCell value="EKS Cluster" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+    56+            <mxGeometry x="549" y="800" width="100" height="30" as="geometry" />
+    57+          </mxCell>
+    58+          <mxCell id="node1" value="" style="shape=mxgraph.aws4.instance2;fillColor=#ED7100;strokeColor=none;html=1;" vertex="1" parent="1">
+    44             <mxGeometry x="800" y="700" width="78" height="78" as="geometry" />
+    45           </mxCell>
+    46-          <mxCell id="node2" value="&lt;b&gt;Worker Node&lt;br&gt;t3.medium&lt;/b&gt;" style="shape=mxgraph.aws4.instance2;fillColor=#ED7100;strokeColor=none;html=1;" vertex="1" parent="1">
+    47-            <mxGeometry x="800" y="840" width="78" height="78" as="geometry" />
+    61+          <mxCell value="Worker Node&lt;br&gt;t3.medium" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+    62+            <mxGeometry x="784" y="780" width="110" height="40" as="geometry" />
+    48           </mxCell>
+    49-          <mxCell id="hpa" value="&lt;b&gt;HPA&lt;br&gt;(Metrics Server)&lt;/b&gt;"
+      style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.auto_scaling2;fillColor=#ED7100;strokeColor=#ffffff;html=1;" vertex="1" parent="1">
+    50-            <mxGeometry x="1060" y="720" width="78" height="78" as="geometry" />
+    64+          <mxCell id="node2" value="" style="shape=mxgraph.aws4.instance2;fillColor=#ED7100;strokeColor=none;html=1;" vertex="1" parent="1">
+    65+            <mxGeometry x="800" y="880" width="78" height="78" as="geometry" />
+    51           </mxCell>
+    52-          <mxCell id="pod1" value="&lt;b&gt;API Pods&lt;br&gt;(api-dev)&lt;/b&gt;" style="shape=mxgraph.aws4.container_1;fillColor=#ED7100;strokeColor=none;html=1;" vertex="1" parent="1">
+    53-            <mxGeometry x="1060" y="860" width="78" height="78" as="geometry" />
+    67+          <mxCell value="Worker Node&lt;br&gt;t3.medium" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+    68+            <mxGeometry x="784" y="960" width="110" height="40" as="geometry" />
+    54           </mxCell>
+    55-          <mxCell id="rds" value="&lt;b&gt;RDS&lt;br&gt;PostgreSQL&lt;/b&gt;" style="shape=mxgraph.aws4.rds_postgresql_instance;fillColor=#C925D1;strokeColor=none;html=1;" vertex="1" parent="1">
+    70+          <mxCell id="hpa" value="" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.auto_scaling2;fillColor=#ED7100;strokeColor=#ffffff;html=1;" vertex="1" parent="1">
+    71+            <mxGeometry x="1060" y="700" width="78" height="78" as="geometry" />
+    72+          </mxCell>
+    73+          <mxCell value="HPA&lt;br&gt;Metrics Server" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+    74+            <mxGeometry x="1044" y="780" width="110" height="40" as="geometry" />
+    75+          </mxCell>
+    76+          <mxCell id="pod1" value="" style="shape=mxgraph.aws4.container_1;fillColor=#ED7100;strokeColor=none;html=1;" vertex="1" parent="1">
+    77+            <mxGeometry x="1060" y="880" width="78" height="78" as="geometry" />
+    78+          </mxCell>
+    79+          <mxCell value="API Pods&lt;br&gt;(api-dev)" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+    80+            <mxGeometry x="1049" y="960" width="100" height="40" as="geometry" />
+    81+          </mxCell>
+    82+          <mxCell id="rds" value="" style="shape=mxgraph.aws4.rds_postgresql_instance;fillColor=#C925D1;strokeColor=none;html=1;" vertex="1" parent="1">
+    56             <mxGeometry x="560" y="1200" width="78" height="78" as="geometry" />
+    57           </mxCell>
+    58-          <mxCell id="redis" value="&lt;b&gt;ElastiCache&lt;br&gt;Redis (optional)&lt;/b&gt;" style="shape=mxgraph.aws4.elasticache_for_redis;fillColor=#C925D1;strokeColor=none;html=1;" vertex="1"
+    85+          <mxCell value="RDS&lt;br&gt;PostgreSQL" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+    86+            <mxGeometry x="549" y="1280" width="100" height="40" as="geometry" />
+    87+          </mxCell>
+    88+          <mxCell id="redis" value="" style="shape=mxgraph.aws4.elasticache_for_redis;fillColor=#C925D1;strokeColor=none;html=1;" vertex="1" parent="1">
+    59             <mxGeometry x="860" y="1200" width="78" height="78" as="geometry" />
+    60           </mxCell>
+    61-          <mxCell id="ecr" value="&lt;b&gt;ECR&lt;/b&gt;" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ecr;fillColor=#ED7100;strokeColor=#ffffff;html=1;" vertex="1" parent="1">
+    91+          <mxCell value="ElastiCache&lt;br&gt;Redis (optional)" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+    92+            <mxGeometry x="839" y="1280" width="120" height="40" as="geometry" />
+    93+          </mxCell>
+    94+          <mxCell id="ecr" value="" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ecr;fillColor=#ED7100;strokeColor=#ffffff;html=1;" vertex="1" parent="1">
+    62             <mxGeometry x="1700" y="300" width="78" height="78" as="geometry" />
+    63           </mxCell>
+    64-          <mxCell id="secrets" value="&lt;b&gt;Secrets&lt;br&gt;Manager&lt;/b&gt;"
+      style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.secrets_manager;fillColor=#DD344C;strokeColor=#ffffff;html=1;" vertex="1" parent="1">
+    97+          <mxCell value="ECR" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+    98+            <mxGeometry x="1709" y="380" width="60" height="30" as="geometry" />
+    99+          </mxCell>
+   100+          <mxCell id="secrets" value="" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.secrets_manager;fillColor=#DD344C;strokeColor=#ffffff;html=1;" vertex="1" parent="1">
+    65             <mxGeometry x="1700" y="500" width="78" height="78" as="geometry" />
+    66           </mxCell>
+    67-          <mxCell id="kms" value="&lt;b&gt;KMS&lt;/b&gt;" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.key_management_service;fillColor=#DD344C;strokeColor=#ffffff;html=1;" vertex="1"
+   103+          <mxCell value="Secrets&lt;br&gt;Manager" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+   104+            <mxGeometry x="1699" y="580" width="80" height="40" as="geometry" />
+   105+          </mxCell>
+   106+          <mxCell id="kms" value="" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.key_management_service;fillColor=#DD344C;strokeColor=#ffffff;html=1;" vertex="1" parent="1">
+    68             <mxGeometry x="1700" y="700" width="78" height="78" as="geometry" />
+    69           </mxCell>
+    70-          <mxCell id="cw" value="&lt;b&gt;CloudWatch&lt;br&gt;Logs &amp;amp; Metrics&lt;/b&gt;"
+      style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cloudwatch_2;fillColor=#E7157B;strokeColor=#ffffff;html=1;" vertex="1" parent="1">
+   109+          <mxCell value="KMS" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+   110+            <mxGeometry x="1709" y="780" width="60" height="30" as="geometry" />
+   111+          </mxCell>
+   112+          <mxCell id="cw" value="" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cloudwatch_2;fillColor=#E7157B;strokeColor=#ffffff;html=1;" vertex="1" parent="1">
+    71             <mxGeometry x="1700" y="900" width="78" height="78" as="geometry" />
+    72           </mxCell>
+    73-          <mxCell id="sns" value="&lt;b&gt;SNS&lt;br&gt;Alerts&lt;/b&gt;" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.sns;fillColor=#E7157B;strokeColor=#ffffff;html=1;" vertex="1"
+   115+          <mxCell value="CloudWatch&lt;br&gt;Logs &amp;amp; Metrics" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+   116+            <mxGeometry x="1684" y="980" width="110" height="40" as="geometry" />
+   117+          </mxCell>
+   118+          <mxCell id="sns" value="" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.sns;fillColor=#E7157B;strokeColor=#ffffff;html=1;" vertex="1" parent="1">
+    74             <mxGeometry x="1960" y="900" width="78" height="78" as="geometry" />
+    75           </mxCell>
+    7-          <mxCell id="xray" value="&lt;b&gt;X-Ray&lt;br&gt;Tracing&lt;/b&gt;" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.xray;fillColor=#C925D1;strokeColor=#ffffff;html=1;" vertex="1"
+     parent="1">
+   121+          <mxCell value="SNS&lt;br&gt;Alerts" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+   122+            <mxGeometry x="1969" y="980" width="60" height="40" as="geometry" />
+   123+          </mxCell>
+   124+          <mxCell id="xray" value="" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.xray;fillColor=#C925D1;strokeColor=#ffffff;html=1;" vertex="1" parent="1">
+    77             <mxGeometry x="1700" y="1100" width="78" height="78" as="geometry" />
+    78           </mxCell>
+    79-          <mxCell id="acm" value="&lt;b&gt;ACM&lt;br&gt;TLS Certs&lt;/b&gt;"
+      style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.certificate_manager_3;fillColor=#DD344C;strokeColor=#ffffff;html=1;" vertex="1" parent="1">
+    80-            <mxGeometry x="880" y="300" width="65" height="65" as="geometry" />
+   127+          <mxCell value="X-Ray&lt;br&gt;Tracing" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+   128+            <mxGeometry x="1704" y="1180" width="70" height="40" as="geometry" />
+    81           </mxCell>
+   130+          <mxCell id="acm" value="" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.certificate_manager_3;fillColor=#DD344C;strokeColor=#ffffff;html=1;" vertex="1" parent="1">
+   131+            <mxGeometry x="880" y="290" width="65" height="65" as="geometry" />
+   132+          </mxCell>
+   133+          <mxCell value="ACM&lt;br&gt;TLS Certs" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+   134+            <mxGeometry x="867" y="358" width="90" height="40" as="geometry" />
+   135+          </mxCell>
+    82           <mxCell id="edge-user-igw"
+  style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1"
+  source="user" target="igw" parent="1">
+    83             <mxGeometry relative="1" as="geometry" />
+    84           </mxCell>
+    85           <mxCell id="edge-igw-alb" value="HTTPS"
+  style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;labelBackgroundColor=#F5F5F5;fontSize=11;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;e
+  ntryY=0.5;entryDx=0;entryDy=0;" edge="1" source="igw" target="alb" parent="1">
+    86             <mxGeometry relative="1" as="geometry" />
+    87           </mxCell>
+    88           <mxCell id="edge-alb-nodes"
+  style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1"
+  source="alb" target="node1" parent="1">
+    89             <mxGeometry relative="1" as="geometry" />
+    90           </mxCell>
+    91           <mxCell id="edge-alb-node2"
+  style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
+  edge="1" source="alb" target="node2" parent="1">
+    92             <mxGeometry relative="1" as="geometry" />
+    93           </mxCell>
+    94           <mxCell id="edge-eks-node1"
+  style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1"
+  source="eks" target="node1" parent="1">
+    95             <mxGeometry relative="1" as="geometry" />
+    96           </mxCell>
+    97           <mxCell id="edge-eks-node2"
+  style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1"
+  source="eks" target="node2" parent="1">
+    98             <mxGeometry relative="1" as="geometry" />
+    99           </mxCell>
+   100           <mxCell id="edge-node1-hpa"
+  style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
+  edge="1" source="node1" target="hpa" parent="1">
+   101             <mxGeometry relative="1" as="geometry" />
+   102           </mxCell>
+   103           <mxCell id="edge-node-pods"
+  style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1"
+  source="node2" target="pod1" parent="1">
+   104             <mxGeometry relative="1" as="geometry" />
+   105           </mxCell>
+   106           <mxCell id="edge-nodes-rds" value="Port 5432"
+  style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;labelBackgroundColor=#F5F5F5;fontSize=11;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5
+  ;entryY=0;entryDx=0;entryDy=0;" edge="1" source="node1" target="rds" parent="1">
+   107             <mxGeometry relative="1" as="geometry" />
+   108           </mxCell>
+   109           <mxCell id="edge-nodes-redis" value="Port 6379"
+  style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;dashed=1;labelBackgroundColor=#F5F5F5;fontSize=11;exitX=0.5;exitY=1;exitDx=0;exitDy=0;e
+  ntryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="node2" target="redis" parent="1">
+   110             <mxGeometry relative="1" as="geometry" />
+   111           </mxCell>
+   112           <mxCell id="edge-nodes-ecr" value="Pull images"
+  style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;dashed=1;labelBackgroundColor=#F5F5F5;fontSize=11;exitX=1;exitY=0.5;exitDx=0;exitDy=0;e
+  ntryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="node1" target="ecr" parent="1">
+   113             <mxGeometry relative="1" as="geometry" />
+   114           </mxCell>
+   115           <mxCell id="edge-nodes-secrets" value="Credentials"
+  style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;dashed=1;labelBackgroundColor=#F5F5F5;fontSize=11;exitX=1;exitY=0.5;exitDx=0;exitDy=0;e
+  ntryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="node2" target="secrets" parent="1">
+   116             <mxGeometry relative="1" as="geometry" />
+   117           </mxCell>
+   118           <mxCell id="edge-kms-rds"
+  style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;dashed=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;"
+  edge="1" source="kms" target="rds" parent="1">
+   119             <mxGeometry relative="1" as="geometry" />
+   120           </mxCell>
+   121           <mxCell id="edge-nodes-cw" value="Logs"
+  style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;labelBackgroundColor=#F5F5F5;fontSize=11;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;e
+  ntryY=0.5;entryDx=0;entryDy=0;" edge="1" source="pod1" target="cw" parent="1">
+   122             <mxGeometry relative="1" as="geometry" />
+   123           </mxCell>
+   124           <mxCell id="edge-cw-sns" value="Alarms"
+  style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#DD344C;labelBackgroundColor=#F5F5F5;fontSize=11;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;e
+  ntryY=0.5;entryDx=0;entryDy=0;" edge="1" source="cw" target="sns" parent="1">
+   125             <mxGeometry relative="1" as="geometry" />
+   126           </mxCell>
+   127           <mxCell id="edge-pods-xray" value="Traces"
+  style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;dashed=1;labelBackgroundColor=#F5F5F5;fontSize=11;exitX=1;exitY=1;exitDx=0;exitDy=0;ent
+  ryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="pod1" target="xray" parent="1">
+   128             <mxGeometry relative="1" as="geometry" />
+   129           </mxCell>
+   130           <mxCell id="edge-alb-acm"
+  style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
+  edge="1" source="alb" target="acm" parent="1">
+   131             <mxGeometry relative="1" as="geometry" />
+   132           </mxCell>
+   133           <mxCell id="edge-nat-out" value="Outbound"
+  style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;dashed=1;labelBackgroundColor=#F5F5F5;fontSize=11;exitX=0;exitY=0.5;exitDx=0;exitDy=0;e
+  ntryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" source="nat" target="igw" parent="1">
+   134             <mxGeometry relative="1" as="geometry" />
+   135           </mxCell>
+   136           <mxCell id="edge-private-nat"
+  style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#545B64;dashed=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;"
+  edge="1" source="eks" target="nat" parent="1">
+   137             <mxGeometry relative="1" as="geometry" />
+   138           </mxCell>
+   139           <mxCell value="&lt;b&gt;Legend&lt;/b&gt;&lt;br&gt;Solid line: Primary data flow&lt;br&gt;Dashed line: Async / optional path&lt;br&gt;Red line: Alert path"
+  style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;spacing=6;fillColor=#FFFFFF;strokeColor=#CCCCCC;" vertex="1" parent="1">
+   140             <mxGeometry x="40" y="1420" width="250" height="80" as="geometry" />
+   141           </mxCell>
+   142         </root>
+   143       </mxGraphModel>
+   144     </diagram>
+   145   </mxfile>
+
+  Updated. All icons now have empty value="" (no text inside the icon shape), with separate text labels positioned below each icon. This keeps the icons clean and the labels readable without overlapping any
+  connections.
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  does an aws api gateway make this better?
+
+  For a Kubernetes training environment, no — API Gateway would add cost and complexity without much benefit. Here's the comparison:
+
+  ALB (current setup) vs API Gateway + ALB
+
+  ┌────────────────────────┬────────────────────────────────────────────────┬────────────────────────────────────────────────────────────────────────┐
+  │ Factor                 │ ALB Only (current)                             │ Adding API Gateway                                                     │
+  ├────────────────────────┼────────────────────────────────────────────────┼────────────────────────────────────────────────────────────────────────┤
+  │ **Cost**               │ ~$22/month + LCUs                              │ +$3.50/million requests + $22 ALB still needed                         │
+  │ **Complexity**         │ Simple — Ingress resource creates ALB directly │ Extra hop: API GW → VPC Link → NLB/ALB → pods                          │
+  │ **Latency**            │ Single hop to pods                             │ Adds 5-15ms per request                                                │
+  │ **What you gain**      │ —                                              │ Throttling, API keys, request validation, usage plans, WAF integration │
+  │ **K8s learning value** │ Teaches Ingress, ALB controller, services      │ Teaches... API Gateway (not a K8s concept)                             │
+  └────────────────────────┴────────────────────────────────────────────────┴────────────────────────────────────────────────────────────────────────┘
+
+  When API Gateway *would* make sense
+
+  - Production APIs needing rate limiting, API keys, and usage plans per consumer
+  - Request transformation (mapping templates between clients and backend)
+  - Multiple backends where some are Lambda and some are EKS
+  - Fine-grained authorization (Lambda authorizers, Cognito)
+  - WAF without paying for ALB WAF separately
+
+  For your training purposes
+
+  Stick with ALB. The whole point is learning Kubernetes networking — Ingress resources, Services, ALB controller annotations, path-based routing. API Gateway would obscure those concepts behind a managed
+  proxy that has nothing to do with Kubernetes.
+
+  If you want to teach API management later, you can add it without changing the EKS setup (API GW → VPC Link → existing ALB or NLB).
+
+▸ Credits: 0.23 • Time: 14s
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  create an md file in ./terraform/docs/ that explains the setup of the terraform modules and lists any prerequisites
+
+● Write /home/ppatram/kubernetes/terraform/docs/setup.md
+  added 204 lines in setup.md
+     1+  # EKS Training Infrastructure — Setup Guide
+     2+
+     3+  ## Prerequisites
+     4+
+     5+  ### Local Tools
+     6+
+     7+  | Tool | Minimum Version | Purpose |
+     8+  |---|---|---|
+     9+  | [Terraform](https://developer.hashicorp.com/terraform/install) | 1.5.0 | Infrastructure provisioning |
+    10+  | [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) | 2.x | AWS authentication and EKS kubeconfig |
+    11+  | [kubectl](https://kubernetes.io/docs/tasks/tools/) | 1.29+ | Kubernetes cluster interaction |
+    12+  | [Helm](https://helm.sh/docs/intro/install/) | 3.x | Installing cluster add-ons |
+    13+
+    14+  ### AWS Account
+    15+
+    16+  - An AWS account with billing enabled (Free plan or Paid plan)
+    17+  - An IAM user or role with **AdministratorAccess** (for training; scope down for production)
+    18+  - AWS credentials configured locally:
+    19+    ```bash
+    20+    aws configure
+    21+    # or export AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+    22+    ```
+    23+  - Sufficient service quotas for: EKS clusters, EC2 instances (t3.medium), VPCs, Elastic IPs, NAT Gateways
+    24+
+    25+  ### Billing Safeguard
+    26+
+    27+  Set a billing alarm before deploying:
+    28+  ```bash
+    29+  aws cloudwatch put-metric-alarm \
+    30+    --alarm-name "billing-alarm-50" \
+    31+    --metric-name EstimatedCharges \
+    32+    --namespace AWS/Billing \
+    33+    --statistic Maximum \
+    34+    --period 21600 \
+    35+    --threshold 50 \
+    36+    --comparison-operator GreaterThanThreshold \
+    37+    --evaluation-periods 1 \
+    38+    --alarm-actions <your-sns-topic-arn> \
+    39+    --dimensions Name=Currency,Value=USD \
+    40+    --region us-east-1
+    41+  ```
+    42+
+    43+  ---
+    44+
+    45+  ## Module Structure
+    46+
+    47+  ```
+    48+  terraform/
+    49+  ├── versions.tf          # Provider version constraints (aws ~> 5.50, tls, random)
+    50+  ├── variables.tf         # All input variables with descriptions and defaults
+    51+  ├── terraform.tfvars     # Training-optimized values (override defaults here)
+    52+  ├── main.tf              # VPC, subnets, IGW, NAT Gateway, route tables, security groups
+    53+  ├── eks.tf               # EKS cluster, OIDC provider, IAM roles, managed node group
+    54+  ├── data.tf              # RDS PostgreSQL, ElastiCache Redis, Secrets Manager
+    55+  ├── ecr.tf               # ECR repository with image scanning and lifecycle policies
+    56+  ├── alb.tf               # AWS Load Balancer Controller IRSA role and IAM policy
+    57+  ├── observability.tf     # CloudWatch log groups, SNS alert topic, CloudWatch alarms
+    58+  ├── outputs.tf           # Cluster info, endpoints, scale up/down commands
+    59+  └── post-apply.sh        # Installs Helm add-ons after cluster is ready
+    60+  ```
+    61+
+    62+  ---
+    63+
+    64+  ## What Each File Provisions
+    65+
+    66+  ### main.tf — Networking
+    67+
+    68+  - VPC with configurable CIDR (default `10.0.0.0/16`)
+    69+  - Public subnets (ALB, NAT Gateway) with internet gateway
+    70+  - Private subnets (EKS worker nodes) routed through NAT gateway
+    71+  - Data subnets (RDS, ElastiCache) with no direct internet access
+    72+  - Three security groups enforcing tier separation:
+    73+    - **ALB SG**: allows HTTPS (443) inbound
+    74+    - **Nodes SG**: allows port 8080 from ALB SG only
+    75+    - **Data SG**: allows 5432 (PostgreSQL) and 6379 (Redis) from Nodes SG only
+    76+
+    77+  ### eks.tf — Compute
+    78+
+    79+  - EKS cluster with private API endpoint and audit logging
+    80+  - OIDC provider for IAM Roles for Service Accounts (IRSA)
+    81+  - Managed node group (scalable to 0 for cost savings)
+    82+  - IAM roles with policies for worker nodes (ECR pull, CNI, SSM)
+    83+
+    84+  ### data.tf — Data Layer
+    85+
+    86+  - RDS PostgreSQL instance (encrypted, private, no public access)
+    87+  - ElastiCache Redis replication group (optional, disabled by default)
+    88+  - Random password generation for DB credentials
+    89+  - Secrets Manager secret storing DB connection details as JSON
+    90+
+    91+  ### ecr.tf — Container Registry
+    92+
+    93+  - ECR repository with immutable tags and scan-on-push
+    94+  - Lifecycle policy to expire untagged images after 7 days
+    95+
+    96+  ### alb.tf — Ingress
+    97+
+    98+  - IRSA role for AWS Load Balancer Controller
+    99+  - Full IAM policy granting ELB, EC2, WAF, and ACM permissions
+   100+  - The controller itself is installed by `post-apply.sh` via Helm
+   101+
+   102+  ### observability.tf — Monitoring
+   103+
+   104+  - CloudWatch log groups for application and EKS cluster logs
+   105+  - SNS topic for alert delivery
+   106+  - CloudWatch alarms: node CPU > 80%, memory > 80%, pod restarts > 3
+   107+
+   108+  ---
+   109+
+   110+  ## Deployment
+   111+
+   112+  ### 1. Initialize and Apply
+   113+
+   114+  ```bash
+   115+  cd terraform
+   116+  terraform init
+   117+  terraform plan        # Review what will be created
+   118+  terraform apply       # Provision infrastructure (~20-25 minutes)
+   119+  ```
+   120+
+   121+  ### 2. Install Cluster Add-ons
+   122+
+   123+  ```bash
+   124+  ./post-apply.sh
+   125+  ```
+   126+
+   127+  This installs:
+   128+  - **metrics-server** — required for Horizontal Pod Autoscaler
+   129+  - **AWS Load Balancer Controller** — creates ALBs from Ingress resources
+   130+  - **External Secrets Operator** — syncs Secrets Manager into K8s Secrets
+   131+  - **Application namespaces** — `api-dev`, `api-qa`, `api-prod`
+   132+  - **ClusterSecretStore** — connects ESO to AWS Secrets Manager
+   133+
+   134+  ### 3. Verify
+   135+
+   136+  ```bash
+   137+  kubectl get nodes              # Should show 2 Ready nodes
+   138+  kubectl get pods -A            # All system pods Running
+   139+  kubectl get ns                 # api-dev, api-qa, api-prod exist
+   140+  ```
+   141+
+   142+  ---
+   143+
+   144+  ## Cost Management
+   145+
+   146+  ### Pause (scale nodes to 0)
+   147+
+   148+  ```bash
+   149+  $(terraform output -raw scale_down_command)
+   150+  ```
+   151+
+   152+  EKS control plane stays running (~$2.40/day) but EC2 costs drop to $0.
+   153+
+   154+  ### Resume
+   155+
+   156+  ```bash
+   157+  $(terraform output -raw scale_up_command)
+   158+  ```
+   159+
+   160+  Nodes come back in ~3 minutes.
+   161+
+   162+  ### Full Teardown
+   163+
+   164+  ```bash
+   165+  terraform destroy
+   166+  ```
+   167+
+   168+  Destroys everything. Takes ~15 minutes. No ongoing charges after completion.
+   169+
+   170+  ---
+   171+
+   172+  ## Estimated Costs
+   173+
+   174+  | Usage Pattern | Monthly Cost |
+   175+  |---|---|
+   176+  | Always running (24/7) | ~$270 |
+   177+  | Keep EKS, scale nodes on 20 hrs/week | ~$95 |
+   178+  | Full destroy/recreate, 15 hrs/week | ~$17 |
+   179+
+   180+  ---
+   181+
+   182+  ## Configuration
+   183+
+   184+  All settings are in `terraform.tfvars`. Key toggles:
+   185+
+   186+  | Variable | Default | Purpose |
+   187+  |---|---|---|
+   188+  | `enable_nat_gateway` | `true` | Set `false` if you only need intra-VPC traffic |
+   189+  | `enable_elasticache` | `false` | Set `true` when ready to add Redis |
+   190+  | `node_min_size` | `0` | Allows scaling to zero between sessions |
+   191+  | `node_desired_size` | `2` | Number of nodes when active |
+   192+  | `rds_multi_az` | `false` | Set `true` to practice HA database patterns |
+   193+
+   194+  ---
+   195+
+   196+  ## Troubleshooting
+   197+
+   198+  | Issue | Solution |
+   199+  |---|---|
+   200+  | `terraform apply` times out on EKS | EKS takes 15-25 min to create. Wait or check CloudFormation console. |
+   201+  | `kubectl` can't connect | Run: `aws eks update-kubeconfig --name k8s-training-dev-cluster --region us-east-1` |
+   202+  | Pods stuck in `Pending` | Nodes may be scaled to 0. Run the scale-up command. |
+   203+  | ALB not created from Ingress | Check ALB controller logs: `kubectl logs -n kube-system -l app.kubernetes.io/name=aws-load-balancer-controller` |
+   204+  | `post-apply.sh` fails on Helm | Ensure Helm 3.x is installed and you have internet access for chart repos. |
+
+  Created terraform/docs/setup.md. It covers:
+
+  - Prerequisites (tools, AWS account, billing safeguard)
+  - Module structure and what each file provisions
+  - Step-by-step deployment instructions
+  - Cost management (pause/resume/destroy)
+  - Configuration toggles
+  - Troubleshooting common issues
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  look at my ./mkdocs.yml. can I have it show bot the requirements and terraform setup?
+
+● Read /home/ppatram/kubernetes/mkdocs.yml
+● Read /home/ppatram/kubernetes/docs
+
+  Your mkdocs.yml is already configured to show both pages:
+
+  nav:
+    - Home: index.md
+    - Requirements: requirements.md
+    - Infrastructure: terraform_setup.md
+
+  And docs/terraform_setup.md already exists. It should work as-is. You can test it with:
+
+  mkdocs serve
+
+  If terraform_setup.md is empty or stale (it was created before the full setup doc), I can copy the content from terraform/docs/setup.md into it. Want me to do that?
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  would this terraform apply build using cloudformation or jsut api calls to aws
+
+  Just direct API calls to AWS. Terraform does not use CloudFormation.
+
+  When you run terraform apply, the AWS provider makes direct REST API calls to each service (EC2 API for VPCs/subnets, EKS API for clusters, RDS API for databases, etc.). It tracks the state of what it
+  created in a local terraform.tfstate file (or remote backend like S3).
+
+  The one exception in this stack: EKS itself uses CloudFormation internally on the AWS side to orchestrate node group creation. You'll see a CloudFormation stack appear in the console named something like
+  eks-... — but that's AWS's internal implementation detail, not something Terraform triggers directly. Terraform just calls the EKS API and waits for it to complete.
+
+  Comparison
+
+  ┌────────────────────┬───────────────────────────────────────────────────────────────────────┐
+  │ Tool               │ How it provisions                                                     │
+  ├────────────────────┼───────────────────────────────────────────────────────────────────────┤
+  │ **Terraform**      │ Direct AWS API calls, state in `.tfstate`                             │
+  │ **AWS CDK**        │ Generates CloudFormation templates, deploys via CloudFormation stacks │
+  │ **CloudFormation** │ Declarative templates deployed as stacks                              │
+  │ **AWS SAM**        │ CloudFormation extension for serverless                               │
+  └────────────────────┴───────────────────────────────────────────────────────────────────────┘
+
+  This is why Terraform destroy is generally faster and more reliable for cleanup — it deletes resources directly via API rather than going through CloudFormation stack deletion ordering.
+
+▸ Credits: 0.22 • Time: 9s
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  can i embed images into md files
+
+  Yes. Standard markdown image syntax:
+
+  ![Alt text](path/to/image.png)
+
+  For your MkDocs setup, put images in the docs/ directory (e.g., docs/images/) and reference them with a relative path:
+
+  ![Architecture Diagram](images/eks-training-infrastructure.png)
+
+  You can also control size with raw HTML if needed:
+
+  <img src="images/eks-training-infrastructure.png" alt="Architecture Diagram" width="800">
+
+  To get a PNG from your .drawio file, export it from draw.io (File → Export as → PNG) and save it to docs/images/.
+
+▸ Credits: 0.38 • Time: 6s
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  will pandoc convert drawio to png
+
+  No. Pandoc doesn't support .drawio files. It handles document format conversions (markdown, HTML, PDF, docx), not diagram rendering.
+
+  To convert .drawio to PNG, use the draw.io CLI (also called drawio or xdg-open):
+
+  # Linux (install draw.io desktop or use the CLI package)
+  drawio -x -f png -o output.png input.drawio
+
+  # macOS
+  /Applications/draw.io.app/Contents/MacOS/draw.io -x -f png -o output.png input.drawio
+
+  Or alternatives:
+
+  ┌────────────────────┬─────────────────────────────────────────────────────────────────────┐
+  │ Method             │ Command/Tool                                                        │
+  ├────────────────────┼─────────────────────────────────────────────────────────────────────┤
+  │ **draw.io CLI**    │ `drawio -x -f png -o out.png in.drawio`                             │
+  │ **draw.io Docker** │ `docker run -v $(pwd):/data rlespinasse/drawio-export --format png` │
+  │ **Web app**        │ Open in app.diagrams.net → File → Export as → PNG                   │
+  │ **VS Code**        │ Draw.io Integration extension → right-click → Export                │
+  └────────────────────┴─────────────────────────────────────────────────────────────────────┘
+
+  The Docker approach is handy if you don't want to install the desktop app.
+
+▸ Credits: 0.22 • Time: 8s
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  install drawio cli on this server
+
+● Shell cat /etc/os-release 2>/dev/null | head -5; echo "---"; which apt dpkg snap 2>/dev/null; echo "---"; sudo -n true 2>&1
+
+  We don't have sudo access (no output from sudo -n true), and the draw.io desktop app requires a display server (X11/Wayland) which this server likely doesn't have. Let me check:
+● Shell echo "DISPLAY=$DISPLAY"; which docker 2>/dev/null; which npm npx node 2>/dev/null; which xvfb-run 2>/dev/null
+
+  We have Docker available. That's the cleanest way to run draw.io export on a headless server without sudo:
+● Shell docker pull rlespinasse/drawio-export:latest 2>&1 | tail -5
+● Shell cd /home/ppatram/kubernetes/terraform && docker run --rm -v "$(pwd)":/data rlespinasse/drawio-export --format png --fileext drawio 2>&1
+● Shell docker run --rm rlespinasse/drawio-export --help 2>&1
+● Shell cd /home/ppatram/kubernetes/terraform && docker run --rm -v "$(pwd)":/data rlespinasse/drawio-export --drawio-desktop-headless --format png --output . eks-training-infrastructure.drawio 2>&1
+● Shell cd /home/ppatram/kubernetes/terraform && docker run --rm -v "$(pwd)":/data rlespinasse/drawio-export --format png --output . 2>&1
+● Shell docker run --rm -v /home/ppatram/kubernetes/terraform:/data rlespinasse/drawio-export -f png /data/eks-training-infrastructure.drawio 2>&1
+● Shell cd /home/ppatram/kubernetes/terraform && docker run --rm -v "$(pwd)":/data -w /data rlespinasse/drawio-export -f png . 2>&1
+● Shell docker pull rlespinasse/drawio-desktop-headless:latest 2>&1 | tail -3 || true; docker images | grep drawio
+● Shell cd /home/ppatram/kubernetes/terraform && docker run --rm -v "$(pwd)":/data rlespinasse/drawio-desktop-headless -x -f png -o /data/eks-training-infrastructure.png
+  /data/eks-training-infrastructure.drawio 2>&1
+● Shell cd /home/ppatram/kubernetes/terraform && docker run --rm -v "$(pwd)":/work rlespinasse/drawio-desktop-headless -x -f png -o /work/eks-training-infrastructure.png
+  /work/eks-training-infrastructure.drawio 2>&1
+● Shell cd /home/ppatram/kubernetes/terraform && docker run --rm -v "$(pwd)":/work --entrypoint ls rlespinasse/drawio-desktop-headless /work/ 2>&1
+
+  The drawio file isn't showing in the mount. Let me check:
+● Shell ls -la /home/ppatram/kubernetes/terraform/eks-training-infrastructure.drawio
+● Shell find /home/ppatram/kubernetes -name "*.drawio" 2>/dev/null
+● Shell cd /home/ppatram/kubernetes/docs && docker run --rm -v "$(pwd)":/work rlespinasse/drawio-desktop-headless -x -f png -o /work/eks-training-infrastructure.png /work/eks-training-infrastructure.drawio
+  2>&1
+● Shell which drawio 2>/dev/null; dpkg -l | grep -i drawio 2>/dev/null; apt list --installed 2>/dev/null | grep -i draw
+● Shell cd /tmp && curl -sLo drawio.deb "https://github.com/jgraph/drawio-desktop/releases/download/v26.0.9/drawio-amd64-26.0.9.deb" && ls -la drawio.deb
+● Shell cd /tmp && mkdir -p drawio-app && dpkg-deb -x drawio.deb drawio-app/ && ls drawio-app/opt/drawio/ | head -10
+● Shell cd /home/ppatram/kubernetes/docs && xvfb-run /tmp/drawio-app/opt/drawio/drawio -x -f png -o eks-training-infrastructure.png eks-training-infrastructure.drawio 2>&1
+● Shell ls -la /home/ppatram/kubernetes/docs/eks-training-infrastructure.png
+
+  Done. Draw.io CLI is working. Here's what I set up:
+
+  Extracted draw.io desktop to /tmp/drawio-app/opt/drawio/drawio (no sudo needed — extracted from the .deb).
+
+  Export command (use this going forward):
+
+  xvfb-run /tmp/drawio-app/opt/drawio/drawio -x -f png -o output.png input.drawio
+
+  The PNG was generated successfully at docs/eks-training-infrastructure.png (144 KB). You can now reference it in your MkDocs pages:
+
+  ![Architecture Diagram](eks-training-infrastructure.png)
+
+  Note: since the binary is in /tmp, it won't survive a reboot. If you want it permanent:
+
+  mkdir -p ~/bin/drawio-app
+  cp -r /tmp/drawio-app/opt/drawio/* ~/bin/drawio-app/
+  # Then use: xvfb-run ~/bin/drawio-app/drawio -x -f png -o out.png in.drawio
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  why is the xvfb-run using a gpu?
+
+  It's not actually using a GPU — that error message is harmless.
+
+  Draw.io desktop is an Electron app (Chromium-based). Chromium always tries to initialize a GPU process for hardware-accelerated rendering. On this headless server there's no GPU, so the GPU process fails and
+  Chromium falls back to software rendering automatically.
+
+  The log line:
+
+  Exiting GPU process due to errors during initialization
+
+  ...just means "no GPU found, falling back to CPU rendering." The export still works fine.
+
+  You can suppress the warning with --disable-gpu:
+
+  xvfb-run /tmp/drawio-app/opt/drawio/drawio --disable-gpu -x -f png -o output.png input.drawio
+
+  But it's purely cosmetic — the output is identical either way.
+
+▸ Credits: 0.40 • Time: 7s
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  xvfb-run ~/bin/drawio-app/drawio -x --disable-gpu -f png -o docs/eks-training-infrastructure.png docs/eks-training-infrastructure.drawio
+  Checking for beta autoupdate feature for deb/rpm distributions
+  Found package-type: deb
+  Error: input file/directory not found
+  [40555:0602/133646.800827:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.DBus.StartServiceByName: object_path= /org/freedesktop/DBus: org.freedesktop.DBus.Error.NoReply: Did not receive a
+  reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.
+
+  Draw.io requires absolute paths. Relative paths don't resolve correctly in Electron apps launched via xvfb-run. Use:
+
+  xvfb-run ~/bin/drawio-app/drawio --disable-gpu -x -f png -o "$(pwd)/docs/eks-training-infrastructure.png" "$(pwd)/docs/eks-training-infrastructure.drawio"
+
+▸ Credits: 0.22 • Time: 4s
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  xvfb-run ~/bin/drawio-app/drawio --disable-gpu -x -f png -o "$(pwd)/docs/eks-training-infrastructure.png" "$(pwd)/docs/eks-training-infrastructure.drawio"
+  Checking for beta autoupdate feature for deb/rpm distributions
+  Found package-type: deb
+  Error: input file/directory not found
+  [40969:0602/133839.577688:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.DBus.StartServiceByName: object_path= /org/freedesktop/DBus: org.freedesktop.DBus.Error.NoReply: Did not receive a
+  reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.
+
+● Shell ls ~/bin/drawio-app/drawio 2>&1; echo "---"; ls /home/ppatram/kubernetes/docs/eks-training-infrastructure.drawio 2>&1
+● Shell cd /home/ppatram/kubernetes && xvfb-run /home/ppatram/bin/drawio-app/drawio --no-sandbox --disable-gpu -x -f png -o /home/ppatram/kubernetes/docs/eks-training-infrastructure.png
+  /home/ppatram/kubernetes/docs/eks-training-infrastructure.drawio 2>&1
+● Shell ls ~/bin/drawio-app/ | wc -l; echo "---"; ls /tmp/drawio-app/opt/drawio/ | wc -l; echo "---"; diff <(ls ~/bin/drawio-app/) <(ls /tmp/drawio-app/opt/drawio/) | head -20
+● Shell ls ~/bin/drawio-app/resources/ 2>&1 | head -5; echo "---"; ls /tmp/drawio-app/opt/drawio/resources/ 2>&1 | head -5
+● Shell xvfb-run /tmp/drawio-app/opt/drawio/drawio --disable-gpu -x -f png -o /home/ppatram/kubernetes/docs/eks-training-infrastructure.png /home/ppatram/kubernetes/docs/eks-training-infrastructure.drawio 2>&1
+
+  Interesting — it's now failing from the same path that worked before. The issue might be the drawio file content itself after the last edit (when I moved labels outside icons). Let me check:
+● Shell head -3 /home/ppatram/kubernetes/docs/eks-training-infrastructure.drawio; echo "---"; xmllint --noout /home/ppatram/kubernetes/docs/eks-training-infrastructure.drawio 2>&1 || python3 -c "import
+  xml.etree.ElementTree as ET; ET.parse('/home/ppatram/kubernetes/docs/eks-training-infrastructure.drawio'); print('Valid XML')" 2>&1
+● Shell find /home/ppatram/kubernetes -name "*.drawio" -exec ls -la {} \;
+● Shell cp /home/ppatram/kubernetes/docs/eks-training-infrastructure.drawio /tmp/test.drawio && xvfb-run /tmp/drawio-app/opt/drawio/drawio --disable-gpu -x -f png -o /tmp/test.png /tmp/test.drawio 2>&1
+● Shell rm -rf ~/.config/drawio 2>/dev/null; xvfb-run /tmp/drawio-app/opt/drawio/drawio -x -f png --disable-gpu -o /tmp/test.png /tmp/test.drawio 2>&1
+● Shell xvfb-run -a -s "-screen 0 1024x768x24" /tmp/drawio-app/opt/drawio/drawio -x -f png -o /tmp/test.png /tmp/test.drawio 2>&1
+
+  That's it. The key flag is `-a` (auto-select a free display number). Without it, xvfb-run can clash with a stale X server lock from the earlier run.
+
+  Your working command:
+
+  xvfb-run -a ~/bin/drawio-app/drawio -x -f png -o "$(pwd)/docs/eks-training-infrastructure.png" "$(pwd)/docs/eks-training-infrastructure.drawio"
+
+  The -a flag tells xvfb-run to automatically pick an available display number instead of reusing :99 (which may have a stale lockfile from the previous export).
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  xvfb-run -a ~/bin/drawio-app/drawio -x -f png -o "$(pwd)/docs/eks-training-infrastructure.png" "$(pwd)/docs/eks-training-infrastructure.drawio"
+  Checking for beta autoupdate feature for deb/rpm distributions
+  Found package-type: deb
+  [41946:0602/134041.011944:ERROR:viz_main_impl.cc(166)] Exiting GPU process due to errors during initialization
+  [41911:0602/134041.913966:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.DBus.StartServiceByName: object_path= /org/freedesktop/DBus: org.freedesktop.DBus.Error.NoReply: Did not receive a
+  reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.
+  /home/ppatram/kubernetes/docs/eks-training-infrastructure.drawio -> /home/ppatram/kubernetes/docs/eks-training-infrastructure.png
+
+  It worked. The last line confirms it:
+
+  .drawio -> .png
+
+  The ERROR lines are just Chromium noise (no GPU, no DBus) — harmless. Your PNG is at docs/eks-training-infrastructure.png.
+
+▸ Credits: 0.22 • Time: 4s
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  what were the commands you ran to install the drawio xvfb utility
+
+  # Download the draw.io desktop .deb package
+  curl -sLo /tmp/drawio.deb "https://github.com/jgraph/drawio-desktop/releases/download/v26.0.9/drawio-amd64-26.0.9.deb"
+
+  # Extract without installing (no sudo needed)
+  mkdir -p /tmp/drawio-app
+  dpkg-deb -x /tmp/drawio.deb /tmp/drawio-app/
+
+  # Copy to a permanent location
+  mkdir -p ~/bin/drawio-app
+  cp -r /tmp/drawio-app/opt/drawio/* ~/bin/drawio-app/
+
+  xvfb-run was already installed on the server (/usr/bin/xvfb-run). If it weren't, you'd need sudo apt install xvfb.
+
+  Usage:
+
+  xvfb-run -a ~/bin/drawio-app/drawio -x -f png -o output.png input.drawio
+
+▸ Credits: 0.42 • Time: 8s
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  the file docs/good-to-know.md contains shell commands can you update it so it's not plain text
+
+● Read /home/ppatram/kubernetes/docs/good-to-know.md
+● Write /home/ppatram/kubernetes/docs/good-to-know.md
+  added 21 lines, removed 20 lines in good-to-know.md
+     1-  # Useful commands
+     1+  # Useful Commands
+     2
+     3-  **Audience:** DevOps engineers building and deploying a containerized API application across development, QA, and production environments on AWS using Kubernetes.
+     3+  ## Convert .drawio to PNG
+     4
+     5-  ---
+     5+  ### Install draw.io CLI (no sudo required)
+     6
+     7-  ## 1. Application Overview
+     7+  ```bash
+     8+  # Download the draw.io desktop .deb package
+     9+  curl -sLo /tmp/drawio.deb "https://github.com/jgraph/drawio-desktop/releases/download/v26.0.9/drawio-amd64-26.0.9.deb"
+     8
+     9-  convert drawio to png
+    10-    what were the commands you ran to install the drawio xvfb utility
+    11+  # Extract without installing (no sudo needed)
+    12+  mkdir -p /tmp/drawio-app
+    13+  dpkg-deb -x /tmp/drawio.deb /tmp/drawio-app/
+    11
+    12-    # Download the draw.io desktop .deb package
+    13-    curl -sLo /tmp/drawio.deb "https://github.com/jgraph/drawio-desktop/releases/download/v26.0.9/drawio-amd64-26.0.9.deb"
+    15+  # Copy to a permanent location
+    16+  mkdir -p ~/bin/drawio-app
+    17+  cp -r /tmp/drawio-app/opt/drawio/* ~/bin/drawio-app/
+    18+  ```
+    14
+    15-    # Extract without installing (no sudo needed)
+    16-    mkdir -p /tmp/drawio-app
+    17-    dpkg-deb -x /tmp/drawio.deb /tmp/drawio-app/
+    20+  > **Note:** `xvfb-run` must be available (`/usr/bin/xvfb-run`). If not installed:
+    21+  > ```bash
+    22+  > sudo apt install xvfb
+    23+  > ```
+    18
+    19-    # Copy to a permanent location
+    20-    mkdir -p ~/bin/drawio-app
+    21-    cp -r /tmp/drawio-app/opt/drawio/* ~/bin/drawio-app/
+    25+  ### Usage
+    22
+    23-    xvfb-run was already installed on the server (/usr/bin/xvfb-run). If it weren't, you'd need sudo apt install xvfb.
+    24-
+    25-    Usage:
+    26-
+    27-    xvfb-run -a ~/bin/drawio-app/drawio -x -f png -o output.png input.drawio
+    28-  ---
+    27+  ```bash
+    28+  xvfb-run -a ~/bin/drawio-app/drawio -x -f png -o output.png input.drawio
+    29+  ```
+
+  Done. Wrapped the shell commands in fenced code blocks with bash syntax highlighting and cleaned up the structure.
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  update the docs/eks-training-infrastructure.md and add the ./docs/eks-training-infrastructure.png at the top
+
+● Read /home/ppatram/kubernetes/docs/eks-training-infrastructure.md (L1-5)
+● Write /home/ppatram/kubernetes/docs/eks-training-infrastructure.md
+  added 2 lines in eks-training-infrastructure.md
+     1   # EKS Training Infrastructure — Architecture Diagram
+     2
+     3+  ![EKS Training Infrastructure](eks-training-infrastructure.png)
+     4+
+     3   ## Overview
+
+  Done. The PNG is now embedded at the top of the page, right below the title.
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  my mkdocs is not automatically updating I ned to restart everytime
+
+● Read /home/ppatram/kubernetes/mkdocs.yml
+
+  Your config looks fine. The issue is likely that you're running mkdocs serve without the --livereload flag being effective — or the files are being edited outside the watched directory.
+
+  Since your docs_dir: docs is set and that's where your files live, try restarting with:
+
+  mkdocs serve --watch docs
+
+  Or if you're running it in the background via nohup, kill it and restart with live reload explicitly:
+
+  # Kill existing
+  pkill -f "mkdocs serve"
+
+  # Restart with explicit watch
+  mkdocs serve --dirty
+
+  --dirty only rebuilds changed pages (faster reload). If that still doesn't work, check if you're editing files in terraform/docs/ instead of docs/ — MkDocs only watches the docs_dir path.
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  create all of the manifests in ./manifests/
+
+● Read /home/ppatram/kubernetes/docs/requirements.md (L151-200)
+● Read /home/ppatram/kubernetes/docs/requirements.md (L196-245)
+● Task list created
+● Write /home/ppatram/kubernetes/manifests/base/deployment.yaml
+  added 59 lines in deployment.yaml
+     1+  apiVersion: apps/v1
+     2+  kind: Deployment
+     3+  metadata:
+     4+    name: api
+     5+    labels:
+     6+      app: api
+     7+  spec:
+     8+    replicas: 1
+     9+    selector:
+    10+      matchLabels:
+    11+        app: api
+    12+    strategy:
+    13+      type: RollingUpdate
+    14+      rollingUpdate:
+    15+        maxUnavailable: 1
+    16+        maxSurge: 1
+    17+    template:
+    18+      metadata:
+    19+        labels:
+    20+          app: api
+    21+      spec:
+    22+        terminationGracePeriodSeconds: 30
+    23+        securityContext:
+    24+          runAsNonRoot: true
+    25+          runAsUser: 1000
+    26+          fsGroup: 1000
+    27+        containers:
+    28+          - name: api
+    29+            image: api:latest
+    30+            ports:
+    31+              - containerPort: 8080
+    32+                protocol: TCP
+    33+            envFrom:
+    34+              - configMapRef:
+    35+                  name: api-config
+    36+            livenessProbe:
+    37+              httpGet:
+    38+                path: /health/live
+    39+                port: 8080
+    40+              initialDelaySeconds: 5
+    41+              periodSeconds: 10
+    42+              failureThreshold: 3
+    43+            readinessProbe:
+    44+              httpGet:
+    45+                path: /health/ready
+    46+                port: 8080
+    47+              initialDelaySeconds: 10
+    48+              periodSeconds: 5
+    49+              failureThreshold: 3
+    50+            resources:
+    51+              requests:
+    52+                cpu: 100m
+    53+                memory: 128Mi
+    54+              limits:
+    55+                cpu: 250m
+    56+                memory: 256Mi
+    57+            securityContext:
+    58+              readOnlyRootFilesystem: true
+    59+              allowPrivilegeEscalation: false
+● Write /home/ppatram/kubernetes/manifests/base/service.yaml
+     1   apiVersion: v1
+     2   kind: Service
+     3   metadata:
+     4     name: api
+     5     labels:
+     6       app: api
+     7   spec:
+     8     type: ClusterIP
+     9     selector:
+    10       app: api
+    11     ports:
+    12       - port: 80
+    13         targetPort: 8080
+    14         protocol: TCP
+● Write /home/ppatram/kubernetes/manifests/base/ingress.yaml
+     1   apiVersion: networking.k8s.io/v1
+     2   kind: Ingress
+     3   metadata:
+     4     name: api
+     5     labels:
+     6       app: api
+     7     annotations:
+     8       kubernetes.io/ingress.class: alb
+     9       alb.ingress.kubernetes.io/scheme: internet-facing
+    10       alb.ingress.kubernetes.io/target-type: ip
+    11       alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}]'
+    12       alb.ingress.kubernetes.io/healthcheck-path: /health/ready
+    13   spec:
+    14     rules:
+    15       - http:
+    16           paths:
+    17             - path: /api
+    18               pathType: Prefix
+    19               backend:
+    20                 service:
+    21                   name: api
+    22                   port:
+    23                     number: 80
+● Write /home/ppatram/kubernetes/manifests/base/configmap.yaml
+     1   apiVersion: v1
+     2   kind: ConfigMap
+     3   metadata:
+     4     name: api-config
+     5     labels:
+     6       app: api
+     7   data:
+     8     APP_ENV: "development"
+     9     LOG_LEVEL: "debug"
+    10     PORT: "8080"
+    11     DB_HOST: "localhost"
+    12     DB_NAME: "appdb"
+    13     CACHE_TTL_SECONDS: "10"
+    14     RATE_LIMIT_RPS: "100"
+    15     CORS_ORIGINS: "*"
+● Write /home/ppatram/kubernetes/manifests/base/hpa.yaml
+     1   apiVersion: autoscaling/v2
+     2   kind: HorizontalPodAutoscaler
+     3   metadata:
+     4     name: api
+     5     labels:
+     6       app: api
+     7   spec:
+     8     scaleTargetRef:
+     9       apiVersion: apps/v1
+    10       kind: Deployment
+    11       name: api
+    12     minReplicas: 3
+    13     maxReplicas: 10
+    14     metrics:
+    15       - type: Resource
+    16         resource:
+    17           name: cpu
+    18           target:
+    19             type: Utilization
+    20             averageUtilization: 70
+    21       - type: Resource
+    22         resource:
+    23           name: memory
+    24           target:
+    25             type: Utilization
+    26             averageUtilization: 80
+● Write /home/ppatram/kubernetes/manifests/base/kustomization.yaml
+     1   apiVersion: kustomize.config.k8s.io/v1beta1
+     2   kind: Kustomization
+     3   resources:
+     4     - deployment.yaml
+     5     - service.yaml
+     6     - ingress.yaml
+     7     - configmap.yaml
+     8     - hpa.yaml
+● Tasks updated
+● Write /home/ppatram/kubernetes/manifests/overlays/dev/kustomization.yaml
+  added 14 lines in kustomization.yaml
+     1+  apiVersion: kustomize.config.k8s.io/v1beta1
+     2+  kind: Kustomization
+     3+  namespace: api-dev
+     4+  resources:
+     5+    - ../../base
+     6+  patches:
+     7+    - path: patch-resources.yaml
+     8+  configMapGenerator:
+     9+    - name: api-config
+    10+      behavior: replace
+    11+      files:
+    12+        - configmap-values.yaml
+    13+  generatorOptions:
+    14+    disableNameSuffixHash: true
+
+  Actually, configMapGenerator with files won't produce the right format — I need to use envs or inline literals. Let me use a simpler patch approach:
+● Write /home/ppatram/kubernetes/manifests/overlays/dev/kustomization.yaml
+  added 1 line, removed 7 lines in kustomization.yaml
+     1   apiVersion: kustomize.config.k8s.io/v1beta1
+     2   kind: Kustomization
+     3   namespace: api-dev
+     4   resources:
+     5     - ../../base
+     6   patches:
+     7     - path: patch-resources.yaml
+     8-  configMapGenerator:
+     9-    - name: api-config
+    10-      behavior: replace
+    11-      files:
+    12-        - configmap-values.yaml
+    13-  generatorOptions:
+    14-    disableNameSuffixHash: true
+     8+    - path: configmap-values.yaml
+● Write /home/ppatram/kubernetes/manifests/overlays/dev/patch-resources.yaml
+     1   apiVersion: apps/v1
+     2   kind: Deployment
+     3   metadata:
+     4     name: api
+     5   spec:
+     6     replicas: 1
+     7     strategy:
+     8       rollingUpdate:
+     9         maxUnavailable: 1
+    10         maxSurge: 1
+    11     template:
+    12       spec:
+    13         containers:
+    14           - name: api
+    15             resources:
+    16               requests:
+    17                 cpu: 100m
+    18                 memory: 128Mi
+    19               limits:
+    20                 cpu: 250m
+    21                 memory: 256Mi
+    22   ---
+    23   apiVersion: autoscaling/v2
+    24   kind: HorizontalPodAutoscaler
+    25   metadata:
+    26     name: api
+    27   $patch: delete
+● Write /home/ppatram/kubernetes/manifests/overlays/dev/configmap-values.yaml
+     1   apiVersion: v1
+     2   kind: ConfigMap
+     3   metadata:
+     4     name: api-config
+     5   data:
+     6     APP_ENV: "development"
+     7     LOG_LEVEL: "debug"
+     8     PORT: "8080"
+     9     DB_HOST: "k8s-training-dev-postgres.xxxxx.us-east-1.rds.amazonaws.com"
+    10     DB_NAME: "appdb"
+    11     CACHE_TTL_SECONDS: "10"
+    12     RATE_LIMIT_RPS: "100"
+    13     CORS_ORIGINS: "*"
+● Tasks updated
+● Write /home/ppatram/kubernetes/manifests/overlays/qa/kustomization.yaml
+  added 8 lines in kustomization.yaml
+     1+  apiVersion: kustomize.config.k8s.io/v1beta1
+     2+  kind: Kustomization
+     3+  namespace: api-qa
+     4+  resources:
+     5+    - ../../base
+     6+  patches:
+     7+    - path: patch-resources.yaml
+     8+    - path: configmap-values.yaml
+● Write /home/ppatram/kubernetes/manifests/overlays/qa/patch-resources.yaml
+     1   apiVersion: apps/v1
+     2   kind: Deployment
+     3   metadata:
+     4     name: api
+     5   spec:
+     6     replicas: 2
+     7     strategy:
+     8       rollingUpdate:
+     9         maxUnavailable: 1
+    10         maxSurge: 1
+    11     template:
+    12       spec:
+    13         containers:
+    14           - name: api
+    15             resources:
+    16               requests:
+    17                 cpu: 250m
+    18                 memory: 256Mi
+    19               limits:
+    20                 cpu: 500m
+    21                 memory: 512Mi
+    22   ---
+    23   apiVersion: autoscaling/v2
+    24   kind: HorizontalPodAutoscaler
+    25   metadata:
+    26     name: api
+    27   $patch: delete
+● Write /home/ppatram/kubernetes/manifests/overlays/qa/configmap-values.yaml
+     1   apiVersion: v1
+     2   kind: ConfigMap
+     3   metadata:
+     4     name: api-config
+     5   data:
+     6     APP_ENV: "qa"
+     7     LOG_LEVEL: "info"
+     8     PORT: "8080"
+     9     DB_HOST: "k8s-training-qa-postgres.xxxxx.us-east-1.rds.amazonaws.com"
+    10     DB_NAME: "appdb"
+    11     CACHE_TTL_SECONDS: "60"
+    12     RATE_LIMIT_RPS: "500"
+    13     CORS_ORIGINS: "https://qa.example.com"
+● Tasks updated
+● Write /home/ppatram/kubernetes/manifests/overlays/prod/kustomization.yaml
+  added 9 lines in kustomization.yaml
+     1+  apiVersion: kustomize.config.k8s.io/v1beta1
+     2+  kind: Kustomization
+     3+  namespace: api-prod
+     4+  resources:
+     5+    - ../../base
+     6+  patches:
+     7+    - path: patch-resources.yaml
+     8+    - path: patch-hpa.yaml
+     9+    - path: configmap-values.yaml
+● Write /home/ppatram/kubernetes/manifests/overlays/prod/patch-resources.yaml
+  added 21 lines in patch-resources.yaml
+     1+  apiVersion: apps/v1
+     2+  kind: Deployment
+     3+  metadata:
+     4+    name: api
+     5+  spec:
+     6+    replicas: 3
+     7+    strategy:
+     8+      rollingUpdate:
+     9+        maxUnavailable: 0
+    10+        maxSurge: 1
+    11+    template:
+    12+      spec:
+    13+        containers:
+    14+          - name: api
+    15+            resources:
+    16+              requests:
+    17+                cpu: 500m
+    18+                memory: 512Mi
+    19+              limits:
+    20+                cpu: "1"
+    21+                memory: 1024Mi
+● Write /home/ppatram/kubernetes/manifests/overlays/prod/patch-hpa.yaml
+     1   apiVersion: autoscaling/v2
+     2   kind: HorizontalPodAutoscaler
+     3   metadata:
+     4     name: api
+     5   spec:
+     6     minReplicas: 3
+     7     maxReplicas: 10
+     8     metrics:
+     9       - type: Resource
+    10         resource:
+    11           name: cpu
+    12           target:
+    13             type: Utilization
+    14             averageUtilization: 70
+    15       - type: Resource
+    16         resource:
+    17           name: memory
+    18           target:
+    19             type: Utilization
+    20             averageUtilization: 80
+● Write /home/ppatram/kubernetes/manifests/overlays/prod/configmap-values.yaml
+     1   apiVersion: v1
+     2   kind: ConfigMap
+     3   metadata:
+     4     name: api-config
+     5   data:
+     6     APP_ENV: "production"
+     7     LOG_LEVEL: "warn"
+     8     PORT: "8080"
+     9     DB_HOST: "k8s-training-prod-postgres.xxxxx.us-east-1.rds.amazonaws.com"
+    10     DB_NAME: "appdb"
+    11     CACHE_TTL_SECONDS: "300"
+    12     RATE_LIMIT_RPS: "2000"
+    13     CORS_ORIGINS: "https://app.example.com"
+● Tasks updated
+
+  Done. Here's the final structure:
+
+  manifests/
+  ├── base/
+  │   ├── kustomization.yaml
+  │   ├── deployment.yaml      # Non-root, probes, graceful shutdown (30s)
+  │   ├── service.yaml         # ClusterIP 80→8080
+  │   ├── ingress.yaml         # ALB, HTTPS, /api path
+  │   ├── configmap.yaml       # All env vars (defaults)
+  │   └── hpa.yaml             # CPU 70%, memory 80%, 3-10 replicas
+  ├── overlays/
+  │   ├── dev/
+  │   │   ├── kustomization.yaml
+  │   │   ├── patch-resources.yaml    # 1 replica, 100m CPU, HPA removed
+  │   │   └── configmap-values.yaml   # debug logging, dev DB
+  │   ├── qa/
+  │   │   ├── kustomization.yaml
+  │   │   ├── patch-resources.yaml    # 2 replicas, 250m CPU, HPA removed
+  │   │   └── configmap-values.yaml   # info logging, QA DB
+  │   └── prod/
+  │       ├── kustomization.yaml
+  │       ├── patch-resources.yaml    # 3 replicas, 500m CPU, zero-downtime
+  │       ├── patch-hpa.yaml          # HPA enabled (3-10)
+  │       └── configmap-values.yaml   # warn logging, prod DB
+
+  Deploy with:
+
+  kubectl apply -k manifests/overlays/dev
+  kubectl apply -k manifests/overlays/qa
+  kubectl apply -k manifests/overlays/prod
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  can I run gitlab in kubernetes?
+
+  Yes, GitLab publishes an official Helm chart for running on Kubernetes. But for a training environment, I'd advise against it:
+
+  Why it's impractical here:
+
+  ┌───────────────────────┬────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Concern               │ Impact                                                                                     │
+  ├───────────────────────┼────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ Resource requirements │ GitLab needs 8+ GB RAM minimum (webservice, Sidekiq, Gitaly, PostgreSQL, Redis, registry)  │
+  │ Your nodes            │ 2× t3.medium = 8 GB total — GitLab alone would consume your entire cluster                 │
+  │ Complexity            │ 30+ pods, persistent volumes, certificates, DNS — more infra work than the actual training │
+  │ Cost                  │ You'd need to upsize to t3.xlarge or add nodes (~$100+/month extra)                        │
+  └───────────────────────┴────────────────────────────────────────────────────────────────────────────────────────────┘
+
+  Better alternatives for training:
+
+  1. GitLab.com free tier — 5 GB storage, CI/CD included, zero maintenance
+  2. Gitea on K8s — lightweight Git server (~256 MB RAM), good if you want to practice deploying a stateful app
+  3. Local git + manual `kubectl apply` — simplest for learning Kubernetes itself
+
+  If your goal is to learn Kubernetes concepts (deployments, services, ingress, kustomize), use GitLab.com for source control and focus your cluster resources on the actual application workloads.
+
+  If your goal is specifically to learn how to run stateful apps on Kubernetes, then Gitea or a minimal GitLab Omnibus single-pod deployment would be a good exercise — just budget a larger node.
+
+▸ Credits: 0.48 • Time: 11s
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  what about github actions?
+
+  Yes — GitHub Actions is a great fit for this training setup. It's free for public repos and gives you 2,000 minutes/month free on private repos.
+
+  Pipeline for your EKS training (what it would do):
+
+  1. Build container image
+  2. Push to ECR
+  3. Deploy to EKS via kubectl apply -k
+
+  What you need:
+
+  - A GitHub repo (free)
+  - An IAM role with OIDC trust for GitHub Actions (no stored credentials — more secure than access keys)
+  - A workflow file (.github/workflows/deploy.yml)
+
+  Fits your requirements doc perfectly:
+
+  ┌─────────────────────┬──────────────────────────────────────────┐
+  │ Pipeline Stage      │ GitHub Actions                           │
+  ├─────────────────────┼──────────────────────────────────────────┤
+  │ Build + test + lint │ ✅ Native runners (free)                 │
+  │ Push to ECR         │ ✅ `aws-actions/amazon-ecr-login`        │
+  │ Image scan          │ ✅ ECR scan-on-push (already configured) │
+  │ Deploy dev          │ ✅ Auto on merge to main                 │
+  │ Deploy QA           │ ✅ Auto after dev succeeds               │
+  │ Deploy prod         │ ✅ Manual approval via environments      │
+  └─────────────────────┴──────────────────────────────────────────┘
+
+  vs GitLab CI (from your requirements):
+
+  ┌─────────────────┬─────────────────────────────────┬───────────────────────────────────────────┐
+  │ Factor          │ GitHub Actions                  │ GitLab CI (self-hosted)                   │
+  ├─────────────────┼─────────────────────────────────┼───────────────────────────────────────────┤
+  │ Cost            │ Free (2000 min/month)           │ Free on gitlab.com, expensive self-hosted │
+  │ Setup           │ Zero — just add a workflow file │ Need runners or gitlab.com                │
+  │ EKS integration │ OIDC federation (no secrets)    │ Needs stored credentials or IRSA          │
+  │ Approval gates  │ Environment protection rules    │ Manual jobs                               │
+  │ Runs on K8s     │ No (GitHub-hosted runners)      │ Yes (optional self-hosted runners)        │
+  └─────────────────┴─────────────────────────────────┴───────────────────────────────────────────┘
+
+  Want me to create the GitHub Actions workflow file for this project?
+
+▸ Credits: 0.28 • Time: 14s
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  create github actions workflow
+
+● Write /home/ppatram/kubernetes/.github/workflows/deploy.yml
+  added 128 lines in deploy.yml
+     1+  name: Build and Deploy
+     2+
+     3+  on:
+     4+    push:
+     5+      branches: [main]
+     6+    pull_request:
+     7+      branches: [main]
+     8+
+     9+  env:
+    10+    AWS_REGION: us-east-1
+    11+    ECR_REPOSITORY: k8s-training-dev-api
+    12+    EKS_CLUSTER: k8s-training-dev-cluster
+    13+
+    14+  permissions:
+    15+    id-token: write
+    16+    contents: read
+    17+
+    18+  jobs:
+    19+    build:
+    20+      runs-on: ubuntu-latest
+    21+      outputs:
+    22+        image-tag: ${{ steps.meta.outputs.tag }}
+    23+      steps:
+    24+        - uses: actions/checkout@v4
+    25+
+    26+        - name: Set image tag
+    27+          id: meta
+    28+          run: echo "tag=${GITHUB_SHA::8}" >> "$GITHUB_OUTPUT"
+    29+
+    30+        - name: Configure AWS credentials
+    31+          uses: aws-actions/configure-aws-credentials@v4
+    32+          with:
+    33+            role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+    34+            aws-region: ${{ env.AWS_REGION }}
+    35+
+    36+        - name: Login to ECR
+    37+          id: ecr
+    38+          uses: aws-actions/amazon-ecr-login@v2
+    39+
+    40+        - name: Build and push image
+    41+          env:
+    42+            REGISTRY: ${{ steps.ecr.outputs.registry }}
+    43+            TAG: ${{ steps.meta.outputs.tag }}
+    44+          run: |
+    45+            docker build -t $REGISTRY/$ECR_REPOSITORY:$TAG .
+    46+            docker push $REGISTRY/$ECR_REPOSITORY:$TAG
+    47+
+    48+    deploy-dev:
+    49+      needs: build
+    50+      runs-on: ubuntu-latest
+    51+      if: github.ref == 'refs/heads/main'
+    52+      environment: development
+    53+      steps:
+    54+        - uses: actions/checkout@v4
+    55+
+    56+        - name: Configure AWS credentials
+    57+          uses: aws-actions/configure-aws-credentials@v4
+    58+          with:
+    59+            role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+    60+            aws-region: ${{ env.AWS_REGION }}
+    61+
+    62+        - name: Update kubeconfig
+    63+          run: aws eks update-kubeconfig --name $EKS_CLUSTER --region $AWS_REGION
+    64+
+    65+        - name: Set image in kustomization
+    66+          run: |
+    67+            cd manifests/overlays/dev
+    68+            kustomize edit set image api=${{ needs.build.outputs.image-tag && format('{0}/{1}:{2}', steps.ecr.outputs.registry || format('{0}.dkr.ecr.{1}.amazonaws.com', vars.AWS_ACCOUNT_ID,
+      env.AWS_REGION), env.ECR_REPOSITORY, needs.build.outputs.image-tag) }}
+    69+
+    70+        - name: Deploy to dev
+    71+          run: kubectl apply -k manifests/overlays/dev
+    72+
+    73+        - name: Wait for rollout
+    74+          run: kubectl rollout status deployment/api -n api-dev --timeout=120s
+    75+
+    76+    deploy-qa:
+    77+      needs: [build, deploy-dev]
+    78+      runs-on: ubuntu-latest
+    79+      environment: qa
+    80+      steps:
+    81+        - uses: actions/checkout@v4
+    82+
+    83+        - name: Configure AWS credentials
+    84+          uses: aws-actions/configure-aws-credentials@v4
+    85+          with:
+    86+            role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+    87+            aws-region: ${{ env.AWS_REGION }}
+    88+
+    89+        - name: Update kubeconfig
+    90+          run: aws eks update-kubeconfig --name $EKS_CLUSTER --region $AWS_REGION
+    91+
+    92+        - name: Deploy to QA
+    93+          env:
+    94+            IMAGE: ${{ vars.AWS_ACCOUNT_ID }}.dkr.ecr.${{ env.AWS_REGION }}.amazonaws.com/${{ env.ECR_REPOSITORY }}:${{ needs.build.outputs.image-tag }}
+    95+          run: |
+    96+            cd manifests/overlays/qa
+    97+            kustomize edit set image api=$IMAGE
+    98+            kubectl apply -k .
+    99+
+   100+        - name: Wait for rollout
+   101+          run: kubectl rollout status deployment/api -n api-qa --timeout=120s
+   102+
+   103+    deploy-prod:
+   104+      needs: [build, deploy-qa]
+   105+      runs-on: ubuntu-latest
+   106+      environment: production
+   107+      steps:
+   108+        - uses: actions/checkout@v4
+   109+
+   110+        - name: Configure AWS credentials
+   111+          uses: aws-actions/configure-aws-credentials@v4
+   112+          with:
+   113+            role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+   114+            aws-region: ${{ env.AWS_REGION }}
+   115+
+   116+        - name: Update kubeconfig
+   117+          run: aws eks update-kubeconfig --name $EKS_CLUSTER --region $AWS_REGION
+   118+
+   119+        - name: Deploy to production
+   120+          env:
+   121+            IMAGE: ${{ vars.AWS_ACCOUNT_ID }}.dkr.ecr.${{ env.AWS_REGION }}.amazonaws.com/${{ env.ECR_REPOSITORY }}:${{ needs.build.outputs.image-tag }}
+   122+          run: |
+   123+            cd manifests/overlays/prod
+   124+            kustomize edit set image api=$IMAGE
+   125+            kubectl apply -k .
+   126+
+   127+        - name: Wait for rollout
+   128+          run: kubectl rollout status deployment/api -n api-prod --timeout=180s
+
+  Created .github/workflows/deploy.yml. Here's what it does:
+
+  Pipeline flow:
+
+  PR → build only
+  Merge to main → build → deploy-dev → deploy-qa → deploy-prod
+
+  Setup required in GitHub:
+
+  1. Create an OIDC IAM role for GitHub Actions (one-time Terraform addition):
+
+     # Trust policy allows GitHub Actions to assume this role
+     # Condition: repo:your-org/your-repo:ref:refs/heads/main
+
+  2. Set repository variables (Settings → Variables):
+    - AWS_ROLE_ARN — the OIDC role ARN
+    - AWS_ACCOUNT_ID — your AWS account ID
+
+  3. Create environments (Settings → Environments):
+    - development — no protection rules
+    - qa — no protection rules (auto-deploys after dev succeeds)
+    - production — add required reviewers for manual approval gate
+
+  No secrets stored anywhere — OIDC federation handles auth. Want me to add the GitHub OIDC IAM role to the Terraform module?
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  now I need a simple app that takes a payload and rturen hello world
+
+● Write /home/ppatram/kubernetes/app/package.json
+  added 10 lines in package.json
+     1+  {
+     2+    "name": "k8s-training-api",
+     3+    "version": "1.0.0",
+     4+    "scripts": {
+     5+      "start": "node server.js"
+     6+    },
+     7+    "dependencies": {
+     8+      "express": "4.21.2"
+     9+    }
+    10+  }
+● Write /home/ppatram/kubernetes/app/server.js
+     1   const express = require('express');
+     2
+     3   const app = express();
+     4   const PORT = process.env.PORT || 8080;
+     5
+     6   app.use(express.json());
+     7
+     8   // Health checks
+     9   app.get('/health/live', (req, res) => res.json({ status: 'ok' }));
+    10   app.get('/health/ready', (req, res) => res.json({ status: 'ok' }));
+    11
+    12   // Hello world endpoint
+    13   app.post('/api/v1/hello', (req, res) => {
+    14     res.json({ message: 'Hello, World!', payload: req.body });
+    15   });
+    16
+    17   // Graceful shutdown
+    18   process.on('SIGTERM', () => {
+    19     console.log('SIGTERM received, shutting down...');
+    20     server.close(() => process.exit(0));
+    21   });
+    22
+    23   const server = app.listen(PORT, () => {
+    24     console.log(`API listening on port ${PORT}`);
+    25   });
+● Write /home/ppatram/kubernetes/app/Dockerfile
+     1   FROM node:22-alpine
+     2   WORKDIR /app
+     3   COPY package.json package-lock.json* ./
+     4   RUN npm ci --ignore-scripts --omit=dev
+     5   COPY server.js .
+     6   USER 1000
+     7   EXPOSE 8080
+     8   CMD ["node", "server.js"]
+● Shell cd /home/ppatram/kubernetes/app && npm install --package-lock-only 2>&1 | tail -3
+
+  Done. The app is in app/:
+
+  app/
+  ├── package.json
+  ├── package-lock.json
+  ├── server.js
+  └── Dockerfile
+
+  Test locally:
+
+  cd app
+  npm ci
+  node server.js
+  # In another terminal:
+  curl -X POST http://localhost:8080/api/v1/hello -H "Content-Type: application/json" -d '{"name":"test"}'
+
+  Response:
+
+  {"message": "Hello, World!", "payload": {"name": "test"}}
+
+  Build container:
+
+  docker build -t api:latest app/
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  how do I build and deploy that docker image?
+
+  # 1. Get your ECR repository URL
+  ECR_URL=$(cd terraform && terraform output -raw ecr_repository_url)
+
+  # 2. Login to ECR
+  aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin "$ECR_URL"
+
+  # 3. Build the image
+  docker build -t "$ECR_URL:v1" app/
+
+  # 4. Push to ECR
+  docker push "$ECR_URL:v1"
+
+  # 5. Update the dev overlay to use your image
+  cd manifests/overlays/dev
+  kustomize edit set image "api=$ECR_URL:v1"
+
+  # 6. Deploy to dev namespace
+  kubectl apply -k .
+
+  # 7. Verify
+  kubectl get pods -n api-dev
+  kubectl rollout status deployment/api -n api-dev
+
+  Test the deployed app:
+
+  # Port-forward to test without ALB
+  kubectl port-forward -n api-dev svc/api 8080:80 &
+
+  curl -X POST http://localhost:8080/api/v1/hello \
+    -H "Content-Type: application/json" \
+    -d '{"name":"kubernetes"}'
+
+  If the ALB Ingress is set up, you can get the external URL with:
+
+  kubectl get ingress -n api-dev -o jsonpath='{.items[0].status.loadBalancer.ingress[0].hostname}'
+
+▸ Credits: 0.28 • Time: 7s
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  I have a custom domain name hakerie.fyi. I want to create my private ca for this domain. add it to the infrastructure and make the api endpoint kubestuff.hakerie.fyi
+
+● Task list created
+● Write /home/ppatram/kubernetes/terraform/dns.tf
+  added 67 lines in dns.tf
+     1+  # --- ACM Private Certificate Authority ---
+     2+
+     3+  resource "aws_acmpca_certificate_authority" "main" {
+     4+    type = "ROOT"
+     5+
+     6+    certificate_authority_configuration {
+     7+      key_algorithm     = "RSA_2048"
+     8+      signing_algorithm = "SHA256WITHRSA"
+     9+      subject {
+    10+        common_name  = var.domain_name
+    11+        organization = var.project
+    12+      }
+    13+    }
+    14+
+    15+    tags = local.common_tags
+    16+  }
+    17+
+    18+  # Self-sign the root CA certificate
+    19+  resource "aws_acmpca_certificate" "root" {
+    20+    certificate_authority_arn   = aws_acmpca_certificate_authority.main.arn
+    21+    signing_algorithm           = "SHA256WITHRSA"
+    22+    template_arn                = "arn:aws:acm-pca:::template/RootCACertificate/V1"
+    23+    certificate_authority_arn   = aws_acmpca_certificate_authority.main.arn
+    24+
+    25+    validity {
+    26+      type  = "YEARS"
+    27+      value = 10
+    28+    }
+    29+  }
+    30+
+    31+  resource "aws_acmpca_certificate_authority_certificate" "root" {
+    32+    certificate_authority_arn = aws_acmpca_certificate_authority.main.arn
+    33+    certificate              = aws_acmpca_certificate.root.certificate
+    34+    certificate_chain        = aws_acmpca_certificate.root.certificate_chain
+    35+  }
+    36+
+    37+  # --- ACM Certificate for kubestuff.hakerie.fyi ---
+    38+
+    39+  resource "aws_acm_certificate" "api" {
+    40+    domain_name               = var.api_subdomain
+    41+    certificate_authority_arn = aws_acmpca_certificate_authority.main.arn
+    42+
+    43+    tags = local.common_tags
+    44+
+    45+    depends_on = [aws_acmpca_certificate_authority_certificate.root]
+    46+  }
+    47+
+    48+  # --- Route 53 Hosted Zone ---
+    49+
+    50+  resource "aws_route53_zone" "main" {
+    51+    name = var.domain_name
+    52+    tags = local.common_tags
+    53+  }
+    54+
+    55+  # --- DNS Record (points to ALB created by ingress controller) ---
+    56+
+    57+  resource "aws_route53_record" "api" {
+    58+    zone_id = aws_route53_zone.main.zone_id
+    59+    name    = var.api_subdomain
+    60+    type    = "CNAME"
+    61+    ttl     = 300
+    62+    records = ["placeholder-alb.us-east-1.elb.amazonaws.com"]
+    63+
+    64+    lifecycle {
+    65+      ignore_changes = [records]
+    66+    }
+    67+  }
+
+  The aws_acmpca_certificate resource had a duplicate argument. Let me fix that:
+● Write /home/ppatram/kubernetes/terraform/dns.tf
+  added 3 lines, removed 4 lines at L19 in dns.tf
+    19   resource "aws_acmpca_certificate" "root" {
+    20-    certificate_authority_arn   = aws_acmpca_certificate_authority.main.arn
+    21-    signing_algorithm           = "SHA256WITHRSA"
+    22-    template_arn                = "arn:aws:acm-pca:::template/RootCACertificate/V1"
+    23-    certificate_authority_arn   = aws_acmpca_certificate_authority.main.arn
+    20+    certificate_authority_arn = aws_acmpca_certificate_authority.main.arn
+    21+    signing_algorithm         = "SHA256WITHRSA"
+    22+    template_arn              = "arn:aws:acm-pca:::template/RootCACertificate/V1"
+    24
+    25     validity {
+    26       type  = "YEARS"
+    27       value = 10
+    28     }
+    29   }
+● Tasks updated
+
+  Now add the variables and update the ingress:
+● Write /home/ppatram/kubernetes/terraform/variables.tf
+   134   # --- Observability ---
+   135
+   136   variable "log_retention_days" {
+● Write /home/ppatram/kubernetes/terraform/variables.tf
+  added 14 lines at L134 in variables.tf
+   134+  # --- DNS & TLS ---
+   135+
+   136+  variable "domain_name" {
+   137+    description = "Root domain name"
+   138+    type        = string
+   139+    default     = "hakerie.fyi"
+   140+  }
+   141+
+   142+  variable "api_subdomain" {
+   143+    description = "API subdomain FQDN"
+   144+    type        = string
+   145+    default     = "kubestuff.hakerie.fyi"
+   146+  }
+   147+
+   134   # --- Observability ---
+   135
+   136   variable "log_retention_days" {
+
+  Now add outputs and update the ingress manifest:
+● Write /home/ppatram/kubernetes/terraform/outputs.tf
+  added 12 lines at L84 in outputs.tf
+    84+  # --- DNS & TLS ---
+    85+
+    86+  output "acm_certificate_arn" {
+    87+    description = "ACM certificate ARN for ALB HTTPS"
+    88+    value       = aws_acm_certificate.api.arn
+    89+  }
+    90+
+    91+  output "route53_nameservers" {
+    92+    description = "NS records to configure at your domain registrar"
+    93+    value       = aws_route53_zone.main.name_servers
+    94+  }
+    95+
+    84   # --- Scale Commands ---
+
+  Now update the base ingress manifest to use the certificate and domain:
+● Write /home/ppatram/kubernetes/manifests/base/ingress.yaml
+  added 4 lines, removed 1 line in ingress.yaml
+     1   apiVersion: networking.k8s.io/v1
+     2   kind: Ingress
+     3   metadata:
+     4     name: api
+     5     labels:
+     6       app: api
+     7     annotations:
+     8       kubernetes.io/ingress.class: alb
+     9       alb.ingress.kubernetes.io/scheme: internet-facing
+    10       alb.ingress.kubernetes.io/target-type: ip
+    11       alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}]'
+    12+      alb.ingress.kubernetes.io/certificate-arn: REPLACE_WITH_ACM_CERT_ARN
+    12       alb.ingress.kubernetes.io/healthcheck-path: /health/ready
+    14+      alb.ingress.kubernetes.io/ssl-policy: ELBSecurityPolicy-TLS13-1-2-2021-06
+    13   spec:
+    14     rules:
+    15-      - http:
+    17+      - host: kubestuff.hakerie.fyi
+    18+        http:
+    16           paths:
+    17             - path: /api
+    18               pathType: Prefix
+    19               backend:
+    20                 service:
+    21                   name: api
+    22                   port:
+    23                     number: 80
+● Tasks updated
+
+  Done. Here's what was added:
+
+  Terraform (`dns.tf`):
+
+  - ACM Private CA (root, RSA 2048, 10-year validity)
+  - ACM certificate for kubestuff.hakerie.fyi issued by your private CA
+  - Route 53 hosted zone for hakerie.fyi
+  - CNAME record for kubestuff.hakerie.fyi → ALB
+
+  Ingress manifest updated with:
+
+  - host: kubestuff.hakerie.fyi
+  - certificate-arn annotation (replace with output after apply)
+  - TLS 1.3 policy
+
+  After `terraform apply`, you need to do two things:
+
+  1. Set NS records at your registrar — point hakerie.fyi to the Route 53 nameservers:
+
+     terraform output route53_nameservers
+
+     Add those 4 NS records at wherever you registered hakerie.fyi.
+
+  2. Update the ingress certificate ARN:
+
+     CERT_ARN=$(cd terraform && terraform output -raw acm_certificate_arn)
+     sed -i "s|REPLACE_WITH_ACM_CERT_ARN|$CERT_ARN|" manifests/base/ingress.yaml
+     kubectl apply -k manifests/overlays/dev
+
+  Important note about Private CA: Since this is a private CA, browsers won't trust it by default. Clients need to install your root CA cert. If you want browser-trusted TLS for free, consider using a public
+  ACM certificate instead (just swap certificate_authority_arn for DNS validation) — ACM public certs are free and auto-trusted. The private CA costs $400/month. Want me to switch to a public cert instead?
+
+▸ Credits: 3.71 • Time: 1m 8s
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Kiro · auto · ◔ 15%                                                                                                                                                                       ~/kubernetes · (master)
+
+/quit
+/quit    Quit the application
+
+
+✔ ~/kubernetes [master L|✚ 3…3]
+15:11 $

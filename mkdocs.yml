@@ -1,0 +1,69 @@
+site_name: Kubernetes API Project
+nav:
+  - Home: index.md
+  - Requirements: requirements.md
+  - Infrastructure: terraform_setup.md
+  - Infrastructure Diagram: eks-training-infrastructure.md
+  - Useful commands: good-to-know.md
+  - Lessons:
+    - "01 - CKA 2024 Course Introduction": 01of59.md
+    - "02 - Docker Fundamentals": 02of59.md
+    - "03 - Dockerizing an Application": 03of59.md
+    - "04 - Docker Multi-Stage Builds": 04of59.md
+    - "05 - Why Kubernetes?": 05of59.md
+    - "06 - Kubernetes Architecture In Depth": 06of59.md
+    - "07 - Installing Kubernetes Locally with Kind": 07of59.md
+    - "08 - Pods and YAML Fundamentals": 08of59.md
+    - "09 - Deployments and Replica Sets": 09of59.md
+    - "10 - Kubernetes Services": 10of59.md
+    - "11 - Kubernetes Namespaces": 11of59.md
+    - "12 - Multi-Container Pods and Init Containers": 12of59.md
+    - "13 - DaemonSets, CronJobs, and Jobs": 13of59.md
+    - "14 - Static Pods, Node Selectors, Labels": 14of59.md
+    - "15 - Taints and Tolerations": 15of59.md
+    - "16 - Node Affinity": 16of59.md
+    - "17 - Resource Requests and Limits": 17of59.md
+    - "18 - Autoscaling (HPA, VPA, Cluster)": 18of59.md
+    - "19 - Health Probes": 19of59.md
+    - "20 - ConfigMaps and Secrets": 20of59.md
+    - "21 - SSL/TLS Fundamentals": 21of59.md
+    - "22 - TLS Certificates in Kubernetes": 22of59.md
+    - "23 - Authorization and Kubeconfig": 23of59.md
+    - "24 - RBAC: Roles and Role Bindings": 24of59.md
+    - "25 - Cluster Roles and Cluster Role Bindings": 25of59.md
+    - "26 - Service Accounts": 26of59.md
+    - "27 - Network Policies": 27of59.md
+    - "28 - Multi-Node Cluster with kubeadm": 28of59.md
+    - "29 - Docker Storage": 29of59.md
+    - "30 - Persistent Volumes, PVCs, Storage Classes": 30of59.md
+    - "31 - DNS Fundamentals": 31of59.md
+    - "32 - CoreDNS in Kubernetes": 32of59.md
+    - "33 - Kubernetes Networking and CNI": 33of59.md
+    - "34 - Ingress and Ingress Controllers": 34of59.md
+    - "35 - Upgrading a Kubernetes Cluster": 35of59.md
+    - "36 - etcd Backup and Restore": 36of59.md
+    - "37 - Logging, Monitoring, and Debugging": 37of59.md
+    - "38 - Application Failure Troubleshooting": 38of59.md
+    - "39 - Control Plane Failure Troubleshooting": 39of59.md
+    - "40 - Worker Node Failure Troubleshooting": 40of59.md
+    - "41 - JSONPath and Advanced kubectl": 41of59.md
+    - "42 - CKA Exam Tips and Preparation": 42of59.md
+    - "43 - Private Docker Container Registry": 43of59.md
+    - "44 - CKA Exam Curriculum Changes (Feb 2025)": 44of59.md
+    - "45 - Helm: Package Manager for Kubernetes": 45of59.md
+    - "46 - Kustomize": 46of59.md
+    - "47 - Gateway API Deep Dive": 47of59.md
+    - "48 - Migrating Ingress to Gateway API": 48of59.md
+    - "49 - Pod Priority and Preemption": 49of59.md
+    - "50 - StatefulSets": 50of59.md
+    - "51 - Custom Resources and CRDs": 51of59.md
+    - "52 - Kubernetes Operators": 52of59.md
+    - "53 - Admission Controllers": 53of59.md
+    - "54 - Storage Classes and Dynamic Provisioning": 54of59.md
+    - "55 - CRI-DockerD Container Runtime": 55of59.md
+    - "56 - Pod Security and Linux Capabilities": 56of59.md
+    - "57 - Highly Available Kubernetes Cluster": 57of59.md
+    - "58 - 40 Days of Kubernetes Challenge Winners": 58of59.md
+    - "59 - CKA Companion Guide Book": 59of59.md
+  - "42 (video notes)": video40of59.md
+docs_dir: docs
