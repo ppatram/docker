@@ -1,0 +1,391 @@
+                                           ⢀⣴⣶⣶⣦⡀⠀⠀⠀⠀⢀⣴⣶⣦⣄⡀   ⢀⣴⣶⣶⣦⡀   ⢀⣴⣶⣶⣶⣶⣶⣶⣶⣶⣶⣦⣄⡀       ⢀⣠⣴⣶⣶⣶⣶⣶⣦⣄⡀
+                                          ⢰⣿⠋⠁⠈⠙⣿⡆⠀⢀⣾⡿⠁  ⠈⢻⡆ ⢰⣿⠋⠁⠈⠙⣿⡆ ⢰⣿⠋⠁        ⠈⠙⠻⣦     ⣴⡿⠟⠋⠁   ⠈⠙⠻⢿⣦
+                                          ⢸⣿⠀⠀⠀⠀⣿⣇⣴⡿⠋⠀⠀  ⢀⣼⠇ ⢸⣿⠀⠀⠀⠀⣿⡇ ⢸⣿⠀⠀⠀⢠⣤⣤⣤⣤⣄    ⣿⡆   ⣼⡟⠀⠀⠀ ⣀⣀⣀    ⢻⣧
+                                          ⢸⣿⠀⠀⠀⠀⣿⡿⠋⠀⠀  ⢀⣾⡿⠁  ⢸⣿⠀⠀⠀⠀⣿⡇ ⢸⣿⠀⠀⠀⢸⣿⠉⠉⠉⣿⡇   ⣿⡇  ⣼⡟⠀⠀ ⣰⡿⠟⠛⠻⢿⣆⠀⠀ ⢻⣧
+                                          ⢸⣿⠀⠀⠀⠀⠙⠁⠀⠀ ⢀⣼⡟⠁    ⢸⣿⠀⠀⠀⠀⣿⡇ ⢸⣿⠀⠀⠀⢸⣿⣶⣶⡶⠋⠀   ⣿⠇ ⢰⣿⠀⠀⠀⢰⣿⠀⠀⠀  ⣿⡆⠀⠀ ⣿⡆
+                                          ⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀ ⠹⣷⡀     ⢸⣿⠀⠀⠀⠀⣿⡇⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀   ⣠⣼⠟  ⢸⣿⠀⠀ ⢸⣿⠀⠀⠀⠀ ⣿⡇⠀⠀ ⣿⡇
+                                          ⢸⣿⠀⠀⠀⠀⠀⣠⡀⠀⠀ ⠹⣷⡄    ⢸⣿⠀⠀⠀⠀⣿⡇⠀⢸⣿⠀⠀⠀⠀⣤⣄  ⠀⠀⠹⣿⡅   ⠸⣿⠀⠀ ⠸⣿⠀⠀⠀⠀ ⣿⠇⠀  ⣿⠇
+                                          ⢸⣿⠀⠀⠀⠀⣾⡟⣷⡀⠀⠀ ⠘⣿⣆   ⢸⣿⠀⠀⠀⠀⣿⡇ ⢸⣿⠀⠀⠀⠀⣿⡟⣷⡀⠀⠀ ⠘⣿⣆   ⢻⣧⠀⠀ ⠹⣷⣦⣤⣤⣾⠏⠀⠀⠀⣼⡟
+                                          ⢸⣿⠀⠀⠀⠀⣿⡇⠹⣷⡀  ⠀⠈⢻⡇  ⢸⣿⠀⠀⠀⠀⣿⡇ ⢸⣿⠀⠀⠀⠀⣿⡇⠹⣷⡀  ⠀⠈⢻⡇   ⢻⣧⠀⠀⠀ ⠉⠉⠉    ⣼⡟
+                                          ⠸⣿⣄⡀⢀⣠⣿⠇⠀⠙⣷⡀  ⢀⣼⠇  ⠸⣿⣄⡀⢀⣠⣿⠇ ⠸⣿⣄⡀⢀⣠⣿⠇⠀⠙⣷⡀  ⢀⣼⠇    ⠻⣷⣦⣄⡀   ⢀⣠⣴⣾⠟
+                                           ⠈⠻⠿⠿⠟⠁⠀⠀⠀⠈⠻⠿⠿⠟⠁    ⠈⠻⠿⠿⠟⠁   ⠈⠻⠿⠿⠟⠁⠀⠀⠀⠈⠻⠿⠿⠟⠁     ⠀⠀⠈⠙⠻⠿⠿⠿⠿⠟⠋⠁
+
+                                     Welcome to the new Kiro CLI UX! /tui to learn more, /feedback for thoughts.
+                                          Prefer the classic experience? Relaunch with kiro-cli --classic.
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  can this server do nestgerd virt
+
+  To check if your server supports nested virtualization, run:
+● Shell grep -c 'vmx\|svm' /proc/cpuinfo && cat /sys/module/kvm_intel/parameters/nested 2>/dev/null || cat /sys/module/kvm_amd/parameters/nested
+  2>/dev/null
+
+  Yes — nested virtualization is enabled on this server:
+
+  - 16 CPU threads with vmx/svm flags (hardware virt support)
+  - nested = Y (KVM nested virt is active)
+
+  You can run VMs inside VMs (e.g., running KVM guests inside a VM, or Kubernetes nodes with virtualization).
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  !pwd
+
+  /home/ppatram/kubernetes
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  !ls
+
+  Dockerfile  README.md  app  create-vms.sh  docs  install-kvm.sh  install.sh  manifests  mkdocs.yml  nohup.out  startup.sh  terraform  working
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  command to login to virsh node1
+
+  virsh -c qemu+ssh://node1/system
+
+  If you need to specify a user:
+
+  virsh -c qemu+ssh://user@node1/system
+
+▸ Credits: 0.04 • Time: 3s
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  my virsh list not showing anyhing
+
+  virsh list only shows running VMs. Try:
+
+  virsh list --all
+
+  This shows all VMs including stopped/paused ones.
+● Shell virsh list --all 2>&1
+
+  No VMs are defined on this host at all — not just stopped, but none exist yet. You'd need to create one with virt-install or define one from an
+  XML file.
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ok they all show up only with sudo..can i fix this
+
+  Add your user to the libvirt group:
+
+  sudo usermod -aG libvirt $USER
+
+  Then log out and back in (or run newgrp libvirt for the current session).
+● Shell groups $USER
+
+  You're already in the libvirt group. The issue is likely that virsh is connecting to the wrong URI by default. Set it explicitly:
+
+  export LIBVIRT_DEFAULT_URI="qemu:///system"
+
+  Add that to your ~/.bashrc to make it permanent:
+
+  echo 'export LIBVIRT_DEFAULT_URI="qemu:///system"' >> ~/.bashrc
+
+  Without this, virsh may connect to qemu:///session (user-level), which doesn't see system VMs.
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  what is te command to destroy the vms
+
+  virsh destroy <name>        # force stop (like pulling power)
+  virsh undefine <name>       # remove the VM definition
+
+  To also delete the disk:
+
+  virsh undefine <name> --remove-all-storage
+
+  To stop+delete all at once in a loop:
+
+  for vm in $(virsh list --all --name); do virsh destroy $vm 2>/dev/null; virsh undefine $vm --remove-all-storage; done
+
+▸ Credits: 0.03 • Time: 4s
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  virsh console node1 is at a login screen and won't return my prompt how to break out
+
+  Press:
+
+  Ctrl + ]
+
+  That's the escape sequence to detach from a virsh console.
+
+▸ Credits: 0.04 • Time: 4s
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  what is the root password for the default qemu image
+
+  There is no default root password — most cloud/qemu images (Ubuntu, CentOS, Debian) disable password login entirely and use SSH keys only.
+
+  To reset it without knowing it:
+
+  virt-customize -a /path/to/disk.qcow2 --root-password password:yourpassword
+
+  Or check how the VM was created — if you used virt-install with --cloud-init, the credentials were set there.
+
+▸ Credits: 0.03 • Time: 4s
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ok create cloud init file so it sets the root user ssh known hosts to ssh-ed25519
+  AAAAC3NzaC1lZDI1NTE5AAAAIBX/sK1MNdF0NEqybbh+z6WrN0txvvFPTHUW6NfRmYvH owner@DESKTOP-INMDB24
+
+● Write /home/ppatram/kubernetes/cloud-init/user-data
+  added 5 lines in user-data
+     1+  #cloud-config
+     2+  users:
+     3+    - name: root
+     4+      ssh_authorized_keys:
+     5+        - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBX/sK1MNdF0NEqybbh+z6WrN0txvvFPTHUW6NfRmYvH owner@DESKTOP-INMDB24
+
+  Created at cloud-init/user-data. To use it with virt-install:
+
+  virt-install ... --cloud-init user-data=cloud-init/user-data
+
+  Or generate a cloud-init ISO if needed:
+
+  cloud-localds cloud-init.iso cloud-init/user-data
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  update the user-data in create-vms.sh so it installs and starts ssh so root can login with ssh key
+
+  Let me read the existing script first.
+● Glob "**/create-vms.sh"
+  1 file
+    create-vms.sh
+● Read /home/ppatram/kubernetes/create-vms.sh
+● Write /home/ppatram/kubernetes/create-vms.sh
+  added 5 lines at L32 in create-vms.sh
+    32     cat > "${TMPDIR}/user-data" <<EOF
+    33   #cloud-config
+    34   hostname: ${VM}
+    35   users:
+    36     - name: root
+    37       ssh_authorized_keys:
+    38         - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBX/sK1MNdF0NEqybbh+z6WrN0txvvFPTHUW6NfRmYvH owner@DESKTOP-INMDB24
+    39     - name: kube
+    40       sudo: ALL=(ALL) NOPASSWD:ALL
+    41       shell: /bin/bash
+    42       ssh_authorized_keys:
+    43         - ${SSH_PUB_KEY}
+    44   package_update: true
+    45   packages:
+    46+    - openssh-server
+    46     - qemu-guest-agent
+    48+  runcmd:
+    49+    - sed -i 's/^#*PermitRootLogin.*/PermitRootLogin prohibit-password/' /etc/ssh/sshd_config
+    50+    - systemctl enable ssh
+    51+    - systemctl restart ssh
+    47   EOF
+
+  Added openssh-server to packages and a runcmd that:
+
+  - Sets PermitRootLogin prohibit-password (allows key-based root login, blocks password)
+  - Enables and restarts SSH
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ok how to login using ssh to node1
+
+  First get node1's IP:
+
+  virsh net-dhcp-leases default
+
+  Then SSH as root:
+
+  ssh root@<ip>
+
+  If your key isn't the default (~/.ssh/id_ed25519), specify it:
+
+  ssh -i ~/.ssh/your_key root@<ip>
+
+▸ Credits: 0.03 • Time: 3s
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  rather tan get the node ips is there a virsh command to ssh to the host?
+
+  No — virsh doesn't have a built-in SSH command. The closest is the console:
+
+  virsh console node1
+
+  But for SSH with the IP lookup in one step:
+
+  ssh root@$(virsh domifaddr node1 | awk '/ipv4/{print $4}' | cut -d/ -f1)
+
+▸ Credits: 0.03 • Time: 5s
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ok.. I've setup root login to master node1 node2 and node3. write a script that will install kubernetes on the master with the 3 worker nodes.
+  install-kubernetes.sh
+
+● Shell virsh net-dhcp-leases default 2>/dev/null
+● Write /home/ppatram/kubernetes/install-kubernetes.sh
+  added 87 lines in install-kubernetes.sh
+     1+  #!/bin/bash
+     2+  set -e
+     3+
+     4+  MASTER=$(virsh domifaddr master | awk '/ipv4/{print $4}' | cut -d/ -f1)
+     5+  NODE1=$(virsh domifaddr node1  | awk '/ipv4/{print $4}' | cut -d/ -f1)
+     6+  NODE2=$(virsh domifaddr node2  | awk '/ipv4/{print $4}' | cut -d/ -f1)
+     7+  NODE3=$(virsh domifaddr node3  | awk '/ipv4/{print $4}' | cut -d/ -f1)
+     8+
+     9+  SSH="ssh -o StrictHostKeyChecking=no root"
+    10+  K8S_VERSION="1.30"
+    11+  POD_CIDR="10.244.0.0/16"  # flannel default
+    12+
+    13+  echo "Master: $MASTER  Nodes: $NODE1 $NODE2 $NODE3"
+    14+
+    15+  # Common setup for all nodes
+    16+  common_setup() {
+    17+    local ip=$1
+    18+    $SSH@$ip bash <<'ENDSSH'
+    19+  set -e
+    20+  # Disable swap
+    21+  swapoff -a
+    22+  sed -i '/swap/d' /etc/fstab
+    23+
+    24+  # Load kernel modules
+    25+  modprobe overlay
+    26+  modprobe br_netfilter
+    27+  cat > /etc/modules-load.d/k8s.conf <<EOF
+    28+  overlay
+    29+  br_netfilter
+    30+  EOF
+    31+
+    32+  cat > /etc/sysctl.d/k8s.conf <<EOF
+    33+  net.bridge.bridge-nf-call-iptables  = 1
+    34+  net.bridge.bridge-nf-call-ip6tables = 1
+    35+  net.ipv4.ip_forward                 = 1
+    36+  EOF
+    37+  sysctl --system
+    38+
+    39+  # Install containerd
+    40+  apt-get update -qq
+    41+  apt-get install -y -qq containerd apt-transport-https curl
+    42+
+    43+  mkdir -p /etc/containerd
+    44+  containerd config default > /etc/containerd/config.toml
+    45+  sed -i 's/SystemdCgroup = false/SystemdCgroup = true/' /etc/containerd/config.toml
+    46+  systemctl enable --now containerd
+    47+
+    48+  # Install kubeadm/kubelet/kubectl
+    49+  curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.30/deb/Release.key | gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+    50+  echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.30/deb/ /' >
+      /etc/apt/sources.list.d/kubernetes.list
+    51+  apt-get update -qq
+    52+  apt-get install -y -qq kubelet kubeadm kubectl
+    53+  apt-mark hold kubelet kubeadm kubectl
+    54+  systemctl enable kubelet
+    55+  ENDSSH
+    56+  }
+    57+
+    58+  echo "==> Setting up all nodes..."
+    59+  for ip in $MASTER $NODE1 $NODE2 $NODE3; do
+    60+    echo "  -> $ip"
+    61+    common_setup $ip
+    62+  done
+    63+
+    64+  echo "==> Initializing master..."
+    65+  $SSH@$MASTER bash <<ENDSSH
+    66+  set -e
+    67+  kubeadm init --pod-network-cidr=$POD_CIDR --apiserver-advertise-address=$MASTER
+    68+
+    69+  mkdir -p \$HOME/.kube
+    70+  cp /etc/kubernetes/admin.conf \$HOME/.kube/config
+    71+
+    72+  # Install Flannel CNI
+    73+  kubectl apply -f https://github.com/flannel-io/flannel/releases/latest/download/kube-flannel.yml
+    74+  ENDSSH
+    75+
+    76+  echo "==> Getting join command..."
+    77+  JOIN_CMD=$($SSH@$MASTER kubeadm token create --print-join-command)
+    78+
+    79+  echo "==> Joining worker nodes..."
+    80+  for ip in $NODE1 $NODE2 $NODE3; do
+    81+    echo "  -> $ip"
+    82+    $SSH@$ip $JOIN_CMD
+    83+  done
+    84+
+    85+  echo ""
+    86+  echo "Done! Check cluster:"
+    87+  echo "  ssh root@$MASTER kubectl get nodes"
+● Shell chmod +x /home/ppatram/kubernetes/install-kubernetes.sh
+
+  Created install-kubernetes.sh. Run it with:
+
+  ./install-kubernetes.sh
+
+  What it does:
+
+  1. Auto-discovers VM IPs via virsh domifaddr
+  2. On all 4 nodes: disables swap, configures kernel modules, installs containerd + kubeadm/kubelet/kubectl (k8s 1.30)
+  3. On master: runs kubeadm init, installs Flannel CNI
+  4. On workers: runs the join command
+
+  Takes ~5-10 minutes to complete.
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  look at the log ./kubeinstall.log. what is wrong?
+
+● Read /home/ppatram/kubernetes/kubeinstall.log
+
+  The issue is clear. kubeadm init succeeded, but the Flannel kubectl apply ran too soon — the API server wasn't ready yet (connection refused on
+  port 6443).
+
+  The fix is to wait for the API server to be healthy before applying Flannel. Also, since you're root on the master, you need to set KUBECONFIG
+  before running kubectl.
+● Write /home/ppatram/kubernetes/install-kubernetes.sh
+  added 5 lines, removed 2 lines at L64 in install-kubernetes.sh
+    64   echo "==> Initializing master..."
+    65   $SSH@$MASTER bash <<ENDSSH
+    66   set -e
+    67   kubeadm init --pod-network-cidr=$POD_CIDR --apiserver-advertise-address=$MASTER
+    68
+    69-  mkdir -p \$HOME/.kube
+    70-  cp /etc/kubernetes/admin.conf \$HOME/.kube/config
+    69+  export KUBECONFIG=/etc/kubernetes/admin.conf
+    71
+    71+  # Wait for API server to be ready
+    72+  echo "Waiting for API server..."
+    73+  until kubectl get nodes &>/dev/null; do sleep 3; done
+    74+
+    72   # Install Flannel CNI
+    73   kubectl apply -f https://github.com/flannel-io/flannel/releases/latest/download/kube-flannel.yml
+    74   ENDSSH
+
+  The cluster init itself succeeded though — the nodes just need to join and Flannel needs to be applied. Rather than re-running the full script,
+  apply Flannel manually now:
+
+  ssh root@192.168.122.213 "export KUBECONFIG=/etc/kubernetes/admin.conf && kubectl apply -f
+  https://github.com/flannel-io/flannel/releases/latest/download/kube-flannel.yml"
+
+  Then join the workers (the token from the log is still valid for 24h):
+
+  for ip in 192.168.122.4 192.168.122.154 192.168.122.194; do
+    ssh root@$ip "kubeadm join 192.168.122.213:6443 --token rq49cr.0d9b6f67jvjlobyb --discovery-token-ca-cert-hash
+  sha256:89b19081a452b3e2218f9736314c9bbc75e37c6947b2688d332f809898522fda"
+  done
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  what is virsh command to reboot vm
+
+  virsh reboot node1
+
+  Or for a hard reset (like power cycle):
+
+  virsh reset node1
+
+▸ Credits: 0.05 • Time: 3s
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ok i want to install kubeadmin on this server for the cluster on master
+
+  You mean install kubectl on this host (the KVM hypervisor) so you can manage the cluster from here without SSHing into master every time?
+● Shell kubectl version --client 2>/dev/null || echo "not installed"
+    not installed
+◔ Shell curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.30/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg &&
+● Shell kubectl version --client 2>/dev/null || echo "not installed"
+● Shell curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.30/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg &&
+  echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.30/deb/ /' | sudo tee
+  /etc/apt/sources.list.d/kubernetes.list && sudo apt-get update -qq && sudo apt-get install -y kubectl
+    deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.30/deb/ /
+    Reading package lists...
+    Building dependency tree...
+    Reading state information...
+    The following NEW packages will be installed:
+    ...+33 lines (ctrl+o to toggle)
+
+  kubectl 1.30 installed. Now copy the kubeconfig from master:
+
+  mkdir -p ~/.kube
+  ssh root@192.168.122.213 cat /etc/kubernetes/admin.conf > ~/.kube/config
+  chmod 600 ~/.kube/config
+
+  Then verify:
+
+  kubectl get nodes
+
+▸ Credits: 0.21 • Time: 50s
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Kiro · auto · ◔ 3%                                                                                                             ~/kubernetes · (main)
+
+ ask a question or describe a task ↵
+                                                                                                                                 /copy to clipboard

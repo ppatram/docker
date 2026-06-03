@@ -1,0 +1,5 @@
+#cloud-config
+users:
+  - name: root
+    ssh_authorized_keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBX/sK1MNdF0NEqybbh+z6WrN0txvvFPTHUW6NfRmYvH owner@DESKTOP-INMDB24
