@@ -1,0 +1,43 @@
+appsyncId: profile
+queries:
+  - operationName: getProfile
+    roles:
+      - name: DPEAIESICO_RAGBotGenAI
+        clients:
+          - DPEAIESICO_SharedInfrastructureComponentAIAccountAWSRAG_OIDC_SI
+  - operationName: getSession
+    roles:
+      - name: DPEAIESICO_RAGBotGenAI
+        clients:
+          - DPEAIESICO_SharedInfrastructureComponentAIAccountAWSRAG_OIDC_SI
+  - operationName: getUserSessions
+    roles:
+      - name: DPEAIESICO_RAGBotGenAI
+        clients:
+          - DPEAIESICO_SharedInfrastructureComponentAIAccountAWSRAG_OIDC_SI
+  - operationName: getMessages
+    roles:
+      - name: DPEAIESICO_RAGBotGenAI
+        clients:
+          - DPEAIESICO_SharedInfrastructureComponentAIAccountAWSRAG_OIDC_SI
+mutations:
+  - operationName: upsertProfile
+    roles:
+      - name: DPEAIESICO_RAGBotGenAI
+        clients:
+          - DPEAIESICO_SharedInfrastructureComponentAIAccountAWSRAG_OIDC_SI
+  - operationName: createSession
+    roles:
+      - name: DPEAIESICO_RAGBotGenAI
+        clients:
+          - DPEAIESICO_SharedInfrastructureComponentAIAccountAWSRAG_OIDC_SI
+  - operationName: deleteSession
+    roles:
+      - name: DPEAIESICO_RAGBotGenAI
+        clients:
+          - DPEAIESICO_SharedInfrastructureComponentAIAccountAWSRAG_OIDC_SI
+  - operationName: updateSessionPreview
+    roles:
+      - name: DPEAIESICO_RAGBotGenAI
+        clients:
+          - DPEAIESICO_SharedInfrastructureComponentAIAccountAWSRAG_OIDC_SI
