@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  ca.crt: boop
+metadata:
+  name: boop
+  namespace: default
