@@ -10,7 +10,7 @@ VCPUS=2
 DISK_SIZE=20G
 SSH_PUB_KEY="${SSH_PUB_KEY:-$(cat ~/.ssh/id_rsa.pub 2>/dev/null || cat ~/.ssh/id_ed25519.pub 2>/dev/null || echo '')}"
 
-VMS=("worker1")
+VMS=("worker2")
 
 for VM in "${VMS[@]}"; do
   echo "Creating VM: $VM"
@@ -19,7 +19,6 @@ for VM in "${VMS[@]}"; do
   CIDATA="${DISK_DIR}/${VM}-cidata.img"
 
   # Create disk from base image
-  sudo qemu-img create -f qcow2 -b "$BASE_IMG" -F qcow2 "$DISK" "$DISK_SIZE"
 
   # Generate cloud-init config
   TMPDIR=$(mktemp -d)

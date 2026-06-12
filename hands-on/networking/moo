@@ -1,0 +1,1 @@
+kubectl patch deployment my-db -p '{"spec":{"template":{"spec":{"nodeSelector":{"workload":"db"}}}}}'

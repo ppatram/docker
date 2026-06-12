@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    token: my-token
+  name: my-token
+  namespace: token
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      token: my-token
+  template:
+    metadata:
+      labels:
+        token: my-token
+    spec:
+      containers:
+      - image: nicolaka/netshoot
+        imagePullPolicy: Always
+        name: my-token
+        command: ["sleep", "infinity"]

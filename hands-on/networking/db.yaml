@@ -1,0 +1,36 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: my-db
+  name: my-db
+  namespace: db
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-db
+  template:
+    metadata:
+      labels:
+        app: my-db
+    spec:
+      containers:
+      - image: nicolaka/netshoot
+        name: my-db
+        command: ["sleep", "infinity"]
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-db-service
+  namespace: db
+spec:
+  type: NodePort
+  selector:
+    app: my-db
+  ports:
+    - port: 8080
+      targetPort: 80
+      nodePort: 30082
