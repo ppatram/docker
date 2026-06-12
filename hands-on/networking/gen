@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    p2: my-p2
+  name: my-p2
+  namespace: p2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      p2: my-p2
+  template:
+    metadata:
+      labels:
+        p2: my-p2
+    spec:
+      containers:
+      - image: nicolaka/netshoot
+        imagePullPolicy: Always
+        name: my-p2
+        command: ["sleep", "infinity"]
