@@ -1,0 +1,13 @@
+---
+- name: Install prometheus node_exporter
+  hosts: all
+  user: root
+  roles:
+  - prometheus
+
+- name: Install prometheus server
+  hosts: master
+  user: root
+  roles:
+  - prometheus.prometheus.prometheus
+  
