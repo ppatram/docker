@@ -1,0 +1,3 @@
+nohup  socat TCP-LISTEN:9090,fork TCP:192.168.122.109:9090 &
+nohup socat TCP-LISTEN:9100,fork TCP:192.168.122.109:9100 &
+nohup socat TCP-LISTEN:9093,fork TCP:192.168.122.109:9093 &
