@@ -1,7 +1,7 @@
 [all]
 master
 node1
-#node2
-#node3
+node2
+node3
 [server]
 master
