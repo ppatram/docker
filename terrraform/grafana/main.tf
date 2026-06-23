@@ -8,13 +8,20 @@ terraform {
 backend "s3" {
   bucket         = "tfstate-iek"
   key            = "grafana/tf-state" # <-- Unique Key
-  dynamodb_table = "tf-lock"
+  use_lockfile   = "true"
+
+}
 }
 
 
-
-
+data "local_file" "nginx_dash" {
+  filename = "${path.module}/nginx.dashboard.json"
 }
+
+#output "nginx_dash" {
+#  value = data.local_file.nginx_dash.content
+#}
+
 
 
 
@@ -22,6 +29,10 @@ provider "grafana" {
   url  = "http://kubernetes.hakerie.fyi:3000"           # The URL of your local Grafana server
   auth = var.GRAFANA_API_TOKEN
 }
+
+
+
+
 
 # Create a Folder
 resource "grafana_folder" "my_folder" {
@@ -37,11 +48,7 @@ resource "grafana_data_source" "prometheus" {
 
 # Create a Dashboard inside the folder
 resource "grafana_dashboard" "my_dashboard" {
-  folder = grafana_folder.my_folder.uid
-  config_json = jsonencode({
-    title = "Local Server Overview"
-    uid   = "local-srv-overview"
-    panels = [] # Paste your exported panel JSON configuration arrays here
-  })
+  folder      = grafana_folder.my_folder.uid
+  config_json = data.local_file.nginx_dash.content
 }
 
