@@ -1,0 +1,53 @@
+# Name of the automation workflow visible in GitHub Actions UI
+name: CI/CD Pipeline
+
+# Defines the events that trigger this workflow
+on:
+  push:
+    branches: [ "main" ] # Runs whenever code is pushed to the main branch
+  pull_request:
+    branches: [ "main" ] # Runs when a PR is opened against the main branch
+
+# A workflow run is made up of one or more jobs
+jobs:
+  build-and-test:
+    # Forces GitHub to execute this job on your self-hosted EC2 instance
+    runs-on: self-hosted
+
+    # Set environment variables available to all steps in this job
+    env:
+      NODE_ENV: production
+
+    steps:
+      # Step 1: Downloads a copy of your repository onto the EC2 instance
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      # Step 2: Set up required environment (Example: Node.js)
+      # Note: Ensure Node.js is installed on your EC2 instance first, 
+      # or use standard environment setups if your runner has root privileges.
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      # Step 3: Install project packages using npm
+      # 'npm ci' is preferred for automated CI/CD builds over 'npm install'
+      - name: Install Dependencies
+        run: npm ci
+
+      # Step 4: Run automated tests
+      - name: Run Test Suite
+        run: npm test
+
+      # Step 5: Execute application build script
+      - name: Build Application Artifacts
+        run: npm run build
+
+      # Step 6: Cleanup step or notification (Optional)
+      - name: Deployment Confirmation
+        run: |
+          echo "Deployment successful!"
+          echo "Job ID: ${{ github.run_id }}"
+          echo "Triggered by: ${{ github.actor }}"
